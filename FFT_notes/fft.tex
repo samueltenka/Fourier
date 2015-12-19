@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\newcommand{\wrap}[1]{\left( #1 \right)}
+
+\title{Notes on Fast Fourier Transforms}
+\author{Samuel}
+\begin{document}
+
+Given $(x_0,\cdots,x_{2^N})$, we wish to find:
+$$\tilde{x}_k = \sum_{j=0}^{2^N-1}
+                  \exp\wrap{-i \frac{\tau k}{2^N} j} x_j$$
+Notice that we can decompose:
+\begin{align}
+  \tilde{x}_k &= \sum_{j=0}^{2^{N-1}-1}
+                   \exp\wrap{-i \frac{\tau \boxed{2}k}{\boxed{2^N}} j}
+                   \wrap{x_{2j} + \exp\wrap{-i \frac{\tau k}{2^N}} x_{2j+1}} \\
+              &= \tilde{y}_k + \exp\wrap{-i \frac{\tau k}{2^N}} \tilde{z}_k
+\end{align}
+Here, $y_j=x_{2j}$ and $z_j=x_{2j+1}$ are alternating subsequences of our original inputs.
+The second equality follows when we notice the $\boxed{\text{boxed}}$ $2$'s cancel.
+Also note that there are only $2^{N-1}$ total $\tilde{y}$'s; after that they wrap around.
+Same with $\tilde{z}$'s.
+\end{document}
