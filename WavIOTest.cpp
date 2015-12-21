@@ -34,12 +34,16 @@ int copy(const char* filename_in, const char* filename_out, float duration) {
    int len2=1; while(len2<len) {len2*=2;} len2/=2;
    Cmplx* c = new Cmplx[len];
    wav_read(filename_in, c);
+   for(int i=0; i<100; ++i) {
+      print(c[i]);
+   }
 
    Cmplx* f = new Cmplx[len2];
    FFT(c,len2,1,f);
    Cmplx* c2 = new Cmplx[len2];
-   IFFT(f,len2,1,c);
-   wav_write(filename_out, c2, len2);
+   IFFT(f,len2,1,c2);
+   //wav_write(filename_out, c2, len2);
+   wav_write(filename_out, c, len);
 
    delete[] c;
    delete[] f; 
