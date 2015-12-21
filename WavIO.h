@@ -18,7 +18,6 @@ void wav_read(const char* filename, Cmplx* amplitudes) {
    for(int i=0; i<size/2; ++i) {
       fread(&a, 2, 1, file);
       amplitudes[i] = Cmplx(a/*-256*128*/,0.0);
-      if(i<1000) {std::cout << "$" << a << "\t" << amplitudes[i].re << "\n";}
    }
    fclose(file);
 }
@@ -80,8 +79,6 @@ void wav_write(const char* filename, const Cmplx* amplitudes, const int len) {
    for(int i=0; i<len; ++i) {
       as[i] = static_cast<short>(amplitudes[i].re);
       fwrite(&as[i], 2, 1, file);
-      if(i<1000) {std::cout << as[i] << "\t" << amplitudes[i].re << "\n";}
-      //as[i] = to_littleendian(as[i]);
    }
    //fwrite(as, 2, size/2, file);
    delete[] as;

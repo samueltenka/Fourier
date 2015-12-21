@@ -4,7 +4,21 @@
 #include "Cmplx.h"
 #include <iostream>
 
-void FFT(Cmplx const* const xs, int len, int skip, Cmplx* ys) {
+static void FFT_(Cmplx const* const xs, int len, int skip, Cmplx* ys);
+static void IFFT_(Cmplx const* const ys, int len, int skip, Cmplx* xs);
+
+void FFT(Cmplx const* xs, int len, Cmplx* ys) {
+   FFT_(xs, len, 1, ys);
+}
+void IFFT(Cmplx const* ys, int len, Cmplx* xs) {
+   IFFT_(ys, len, 1, xs);
+   const float norm=1.0/len;
+   for(int i=0; i<len; ++i) {
+      xs[i] = xs[i]*norm;
+   }
+}
+
+static void FFT_(Cmplx const* const xs, int len, int skip, Cmplx* ys) {
    //std::cout << len << "|" << skip << " "; std::cout.flush();
    int size=len/skip;
    if(size==1) {ys[0]=xs[0]; return;}
@@ -25,7 +39,7 @@ void FFT(Cmplx const* const xs, int len, int skip, Cmplx* ys) {
 }
 
 // IFFT is just FFT, but complex-conjugated:
-void IFFT(Cmplx const* const ys, int len, int skip, Cmplx* xs) {
+static void IFFT_(Cmplx const* const ys, int len, int skip, Cmplx* xs) {
    /*FFT(ys,len,skip,xs);
    for(int j=0; j<len; ++j) {
       xs[j] = ~xs[j];

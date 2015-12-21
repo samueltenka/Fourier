@@ -15,7 +15,7 @@ float frequency_of(const char* filename, float duration) {
    Cmplx* f = new Cmplx[len2];
    FFT(c,len2,1,f);
    
-   //find kindex of maximum amplitude^2.
+   //find k-index of maximum amplitude^2.
    int bestk=-1; float max_m2=-1.0;
    for(int k=1; k<len2-1; ++k) {
       float m2=f[k].mag2();

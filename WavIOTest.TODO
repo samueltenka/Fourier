@@ -1,0 +1,4 @@
+clean up this test, and focus it on just IO!
+(we can make a test #2 that reads, then FFT's, then IFFT's, then writes,
+and a #3 that reads, then finds strongest k, then generates sine wave, then writes
+   (i.e. read then FFT then dampen all but max peak then IFFT then writes).
