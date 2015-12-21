@@ -13,7 +13,7 @@ float frequency_of(const char* filename, float duration) {
    wav_read(filename, c);
 
    Cmplx* f = new Cmplx[len2];
-   FFT(c,len2,1,f);
+   FFT(c,len2,f);
    
    //find k-index of maximum amplitude^2.
    int bestk=-1; float max_m2=-1.0;
@@ -39,11 +39,11 @@ int copy(const char* filename_in, const char* filename_out, float duration) {
    }
 
    Cmplx* f = new Cmplx[len2];
-   FFT(c,len2,1,f);
+   FFT(c,len2,f);
    Cmplx* c2 = new Cmplx[len2];
-   IFFT(f,len2,1,c2);
-   //wav_write(filename_out, c2, len2);
-   wav_write(filename_out, c, len);
+   IFFT(f,len2,c2);
+   wav_write(filename_out, c2, len2);
+   //wav_write(filename_out, c, len);
 
    delete[] c;
    delete[] f; 

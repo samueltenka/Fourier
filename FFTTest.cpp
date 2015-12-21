@@ -8,7 +8,7 @@ void print(const Cmplx &a) {
 
 void analyze(Cmplx* c, int len) {
    Cmplx* f = new Cmplx[len];
-   FFT(c,len,1,f);
+   FFT(c,len,f);
    for(int k=0; k<len; ++k) {
       print(f[k]);
    }

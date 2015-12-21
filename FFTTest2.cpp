@@ -28,11 +28,11 @@ int main(int argc, char** argv) {
 
   //1. Analyze white noise
   Cmplx f[len];
-  FFT(c,len,1,f);
+  FFT(c,len,f);
 
   //2. Synthesize white noise
   Cmplx c2[len];
-  IFFT(f,len,1,c2);
+  IFFT(f,len,c2);
 
   //3. Compare
   for(int j=0; j<len; ++j) {

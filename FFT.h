@@ -26,8 +26,8 @@ static void FFT_(Cmplx const* const xs, int len, int skip, Cmplx* ys) {
    int half=size/2;
    Cmplx* y1s = new Cmplx[half],
         * y2s = new Cmplx[half];
-   FFT(xs, len, skip*2, y1s);
-   FFT(xs+skip, len, skip*2, y2s);
+   FFT_(xs, len, skip*2, y1s);
+   FFT_(xs+skip, len, skip*2, y2s);
 
    const Cmplx c = unit(-tau/size);
    Cmplx coef = Cmplx(1.0,0.0);
@@ -50,8 +50,8 @@ static void IFFT_(Cmplx const* const ys, int len, int skip, Cmplx* xs) {
    int half=size/2;
    Cmplx* x1s = new Cmplx[half],
         * x2s = new Cmplx[half];
-   IFFT(ys, len, skip*2, x1s); //aha! bug was that we accidentally wrote FFT instead of IFFT
-   IFFT(ys+skip, len, skip*2, x2s);
+   IFFT_(ys, len, skip*2, x1s); //aha! bug was that we accidentally wrote FFT instead of IFFT
+   IFFT_(ys+skip, len, skip*2, x2s);
 
    const Cmplx c = unit(tau/size);
    Cmplx coef = Cmplx(1.0,0.0);
