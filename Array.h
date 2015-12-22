@@ -27,7 +27,19 @@ struct Array {
 
 // Implemented in ArrayWavIO.h
 struct Array<Cmplx> {
-   Array<Cmplx>(const char* filename);
+   //Array<Cmplx>(const char* filename);
+   Array<Cmplx>(const Array<float> &other);
+   Array<Cmplx>(const Array<short> &other);
+   //void write_to(const char* filename);
+}
+struct Array<float> {
+   Array<float>(const Array<short> &other);
+   Array<float>(const Array<Cmplx> &other);
+}
+struct Array<short> {
+   Array<short>(const char* filename);
+   Array<short>(const Array<Cmplx> &other);
+   Array<short>(const Array<float> &other);
    void write_to(const char* filename);
 }
 
