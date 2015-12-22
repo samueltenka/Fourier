@@ -1,23 +1,21 @@
 #include "SigProc.h"
 #include "rand.h"
 
-void phase_align(const float* in, int len, float* out) {
-   Cmplx* f = new Cmplx[len];
-   FFT(in,len,f);
-   for(int k=0; k<len; ++k) {
-      f[k]=Cmplx(f[k].mag(),0.0);
+void phase_align(const Array<Cmplx> in, Array<Cmplx> out) {
+   Array<Cmplx> f(len);
+   FFT(in,f); Cmplx* const fa=f.a;
+   for(int k=0; k<in.len; ++k) {
+      fa[k]=Cmplx(fa[k].mag(),0.0);
    }
-   IFFT(f,len,out);
-   delete[] f;
+   IFFT(f,out);
 }
-void phase_randomize(const float* in, int len float out) {
-   Cmplx* f = new Cmplx[len];
-   FFT(in,len,f);
-   for(int k=0; k<len; ++k) {
-      f[k] *= unit(randfloat()*tau);
+void phase_randomize(const Array<Cmplx> in, Array<Cmplx> out) {
+   Array<Cmplx> f(len);
+   FFT(in,f); Cmplx* const fa=f.a;
+   for(int k=0; k<in.len; ++k) {
+      fa[k] *= unit(randfloat()*tau);
    }
-   IFFT(f,len,out);
-   delete[] f;
+   IFFT(f,out);
 }
 
 

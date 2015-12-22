@@ -7,14 +7,22 @@
 static void FFT_(Cmplx const* const xs, int len, int skip, Cmplx* ys);
 static void IFFT_(Cmplx const* const ys, int len, int skip, Cmplx* xs);
 
-void FFT(Cmplx const* xs, int len, Cmplx* ys) {
-   FFT_(xs, len, 1, ys);
+int inf2(int i) {
+   //returns largest power of 2 not more than i.
+   int x=1;
+   while(x<i) {x<<1;}
+   return x>>1;
 }
-void IFFT(Cmplx const* ys, int len, Cmplx* xs) {
-   IFFT_(ys, len, 1, xs);
+
+void FFT(const Array<Cmplx> xs, Array<Cmplx> ys) {
+   FFT_(xs.a, inf2(xs.len), 1, ys.a);
+}
+void IFFT(const Array<Cmplx> ys, Array<Cmplx> xs) {
+   IFFT_(ys.a, inf2(ys.len), 1, xs.a);
    const float norm=1.0/len;
+   Cmplx* const xsa = xs.a;
    for(int i=0; i<len; ++i) {
-      xs[i] = xs[i]*norm;
+      xsa[i] = xsa[i]*norm;
    }
 }
 

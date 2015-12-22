@@ -20,8 +20,21 @@ void huge_array() {
    }
    delete[] a;
 }
+struct Array {
+   int* a;
+   int len;
+   Array(int size) {len=size; a = new int[len];}
+   ~Array() {delete[] a;}
+};
+void huge_arraystruct() {
+   Array a(HUGE);
+   int* aa=a.a;
+   for(int i=0; i<HUGE; ++i) {
+      aa[i]=i;
+   }
+}
 
 int main(int argc, char** argv) {
-   huge_array();
+   huge_arraystruct();
    return 0;
 }
