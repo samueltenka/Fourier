@@ -1,47 +1,36 @@
 #ifndef VECTOR_TYPES_H
 #define VECTOR_TYPES_H
 
-//#include "Cmplx.h"
+#include "Cmplx.h"
+#include "stdio.h"
 
 template<typename T>
 struct Array {
-   T* const a;
+   //order matters, e.g. see Array<short>(FILE*) constructor.
    const unsigned int len;
+   T* const data;
 
-   Array(unsigned int l): len(l), a(nullptr) {
-      //following line gets around the constness of a
-      //TODO: Question: is there a nicer way to do this?
-      *(const_cast<T**>(&a)) = new T[len];
+   Array(unsigned int l): len(l), data(new T[len]) {}
+   template<typename S>
+   Array(const Array<S> &other): len(other.len), data(new T[len]) {
+      for(int i=0; i<len; ++i) { data[i] = other.data[i]; }
    }
-   Array(const Array &other) {
-      len=other.len;
-      a = new T[len];
-      for(int i=0; i<len; ++i) {
-         a[i] = other.a[i];
-      }
-   }
-   ~Array() {
-      delete[] a;
-   }
+   ~Array() { delete[] data; }
+
+   Array(FILE* file);
+   Array(const char* filename);
+   void write_to(const char* filename);
 };
 
 // Implemented in ArrayWavIO.h
-struct Array<Cmplx> {
-   //Array<Cmplx>(const char* filename);
-   Array<Cmplx>(const Array<float> &other);
-   Array<Cmplx>(const Array<short> &other);
-   //void write_to(const char* filename);
-}
-struct Array<float> {
-   Array<float>(const Array<short> &other);
-   Array<float>(const Array<Cmplx> &other);
-}
-struct Array<short> {
-   Array<short>(const char* filename);
-   Array<short>(const Array<Cmplx> &other);
-   Array<short>(const Array<float> &other);
-   void write_to(const char* filename);
-}
+/*template <>
+Array<short>::Array(FILE* file);
+template <>
+Array<short>::Array(const char* filename);
+template <>
+void Array<short>::write_to(const char* filename);*/
+
+#include "ArrayWavIO.cpp"
 
 #endif//VECTOR_TYPES_H
 

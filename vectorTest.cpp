@@ -21,9 +21,11 @@ void huge_array() {
    delete[] a;
 }
 struct Array {
-   int* a;
-   int len;
-   Array(int size) {len=size; a = new int[len];}
+   int* const a;
+   int const len;
+   Array(int size):len(size) , a(new int[size]) {
+     // a=new int[size];
+   }
    ~Array() {delete[] a;}
 };
 void huge_arraystruct() {

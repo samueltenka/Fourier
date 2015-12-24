@@ -5,40 +5,50 @@
 #include <iostream>
 #include "Cmplx.h"
 
-/* Thanks to soundfile.sapp.org/doc/WaveFormat/
- */
+/* Thanks to soundfile.sapp.org/doc/WaveFormat/ */
 
-
-Array<Cmplx>::Array<Cmplx>(const char* filename) {
-   FILE* file = fopen(filename, "rb");
+static int get_len(FILE* file) {
    fseek(file, 40, SEEK_SET);
-   int s1,s2;
-   fread(&s1, 2, 1, file);
-   fread(&s2, 2, 1, file);
-   const int size=s2*256*256 + s1;
-   this->len=size/2;
-
+   int s[2];  fread(s, 2, 2, file);
+   return ((s[1]<<(8+8)) + s[0])/2;
+}
+template<>
+Array<short>::Array(FILE* file): len(get_len(file)), data(new short[len]) {
    std::cout << "reading " << len << " amplitudes\n";
-   &(const_cast<Cmplx**>(&(this->a))) = new Array<Cmplx>(len);
-   short* s;
-   for(int i=0; i<size/2; ++i) {
-      fread(&s, 2, 1, file);
-      a[i] = Cmplx(s,0.0); //unsigned 16-bit short interpreted literally
-   }
+   fread(data, 2, len, file);
+}
+
+static FILE* file;
+template<>
+Array<short>::Array(const char* filename): Array(file=fopen(filename,"rb")) {
    fclose(file);
 }
 
-inline void write_bigendian(const int x, FILE* file) {
-   int s1=x>>(8+8+8),
-       s2=(x>>(8+8))%256,
-       s3=(x>>8)%256,
-       s4=x%256;
-   fwrite(&s1,1,1,file);
-   fwrite(&s2,1,1,file);
-   fwrite(&s3,1,1,file);
-   fwrite(&s4,1,1,file);
+
+
+
+static void write_header(FILE* file, unsigned int len);
+
+template<>
+void Array<short>::write_to(const char* filename) {
+   FILE* file = fopen(filename, "wb");
+   write_header(file, len);
+   std::cout << "writing " << len << " amplitudes\n";
+   fwrite(data, 2, len, file);
+   fclose(file);
 }
-void wav_write(const char* filename, const Array<Cmplx> amplitudes) {
+
+
+
+inline void write_bigendian(const int x, FILE* file) {
+   int s[4] = { x>>(8+8+8),
+               (x>>(8+8))%256,
+               (x>>8)%256,
+                x%256         };
+   fwrite(s,1,4,file); //TODO: does this do what we want?
+}
+
+static void write_header(FILE* file, unsigned int len) {
    const int bytes_per_sample=2;
    const int size=len*bytes_per_sample;
    const int ChunkID=0x52494646, //RIFF
@@ -55,8 +65,7 @@ void wav_write(const char* filename, const Array<Cmplx> amplitudes) {
    const int Subchunk2ID=0x64617461, //data
              Subchunk2Size=size;
 
-
-   FILE* file = fopen(filename, "wb");
+   
    write_bigendian(ChunkID, file);
    fwrite(&ChunkSize,4,1,file);
    write_bigendian(Format, file);
@@ -72,19 +81,6 @@ void wav_write(const char* filename, const Array<Cmplx> amplitudes) {
 
    write_bigendian(Subchunk2ID, file);
    fwrite(&Subchunk2Size,4,1,file);
-
-   std::cout << "writing " << len << " amplitudes\n";
-   Array<short> shorts(*this);
-   for(int i=0; i<len; ++i) {
-      shortsa[i] = static_cast<short>(a[i].re);
-   }
-   fwrite(as,2,size/2,file);
-   /*for(int i=0; i<amplitudes.len; ++i) {
-      as[i] = static_cast<short>(aa[i].re);
-      fwrite(&as[i], 2, 1, file);
-   }*/
-   delete[] shorts;
-   fclose(file);
 }
 
 #endif//WAV_READER_H
