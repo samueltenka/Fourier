@@ -2,6 +2,7 @@
 #define FFT_H
 
 #include "Cmplx.h"
+#include "Array.h"
 #include <iostream>
 
 static void FFT_(Cmplx const* const xs, int len, int skip, Cmplx* ys);
@@ -15,19 +16,18 @@ int inf2(int i) {
 }
 
 void FFT(const Array<Cmplx> xs, Array<Cmplx> ys) {
-   FFT_(xs.a, inf2(xs.len), 1, ys.a);
+   FFT_(xs.data, inf2(xs.len), 1, ys.data);
 }
 void IFFT(const Array<Cmplx> ys, Array<Cmplx> xs) {
-   IFFT_(ys.a, inf2(ys.len), 1, xs.a);
-   const float norm=1.0/len;
-   Cmplx* const xsa = xs.a;
-   for(int i=0; i<len; ++i) {
+   IFFT_(ys.data, inf2(ys.len), 1, xs.data);
+   const float norm=1.0/ys.len;//WARNING: assumes ys' length is a power of 2
+   Cmplx* const xsa = xs.data;
+   for(int i=0; i<xs.len; ++i) {
       xsa[i] = xsa[i]*norm;
    }
 }
 
 static void FFT_(Cmplx const* const xs, int len, int skip, Cmplx* ys) {
-   //std::cout << len << "|" << skip << " "; std::cout.flush();
    int size=len/skip;
    if(size==1) {ys[0]=xs[0]; return;}
 
