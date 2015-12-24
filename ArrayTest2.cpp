@@ -15,7 +15,7 @@ void print(const Array<Cmplx> &a) {
    }
 }
 
-const int LEN=130000;
+const int LEN=30;
 int main(int argc, char** argv) {
    //TODO: write not a time test, but a 6way type-conversion test and a Array<short> file read-write-read-compare test.
    Array<float> floats(LEN);

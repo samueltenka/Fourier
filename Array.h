@@ -72,7 +72,7 @@ inline void write_bigendian(const unsigned int x, FILE* file) {
                (x>>(8+8))&0xFF,
                (x>>8)&0xFF,
                 x&0xFF         };
-   for(int i=0; i<4; ++i) {std::cout << "^"<< s[i]<<"\n";}
+   //for(int i=0; i<4; ++i) {std::cout << "^"<< s[i]<<"\n";}
    fwrite(s,1,4,file); //TODO: does this do what we want?
 }
 
