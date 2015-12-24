@@ -7,6 +7,7 @@
 #include "Cmplx.h"
 #include "rand.h"
 #include "FFT.h"
+#include <iostream>
 
 const int SAMPLE_RATE=44100;
 
@@ -28,7 +29,13 @@ void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out) {
    }
    IFFT(f,out);
 }
-
+void print_phases(const Array<Cmplx> &in) {
+   Array<Cmplx> f(in.len);
+   FFT(in,f); Cmplx* const fa=f.data;
+   for(int k=0; k<in.len; ++k) {
+      std::cout << k << ", " << fa[k].im/fa[k].re << "\n";
+   }
+}
 
 //void to_frequency(const float* in, Cmplx* out);
 //void convolve(const std::vector<const float*> ins, int len, float* out); //faster: multiplication in fourier space, no need to take logs.
