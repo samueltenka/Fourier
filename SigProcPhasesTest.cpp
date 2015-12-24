@@ -8,8 +8,12 @@ int main(int argc, char** argv) {
 
    Array<Cmplx> cmplxs2(cmplxs.len);
    phase_randomize(cmplxs, cmplxs2);
+   Array<Cmplx> cmplxs3(cmplxs.len);
+   phase_align(cmplxs, cmplxs3);
 
    Array<short> shorts2(cmplxs2);
    shorts2.write_to("Audio/oooh0148.randomized.wav");
+   Array<short> shorts3(cmplxs3);
+   shorts3.write_to("Audio/oooh0148.aligned.wav");
    return 0;
 }
