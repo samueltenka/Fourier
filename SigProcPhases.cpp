@@ -1,7 +1,7 @@
 #include "SigProc.h"
 #include "rand.h"
 
-void phase_align(const Array<Cmplx> in, Array<Cmplx> out) {
+void phase_align(const Array<Cmplx> &in, Array<Cmplx> &out) {
    Array<Cmplx> f(len);
    FFT(in,f); Cmplx* const fa=f.a;
    for(int k=0; k<in.len; ++k) {
@@ -9,7 +9,7 @@ void phase_align(const Array<Cmplx> in, Array<Cmplx> out) {
    }
    IFFT(f,out);
 }
-void phase_randomize(const Array<Cmplx> in, Array<Cmplx> out) {
+void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out) {
    Array<Cmplx> f(len);
    FFT(in,f); Cmplx* const fa=f.a;
    for(int k=0; k<in.len; ++k) {

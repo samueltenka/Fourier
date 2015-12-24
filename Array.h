@@ -67,18 +67,19 @@ void Array<short>::write_to(const char* filename) {
 
 
 
-inline void write_bigendian(const int x, FILE* file) {
-   int s[4] = { x>>(8+8+8),
-               (x>>(8+8))%256,
-               (x>>8)%256,
-                x%256         };
+inline void write_bigendian(const unsigned int x, FILE* file) {
+   unsigned char s[4] = { x>>(8+8+8),
+               (x>>(8+8))&0xFF,
+               (x>>8)&0xFF,
+                x&0xFF         };
+   for(int i=0; i<4; ++i) {std::cout << "^"<< s[i]<<"\n";}
    fwrite(s,1,4,file); //TODO: does this do what we want?
 }
 
 static void write_header(FILE* file, unsigned int len) {
    const int bytes_per_sample=2;
    const int size=len*bytes_per_sample;
-   const int ChunkID=0x52494646, //RIFF
+   const unsigned int ChunkID=0x52494646, //RIFF
              ChunkSize=36+size,
              Format=0x57415645; //WAVE
    const int Subchunk1ID=0x666d7420, //fmt 

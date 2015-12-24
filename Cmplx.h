@@ -1,6 +1,8 @@
 #ifndef CMPLX_H
 #define CMPLX_H
 
+#include <math.h>
+
 struct Cmplx {
    float re,im;
    Cmplx() {}
@@ -22,6 +24,7 @@ struct Cmplx {
    Cmplx operator*(const float &rhs) const { return Cmplx(re*rhs, im*rhs); }
    Cmplx operator~() const { return Cmplx(re, -im); } //complex conjugation
    float mag2() const { return re*re+im*im; }
+   float mag() const {return sqrt(mag2());}
 };
 
 
