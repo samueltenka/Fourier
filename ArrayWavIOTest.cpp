@@ -22,12 +22,13 @@ void copy(const char* filename_in, const char* filename_out) {
    shorts2.write_to(filename_out);
 }
 
+#include "SigProc.h"
 
 int main() {
-   //float f1000 = frequency_of("Audio/sine1000.wav");
-   //float f0440 = frequency_of("Audio/sine0440.wav");
-   //std::cout << "frequency " << f1000 << " Hz\n";
-   //std::cout << "frequency " << f0440 << " Hz\n";
+   float f1000 = frequency_of("Audio/sine1000.wav");
+   float f0440 = frequency_of("Audio/sine0440.wav");
+   std::cout << "frequency " << f1000 << " Hz\n";
+   std::cout << "frequency " << f0440 << " Hz\n";
    copy("Audio/sine0440.wav", "Audio/sine0440.copy.wav");
    return 0;
 }
