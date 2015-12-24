@@ -19,15 +19,12 @@ void FFT(const Array<Cmplx> &xs, Array<Cmplx> &ys) {
    FFT_(xs.data, inf2(xs.len), 1, ys.data);
 }
 void IFFT(const Array<Cmplx> &ys, Array<Cmplx> &xs) {
-   std::cout << "@@@"; std::cout.flush();
    IFFT_(ys.data, inf2(ys.len), 1, xs.data);
-   std::cout << "###"; std::cout.flush();
    const float norm=1.0/ys.len;//WARNING: assumes ys' length is a power of 2
    Cmplx* const xsa = xs.data;
    for(int i=0; i<xs.len; ++i) {
       xsa[i] = xsa[i]*norm;
    }
-   std::cout << "$$$"; std::cout.flush();
 }
 
 static void FFT_(Cmplx const* const xs, int len, int skip, Cmplx* ys) {
@@ -55,17 +52,14 @@ static void IFFT_(Cmplx const* const ys, int len, int skip, Cmplx* xs) {
    for(int j=0; j<len; ++j) {
       xs[j] = ~xs[j];
    }*/
-   std::cout << ".." << len <<"." <<skip << "..";
    int size=len/skip;
-   if(size==1) {std::cout << "WOAH"<<ys[0].re;std::cout.flush();xs[0]=ys[0];std::cout<<"678";std::cout.flush(); return;}
+   if(size==1) {xs[0]=ys[0]; return;}
 
    int half=size/2;
-   std::cout <<"O"; std::cout.flush();
    Cmplx* x1s = new Cmplx[half],
         * x2s = new Cmplx[half];
    IFFT_(ys, len, skip*2, x1s); //aha! bug was that we accidentally wrote FFT instead of IFFT
    IFFT_(ys+skip, len, skip*2, x2s);
-   std::cout <<"K"; std::cout.flush();
    
    const Cmplx c = unit(tau/size);
    Cmplx coef = Cmplx(1.0,0.0);

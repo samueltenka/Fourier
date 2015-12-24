@@ -9,25 +9,16 @@ void print(const Cmplx &a) {
 }
 
 void copy(const char* filename_in, const char* filename_out) {
-   std::cout << "!"; std::cout.flush();
    Array<short> shorts(filename_in);
-   std::cout << "!@"; std::cout.flush();
    Array<Cmplx> cmplxs(shorts);
-   std::cout << "!*"; std::cout.flush();
    const int len2=inf2(cmplxs.len);
-   std::cout << "!#"<<cmplxs.data[0].re; std::cout.flush();
 
    Array<Cmplx> fourier(len2);
-   std::cout << "!&"<<fourier.len; std::cout.flush();
    FFT(cmplxs,fourier);
-   std::cout << "!$"<<fourier.data[0].re; std::cout.flush();
    Array<Cmplx> cmplxs2(len2);
-   std::cout << "!~"; std::cout.flush();
    IFFT(fourier,cmplxs2);
   
-   std::cout << "!%"; std::cout.flush();
-   Array<float> floats(cmplxs2);
-   Array<short> shorts2(floats); 
+   Array<short> shorts2(cmplxs); 
    shorts2.write_to(filename_out);
 }
 

@@ -1,9 +1,0 @@
-./FFT.h
-./FFTTest2.cpp
-./FFTTest2.o
-./FFTTest.o
-./SigProcPhases.cpp
-./WavIO.o
-./WavIOTest.cpp
-./WavIOTest.o
-./WavIOTest.TODO
