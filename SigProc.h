@@ -8,7 +8,7 @@
 
 const int SAMPLE_RATE=44100;
 
-float frequency_of(const Array<Cmplx> xs);
+float frequency_of(const Array<Cmplx> &xs);
 float frequency_of(const char* filename);
 //void phase_align(const float* in, int len, float* out);
 //void phase_randomize(const float* in, int len, float out);

@@ -1,4 +1,5 @@
 #include "Array.h"
+#include "Cmplx.h"
 #include <iostream>
 
 template<typename T>
@@ -14,9 +15,10 @@ void print(const Array<Cmplx> &a) {
    }
 }
 
+const int LEN=130000;
 int main(int argc, char** argv) {
    //TODO: write not a time test, but a 6way type-conversion test and a Array<short> file read-write-read-compare test.
-   Array<float> floats(30);
+   Array<float> floats(LEN);
    for(int i=0; i<floats.len; ++i) {
       floats.data[i] = i;
    }

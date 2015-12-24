@@ -42,7 +42,9 @@ static int get_len(FILE* file) {
 template<>
 Array<short>::Array(FILE* file): len(get_len(file)), data(new short[len]) {
    std::cout << "reading " << len << " amplitudes\n";
+   std::cout << "!"; std::cout.flush();
    fread(data, 2, len, file);
+   std::cout << "!"; std::cout.flush();
 }
 
 static FILE* file;

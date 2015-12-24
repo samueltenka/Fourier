@@ -1,8 +1,7 @@
 #include "SigProc.h"
 #include "FFT.h"
-#include "Cmplx.h"
 
-float frequency_of(const Array<Cmplx> xs) {
+float frequency_of(const Array<Cmplx> &xs) {
    const int len2=inf2(xs.len);
    Array<Cmplx> fourier(inf2(xs.len));
    FFT(xs,fourier);
