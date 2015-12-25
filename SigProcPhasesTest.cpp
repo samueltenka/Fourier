@@ -7,6 +7,7 @@ void try_brownian_constant(const Array<Cmplx> &in, float drift_speed, const char
    Array<Cmplx> out(inf2(in.len));
    phase_randomize(in, out, drift_speed);
    Array<short> shorts(out);
+   print_phases(out);
    shorts.write_to(filename);
 }
 
@@ -21,7 +22,7 @@ int main(int argc, char** argv) {
    shorts3.write_to("Audio/oooh0148.aligned.wav");
 
    char fnm[] = "Audio/oooh0148.randomized.brown00000.wav";
-   for(float i=10.0; i<100000.0; i*=1.5) {
+   /*for(float i=10.0; i<100000.0; i*=1.5) {
       int ii=static_cast<int>(i);
       for(int j=5-1; j>=0;--j) {
          fnm[31+j]='0'+(ii%10);
@@ -29,6 +30,7 @@ int main(int argc, char** argv) {
       }
       std::cout << "writing " << fnm << " ...\n";
       try_brownian_constant(cmplxs, i, fnm);
-   } 
+   }*/
+   try_brownian_constant(cmplxs,4378.0,fnm); 
    return 0;
 }
