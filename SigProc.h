@@ -22,13 +22,15 @@ void phase_align(const Array<Cmplx> &in, Array<Cmplx> &out) {
    IFFT(f,out);
 }
 
-static const float drift_speed=1.0/30.0;
-void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out) {
+void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out, const float drift_speed) {
+   /*e.g. drift_speed=1300.0*/
+   /*TODO: should drift_speed be duration-dependent?*/
+   /*indeed, it has units of radians per frequency i.e. units of time; so divide by the natural timescale, namely the length of sample?*/
    Array<Cmplx> f(in.len);
    FFT(in,f); Cmplx* const fa=f.data;
    float factor=0.0;
    for(int k=0; k<in.len/2; ++k) {
-      factor += randfloat()*drift_speed;
+      factor += randfloat()*drift_speed/f.len;
       Cmplx phase=unit(factor*tau);
       fa[k] = fa[k] * phase;
       fa[in.len-1-k] = fa[in.len-1-k] * (~phase);
