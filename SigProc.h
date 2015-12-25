@@ -26,7 +26,7 @@ void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out) {
    FFT(in,f); Cmplx* const fa=f.data;
    float factor=0.0;
    for(int k=0; k<in.len/2; ++k) {
-      factor += randfloat()*tau/10.0;
+      factor += randfloat()*tau/100.0;
       Cmplx phase=unit(factor);
       fa[k] = fa[k] * phase;
       fa[in.len-1-k] = fa[in.len-1-k] * (~phase);
