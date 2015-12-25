@@ -24,8 +24,10 @@ void phase_align(const Array<Cmplx> &in, Array<Cmplx> &out) {
 void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out) {
    Array<Cmplx> f(in.len);
    FFT(in,f); Cmplx* const fa=f.data;
-   for(int k=0; k<in.len; ++k) {
-      fa[k] = fa[k] * unit(randfloat()*tau);
+   for(int k=0; k<in.len/2; ++k) {
+      Cmplx phase=unit(randfloat()*tau);
+      fa[k] = fa[k] * phase;
+      fa[in.len-1-k] = fa[in.len-1-k] * (~phase);
    }
    IFFT(f,out);
 }
