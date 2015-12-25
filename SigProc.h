@@ -21,13 +21,15 @@ void phase_align(const Array<Cmplx> &in, Array<Cmplx> &out) {
    }
    IFFT(f,out);
 }
+
+static const float drift_speed=1.0/30.0;
 void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out) {
    Array<Cmplx> f(in.len);
    FFT(in,f); Cmplx* const fa=f.data;
    float factor=0.0;
    for(int k=0; k<in.len/2; ++k) {
-      factor += randfloat()*tau/100.0;
-      Cmplx phase=unit(factor);
+      factor += randfloat()*drift_speed;
+      Cmplx phase=unit(factor*tau);
       fa[k] = fa[k] * phase;
       fa[in.len-1-k] = fa[in.len-1-k] * (~phase);
    }
