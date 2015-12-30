@@ -14,9 +14,9 @@ const int SAMPLE_RATE=44100;
 float frequency_of(const Array<Cmplx> &xs);
 float frequency_of(const char* filename);
 void phase_align(const Array<Cmplx> &in, Array<Cmplx> &out) {
-   Array<Cmplx> f(in.len);
+   Array<Cmplx> f(inf2(in.len));
    FFT(in,f); Cmplx* const fa=f.data;
-   for(int k=0; k<in.len; ++k) {
+   for(int k=0; k<f.len; ++k) {
       fa[k]=Cmplx(fa[k].mag(),0.0);
    }
    IFFT(f,out);
@@ -26,14 +26,14 @@ void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out, const float drif
    /*e.g. drift_speed=1300.0*/
    /*TODO: should drift_speed be duration-dependent?*/
    /*indeed, it has units of radians per frequency i.e. units of time; so divide by the natural timescale, namely the length of sample?*/
-   Array<Cmplx> f(in.len);
+   Array<Cmplx> f(inf2(in.len));
    FFT(in,f); Cmplx* const fa=f.data;
    float factor=0.0;
-   for(int k=0; k<in.len/2; ++k) {
+   for(int k=0; k<f.len/2; ++k) {
       factor += (randfloat()-0.5)*drift_speed/f.len;
       Cmplx phase=unit(factor*tau);
       fa[k] = Cmplx(fa[k].mag(),0.0) * phase;
-      fa[in.len-1-k] = Cmplx(fa[in.len-1-k].mag(),0.0) * (~phase);
+      fa[f.len-1-k] = Cmplx(fa[f.len-1-k].mag(),0.0) * (~phase);
    }
    IFFT(f,out);
 }

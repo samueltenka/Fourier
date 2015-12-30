@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
    Array<Cmplx> cmplxs(shorts);
    //print_phases(cmplxs);
 
-   Array<Cmplx> cmplxs3(cmplxs.len);
+   Array<Cmplx> cmplxs3(inf2(cmplxs.len));
    phase_align(cmplxs, cmplxs3);
    Array<short> shorts3(cmplxs3);
    shorts3.write_to("Audio/sine1000.aligned.wav");
