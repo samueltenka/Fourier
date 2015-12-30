@@ -1,172 +1,1000 @@
-In file included from ArrayWavIOTest.cpp:3:0:
-FFT.h: In function ‘void FFT(Array<Cmplx>, Array<Cmplx>)’:
-FFT.h:18:12: error: ‘const struct Array<Cmplx>’ has no member named ‘a’
-    FFT_(xs.a, inf2(xs.len), 1, ys.a);
-            ^
-FFT.h:18:35: error: ‘struct Array<Cmplx>’ has no member named ‘a’
-    FFT_(xs.a, inf2(xs.len), 1, ys.a);
-                                   ^
-FFT.h: In function ‘void IFFT(Array<Cmplx>, Array<Cmplx>)’:
-FFT.h:21:13: error: ‘const struct Array<Cmplx>’ has no member named ‘a’
-    IFFT_(ys.a, inf2(ys.len), 1, xs.a);
-             ^
-FFT.h:21:36: error: ‘struct Array<Cmplx>’ has no member named ‘a’
-    IFFT_(ys.a, inf2(ys.len), 1, xs.a);
-                                    ^
-FFT.h:22:25: error: ‘len’ was not declared in this scope
-    const float norm=1.0/len;
-                         ^
-FFT.h:23:26: error: ‘struct Array<Cmplx>’ has no member named ‘a’
-    Cmplx* const xsa = xs.a;
-                          ^
-In file included from ArrayWavIOTest.cpp:4:0:
-SigProc.h: At global scope:
-SigProc.h:20:85: error: template argument 1 is invalid
- void convolve(const std::vector<std::pair<const float*, float> ins, int len, float* out);
-                                                                                     ^
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:21: error: invalid use of template-name ‘std::vector’ without an argument list
- void convolve(const std::vector<std::pair<const float*, float> ins, int len, float* out);
-                     ^
-SigProc.h:20:26: error: ISO C++ forbids declaration of ‘parameter’ with no type [-fpermissive]
- void convolve(const std::vector<std::pair<const float*, float> ins, int len, float* out);
-                          ^
-SigProc.h:20:32: error: expected ‘,’ or ‘...’ before ‘<’ token
- void convolve(const std::vector<std::pair<const float*, float> ins, int len, float* out);
-                                ^
-ArrayWavIOTest.cpp: In function ‘float frequency_of(const char*, float)’:
-ArrayWavIOTest.cpp:12:38: error: uninitialized const ‘ca’ [-fpermissive]
-    Array<Cmplx> c(len); Cmplx* const ca;
-                                      ^
-ArrayWavIOTest.cpp:13:24: error: ‘wav_read’ was not declared in this scope
-    wav_read(filename, c);
-                        ^
-ArrayWavIOTest.cpp:14:27: error: ‘find_frequency’ was not declared in this scope
-    return find_frequency(c);
-                           ^
-ArrayWavIOTest.cpp: In function ‘void copy(const char*, const char*, float)’:
-ArrayWavIOTest.cpp:21:28: error: ‘wav_read’ was not declared in this scope
-    filename_in = wav_read(c);
-                            ^
-ArrayWavIOTest.cpp:23:14: error: no match for ‘operator[]’ (operand types are ‘Array<Cmplx>’ and ‘int’)
-       print(c[i]);
-              ^
-ArrayWavIOTest.cpp:30:36: error: ‘wav_write’ was not declared in this scope
-    wav_write(filename_out, c2, len2);
-                                    ^
-In file included from SigProc.h:5:0,
-                 from SigProcFreq.cpp:1:
-FFT.h:17:16: error: ‘Array’ does not name a type
- void FFT(const Array<Cmplx> xs, Array<Cmplx> ys) {
-                ^
-FFT.h:17:16: error: ISO C++ forbids declaration of ‘parameter’ with no type [-fpermissive]
-FFT.h:17:21: error: expected ‘,’ or ‘...’ before ‘<’ token
- void FFT(const Array<Cmplx> xs, Array<Cmplx> ys) {
-                     ^
-FFT.h: In function ‘void FFT(int)’:
-FFT.h:18:9: error: ‘xs’ was not declared in this scope
-    FFT_(xs.a, inf2(xs.len), 1, ys.a);
-         ^
-FFT.h:18:32: error: ‘ys’ was not declared in this scope
-    FFT_(xs.a, inf2(xs.len), 1, ys.a);
-                                ^
-FFT.h: At global scope:
-FFT.h:20:17: error: ‘Array’ does not name a type
- void IFFT(const Array<Cmplx> ys, Array<Cmplx> xs) {
-                 ^
-FFT.h:20:17: error: ISO C++ forbids declaration of ‘parameter’ with no type [-fpermissive]
-FFT.h:20:22: error: expected ‘,’ or ‘...’ before ‘<’ token
- void IFFT(const Array<Cmplx> ys, Array<Cmplx> xs) {
-                      ^
-FFT.h: In function ‘void IFFT(int)’:
-FFT.h:21:10: error: ‘ys’ was not declared in this scope
-    IFFT_(ys.a, inf2(ys.len), 1, xs.a);
-          ^
-FFT.h:21:33: error: ‘xs’ was not declared in this scope
-    IFFT_(ys.a, inf2(ys.len), 1, xs.a);
-                                 ^
-FFT.h:22:25: error: ‘len’ was not declared in this scope
-    const float norm=1.0/len;
-                         ^
-In file included from SigProcFreq.cpp:1:0:
-SigProc.h: At global scope:
-SigProc.h:20:85: error: template argument 1 is invalid
- void convolve(const std::vector<std::pair<const float*, float> ins, int len, float* out);
-                                                                                     ^
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:85: error: template argument 1 is invalid
-SigProc.h:20:85: error: template argument 2 is invalid
-SigProc.h:20:21: error: invalid use of template-name ‘std::vector’ without an argument list
- void convolve(const std::vector<std::pair<const float*, float> ins, int len, float* out);
-                     ^
-SigProc.h:20:26: error: ISO C++ forbids declaration of ‘parameter’ with no type [-fpermissive]
- void convolve(const std::vector<std::pair<const float*, float> ins, int len, float* out);
-                          ^
-SigProc.h:20:32: error: expected ‘,’ or ‘...’ before ‘<’ token
- void convolve(const std::vector<std::pair<const float*, float> ins, int len, float* out);
-                                ^
-SigProcFreq.cpp: In function ‘float frequency_of(Array<Cmplx>)’:
-SigProcFreq.cpp:4:19: error: ‘len’ was not declared in this scope
-    Array<Cmplx> f(len); Cmplx* const fa;
-                   ^
-SigProcFreq.cpp:4:38: error: uninitialized const ‘fa’ [-fpermissive]
-    Array<Cmplx> f(len); Cmplx* const fa;
-                                      ^
-SigProcFreq.cpp:5:12: error: cannot convert ‘const Array<Cmplx>’ to ‘int’ for argument ‘1’ to ‘void FFT(int)’
-    FFT(xs,f);
-            ^
-SigProcFreq.cpp:9:19: error: ‘len2’ was not declared in this scope
-    for(int k=1; k<len2-1; ++k) {
-                   ^
-SigProcFreq.cpp:10:17: error: no match for ‘operator[]’ (operand types are ‘Array<Cmplx>’ and ‘int’)
-       float m2=f[k].mag2();
-                 ^
-SigProcFreq.cpp: In function ‘float frequency_of(const char*, float)’:
-SigProcFreq.cpp:23:38: error: uninitialized const ‘ca’ [-fpermissive]
-    Array<Cmplx> c(len); Cmplx* const ca;
-                                      ^
-SigProcFreq.cpp:24:24: error: ‘wav_read’ was not declared in this scope
-    wav_read(filename, c);
-                        ^
-SigProcFreq.cpp:26:38: error: uninitialized const ‘fa’ [-fpermissive]
-    Array<Cmplx> f(len); Cmplx* const fa;
-                                      ^
-SigProcFreq.cpp:27:11: error: cannot convert ‘Array<Cmplx>’ to ‘int’ for argument ‘1’ to ‘void FFT(int)’
-    FFT(c,f);
-           ^
-SigProcFreq.cpp:31:19: error: ‘len2’ was not declared in this scope
-    for(int k=1; k<len2-1; ++k) {
-                   ^
-SigProcFreq.cpp:32:17: error: no match for ‘operator[]’ (operand types are ‘Array<Cmplx>’ and ‘int’)
-       float m2=f[k].mag2();
-                 ^
+   67  vi Coor.h
+   68  vi MST.h 
+   69  vi Coor.h
+   70  make zoo
+   71  vi Coor.h
+   72  make zoo
+   73  ./zoo -m OPTTSP <cc
+   74  ./zoo -m mST <cc
+   75  ./zoo -m MST <cc
+   76  vi MST
+   77  vi MST.h
+   78  vi Main.cpp 
+   79  vi Coor.h
+   80  make zoo
+   81  ./zoo -m MST <cc
+   82  ./zoo -m OPTTSP <cc
+   83  ./zoo -m FASTTSP <cc
+   84  ./zoo -m FASTTSP <cc10
+   85  ./zoo -m FASTTSP <cc24
+   86  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
+   87  cd
+   88  ls
+   89  cd Desktop/E281_P4/
+   90  ls
+   91  rm *_old*
+   92  ls
+   93  ./zoo -m FASTTSP <cc24
+   94  ./zoo -m OPTTSP <cc22
+   95  time ./zoo -m OPTTSP <cc22
+   96  time ./zoo -m OPTTSP <cc23
+   97  time ./zoo -m FASTTSP <cc23
+   98  time ./zoo -m FASTTSP <cc22
+   99  time ../281_P4_old/cpp_dev/zoo -m FASTTSP <cc22
+  100  time ../281_P4_old/cpp_dev/zoo -m OPTTSP <cc22
+  101  time ./zoo -m OPTTSP <cc22
+  102  time ./zoo -m MST <cc22
+  103  vi OPTTSP
+  104  rm OPTTSP
+  105  vi OPTTSP.cpp 
+  106  make zoo
+  107  time ./zoo -m MST <cc22
+  108  time ./zoo -m OPTTSP <cc22
+  109  pwd
+  110  make zoo
+  111  vi OPTTSP.cpp 
+  112  make zoo
+  113  time ./zoo -m OPTTSP <cc22
+  114  vi OPTTSP.cpp 
+  115  make zoo
+  116  time ./zoo -m OPTTSP <cc22
+  117  vi OPTTSP.cpp 
+  118  make zoo
+  119  time ./zoo -m OPTTSP <cc22
+  120  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
+  121  firefox&
+  122  cd Desktop/E281_P4/
+  123  ls
+  124  vi OPTTSP.cpp 
+  125  vi Coor.h
+  126  vi MST.h 
+  127  vi Coor.h
+  128  make zoo
+  129  vi Coor.h
+  130  make zoo
+  131  vi Coor.h
+  132  make zoo
+  133  vi OPTTSP.cpp 
+  134  make zoo
+  135  vi OPTTSP.cpp 
+  136  make zoo
+  137  vi Coor.h
+  138  make zoo
+  139  ./zoo -m OPTTSP <cc22
+  140  time ./zoo -m OPTTSP <cc22
+  141  vi OPTTSP.cpp 
+  142  cd ..
+  143  ls
+  144  mkdir 281_P4_
+  145  cp E281_P4/* 281_P4_/
+  146  cd E281_P4/
+  147  ls
+  148  vi OPTTSP.cpp 
+  149  time ./zoo -m OPTTSP <cc22
+  150  time ./zoo -m OPTTSP <coors
+  151  time ./zoo -m FASTTSP <coors
+  152  nano coors
+  153  time ./zoo -m OPTTSP <coors
+  154  time ./zoo -m FASTTSP <coors
+  155  vi OPTTSP.cpp
+  156  pwd
+  157  vi OPTTSP.cpp
+  158  cd Desktop/E281_P4/
+  159  ls
+  160  vi OPTTSP.cpp 
+  161  make zoo
+  162  vi OPTTSP.cpp 
+  163  make zoo
+  164  vi OPTTSP.cpp 
+  165  grep Table ./*
+  166  vi OPTTSP.cpp 
+  167  pwd
+  168  vi OPTTSP.cpp 
+  169  make zoo
+  170  vi OPTTSP.cpp 
+  171  make zoo
+  172  vi OPTTSP.cpp 
+  173  make zoo
+  174  vi OPTTSP.cpp 
+  175  make zoo
+  176  vi OPTTSP.cpp 
+  177  make zoo
+  178  vi OPTTSP.cpp 
+  179  make zoo
+  180  vi OPTTSP.cpp 
+  181  make zoo
+  182  vi MST.h
+  183  make zoo
+  184  cp MST.h MSTO.h
+  185  vi MSTO.h 
+  186  vi MST.h
+  187  vi MSTO.h 
+  188  vi OPTTSP.cpp 
+  189  make zoo
+  190  vi MSTO.h OPTTSP.cpp 
+  191  make zoo
+  192  vi MSTO.h
+  193  make zoo
+  194  vi MSTO.h
+  195  vi Makefile 
+  196  make zoo
+  197  vi MSTO.h 
+  198  make zoo
+  199  vi MSTO.h 
+  200  vi MST.h
+  201  vi MSTO.h 
+  202  make zoo
+  203  vi MST.h
+  204  make zoo
+  205  vi MST.h
+  206  make zoo
+  207  vi MST.h
+  208  make zoo
+  209  clear
+  210  make zoo
+  211  vi MSTO.h
+  212  make zoo
+  213  ./zoo -m OPTTSP <cc22
+  214  time ./zoo -m OPTTSP <cc22
+  215  time ./zoo -m MST <cc22
+  216  time ./zoo -m OPTTSP <cc23
+  217  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
+  218  firefox&
+  219  time ./zoo -m OPTTSP <cc22
+  220  time ./zoo -m FASTTSP <cc22
+  221  time ./zoo -m FASTTSP <cc21
+  222  time ./zoo -m OPTTSP <cc21
+  223  cd ..
+  224  ls
+  225  mkdir 281_P4__
+  226  cp E281_P4/* 281_P4__
+  227  vi E281_P4/
+  228  cd E281_P4/
+  229  ./zoo -m OPTTSP <cc22
+  230  ./zoo -m OPTTSP <coors
+  231  ./zoo -m FASTTSP <coors
+  232  ./zoo -m MST <coors
+  233  vi MST.h MSTO.h
+  234  vi Main.cpp 
+  235  vi MST.h MSTO.h
+  236  vi Coor.h 
+  237  ./zoo -m MST <coors
+  238  ./zoo -m MST <cc20
+  239  ./zoo -m MST <cc21
+  240  ./zoo -m MST <cc22
+  241  ./zoo -m MST <cc24
+  242  vi Coor.g
+  243  vi Coor.h
+  244  vi gencoors.py 
+  245  python gencoors.py 
+  246  vi gencoors.py 
+  247  python gencoors.py 
+  248  nano cc10
+  249  ./zoo -m MST <cc24
+  250  nano cc24
+  251  vi MST.h
+  252  make zoo
+  253  ./zoo -m MST <cc24
+  254  vi Coor.h
+  255  make zoo
+  256  ./zoo -m MST <cc24
+  257  vi Coor.h
+  258  make zoo
+  259  vi MST.h
+  260  make zoo
+  261  ./zoo -m MST <cc24
+  262  vi Coor.h
+  263  vi MST.h
+  264  make zoo
+  265  ./zoo -m MST <cc24
+  266  vi MST.h
+  267  vi Coor.h
+  268  make zoo
+  269  ./zoo -m MST <cc24
+  270  vi Coor.h
+  271  vi MST.h
+  272  make zoo
+  273  vi Coor.h
+  274  make zoo
+  275  vi MSTO.h
+  276  make zoo
+  277  ./zoo -m MST <cc24
+  278  vi gencoors.py 
+  279  python gencoors.py 
+  280  ./zoo -m MST <cc24
+  281  vi gencoors.py 
+  282  python gencoors.py 
+  283  ./zoo -m MST <cc24
+  284  vi FileReader.h 
+  285  ./zoo -m MST <cc24
+  286  ./zoo -m OPTTSP <cc24
+  287  ./zoo -m OPTTSP <cc22
+  288  ./zoo -m FASTTSP <cc22
+  289  ./zoo -m FASTTSP <cc20
+  290  ./zoo -m OPTTSP <cc20
+  291  ./zoo -m OPTTSP <cc21
+  292  ./zoo -m OPTTSP <cc22
+  293  time ./zoo -m OPTTSP <cc22
+  294  ls
+  295  cd Desktop/E281_P4/
+  296  ls
+  297  vi MST.h 
+  298  cd Desktop/
+  299  cd E281_P4/
+  300  ls
+  301  make zoo
+  302  ./zoo < coor
+  303  ./zoo -h < coors
+  304  ./zoo -m MST < coors
+  305  ./zoo -m MST < cc10
+  306  ./zoo -m MST < cc24
+  307  ./zoo -m FASTTSP < cc20
+  308  ./zoo -m OPTTSP < cc20
+  309  ./zoo -m OPTTSP < cc21
+  310  cd ../Final/
+  311  ls
+  312  make zoo
+  313  ./zoo -h
+  314  ./zoo -h < coors
+  315  ./zoo -m MST < coors
+  316  ./zoo -m OPTTSP < coors
+  317  ./zoo -m OPTTSP < cc20
+  318  ./zoo -m OPTTSP < cc21
+  319  make zoo
+  320  ./zoo -m OPTTSP < cc21
+  321  time ./zoo -m OPTTSP < cc21
+  322  vi gencoors.py 
+  323  python gencoors.py 
+  324  time ./zoo -m OPTTSP < cc21
+  325  make zoo
+  326  time ./zoo -m OPTTSP < cc21
+  327  make zoo
+  328  time ./zoo -m OPTTSP < cc21
+  329  ls
+  330  ls ../
+  331  time ../E281_P4/zoo -m MST < coors
+  332  time ../E281_P4/zoo -m MST < cc21
+  333  time ../E281_P4/zoo -m OPTTSP < cc21
+  334  time ../281_P4__/zoo -m OPTTSP < cc21
+  335  pwd
+  336  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
+  337  time ./zoo -m OPTTSP < cc20
+  338  time ./zoo -m FASTTSP < cc20
+  339  make zoo
+  340  time ./zoo -m OPTTSP < cc20
+  341  time ./zoo -m FASTTSP < cc20
+  342  time ./zoo -m FASTTSP < cc19
+  343  time ./zoo -m OPTTSP < cc19
+  344  time ./zoo -m OPTTSP < cc21
+  345  make zoo
+  346  time ./zoo -m OPTTSP < cc19
+  347  time ./zoo -m OPTTSP < cc20
+  348  time ./zoo -m OPTTSP < cc21
+  349  make zoo
+  350  time ./zoo -m OPTTSP < cc21
+  351  time ./zoo -m OPTTSP < cc20
+  352  time ./zoo -m OPTTSP < cc19
+  353  make zoo
+  354  time ./zoo -m OPTTSP < cc19
+  355  time ./zoo -m OPTTSP < cc20
+  356  time ./zoo -m OPTTSP < cc21
+  357  time ./zoo -m OPTTSP < cc18
+  358  time ./zoo -m OPTTSP < cc21
+  359  time ./zoo -m FASTTSP < cc21
+  360  paw
+  361  pwd
+  362  make zoo
+  363  time ./zoo -m FASTTSP < cc21
+  364  time ./zoo -m OPTTSP < cc21
+  365  make zoo
+  366  time ./zoo -m OPTTSP < cc21
+  367  make zoo
+  368  time ./zoo -m OPTTSP < cc21
+  369  make zoo
+  370  time ./zoo -m OPTTSP < cc21
+  371  make zoo
+  372  time ./zoo -m OPTTSP < cc21
+  373  make zoo
+  374  time ./zoo -m OPTTSP < cc21
+  375  make zoo
+  376  time ./zoo -m OPTTSP < cc21
+  377  make zoo
+  378  time ./zoo -m OPTTSP < cc21
+  379  make zoo
+  380  time ./zoo -m OPTTSP < cc21
+  381  make zoo
+  382  time ./zoo -m OPTTSP < cc21
+  383  make zoo
+  384  time ./zoo -m OPTTSP < cc21
+  385  make zoo
+  386  time ./zoo -m OPTTSP < cc21
+  387  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
+  388  ./zoo -m OPTTSP <coors
+  389  make zoo
+  390  ./zoo -m OPTTSP <coors
+  391  ./zoo -m FASTTSP <coors
+  392  make zoo
+  393  ./zoo -m OPTTSP <coors
+  394  ./zoo -m FASTTSP <coors
+  395  make zoo
+  396  ./zoo -m FASTTSP <coors
+  397  make zoo
+  398  ./zoo -m FASTTSP <coors
+  399  ./zoo -m OPTTSP <coors
+  400  make zoo
+  401  ./zoo -m OPTTSP <coors
+  402  ./zoo -m OPTTSP <cc20
+  403  ./zoo -m FASTTSP <cc20
+  404  ./zoo -m FASTTSP <coors
+  405  ./zoo -m OPTTSP <coors
+  406  ./zoo -m MST <coors
+  407  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
+  408  cd Desktop/
+  409  cd Fourier
+  410  ls
+  411  cd Audio/
+  412  ls
+  413  vi WavReader.h
+  414  vi WavReaderTest.cpp 
+  415  grep Table ./*
+  416  g++ -std=c++11 Main.cpp -o zoo
+  417  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  418  vi WavReader.h
+  419  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  420  ./WavReaderTest.o
+  421  vi WavReaderTest.o
+  422  vi WavReaderTest.cpp
+  423  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  424  ./WavReaderTest.o
+  425  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  426  ls
+  427  mv WavReader* ../
+  428  ls
+  429  vi out
+  430  mv out sine1000.hex
+  431  ls
+  432  rm *.aup
+  433  ls
+  434  cd ..
+  435  ls
+  436  vi WavReaderTest.cpp
+  437  python
+  438  vi WavReaderTest.cpp
+  439  vi WavReader.cpp
+  440  vi WavReader.h
+  441  vi WavReaderTest.cpp
+  442  vi WavReaderTest.cpp CmplxTest2.cpp
+  443  vi WavReaderTest.cpp FFTTest.cpp
+  444  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  445  vi WavReaderTest.cpp FFTTest.cpp
+  446  vi WavReader.h
+  447  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  448  vi WavReaderTest.cpp
+  449  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  450  ./WavReaderTest.o
+  451  vi WavReaderTest.cpp
+  452  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  453  ./WavReaderTest.o
+  454  vi WavReaderTest.cpp
+  455  vi WavReader.h
+  456  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  457  ./WavReaderTest.o
+  458  vi WavReader.h
+  459  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  460  ./WavReaderTest.o
+  461  vi WavReader.h
+  462  vi WavReaderTest.cpp 
+  463  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  464  ./WavReaderTest.o
+  465  vi WavReader.
+  466  vi WavReader.h
+  467  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  468  ./WavReaderTest.o
+  469  vi WavReader.h
+  470  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  471  ./WavReaderTest.o
+  472  python
+  473  vi WavReader.h
+  474  ./WavReaderTest.o
+  475  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  476  ./WavReaderTest.o
+  477  vi WavReader.h
+  478  ./WavReaderTest.o
+  479  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  480  ./WavReaderTest.o
+  481  vi WavReader.h
+  482  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  483  vi WavReader.h
+  484  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  485  ./WavReaderTest.o
+  486  vi WavReader.h
+  487  ./WavReaderTest.o
+  488  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  489  ./WavReaderTest.o
+  490  cd Audio/
+  491  vi *.hex
+  492  cd ..
+  493  iv WavReader.h
+  494  vi WavReader.h
+  495  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  496  ./WavReaderTest.o
+  497  vi WavReader.h
+  498  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  499  ./WavReaderTest.o
+  500  vi WavReader.h
+  501  vi WavReaderTest.cpp 
+  502  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  503  ./WavReaderTest.o
+  504  vi WavReaderTest.cpp 
+  505  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  506  ./WavReaderTest.o
+  507  python
+  508  vi WavReaderTest.cpp 
+  509  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  510  ./WavReaderTest.o
+  511  vi WavReaderTest.cpp
+  512  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  513  ./WavReaderTest.o
+  514  vi WavReaderTest.cpp
+  515  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
+  516  ./WavReaderTest.o
+  517  vi
+  518  ls
+  519  cd Audio/
+  520  ls
+  521  audacity&
+  522  cd Desktop/Fourier
+  523  ls
+  524  cd Audio/
+  525  ls
+  526  audacity&
+  527  cd Desktop/Fourier
+  528  ls
+  529  vi SigProc.h SigProcPhases.cpp SigProcTest.cpp 
+  530  vi vectorTest.cpp 
+  531  g++ vectorTest.cpp -o vectorTest.o
+  532  ./vectorTest.o
+  533  time ./vectorTest.o
+  534  vi vectorTest.cpp 
+  535  g++ vectorTest.cpp -o vectorTest.o
+  536  ./vectorTest.o
+  537  time ./vectorTest.o
+  538  vi vectorTest.cpp 
+  539  g++ vectorTest.cpp -o vectorTest.o
+  540  vi vectorTest.cpp 
+  541  g++ vectorTest.cpp -o vectorTest.o
+  542  ./vectorTest.o
+  543  time ./vectorTest.o
+  544  vi VectorTypes.h
+  545  vi VectorTypesTest.cpp
+  546  g++ vectorTest.cpp -o vectorTest.o
+  547  g++ VectorTypesTest.cpp -o VectorTypesTest.o
+  548  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
+  549  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  550  vi VectorTypesTest.cpp
+  551  vi VectorTypes.h
+  552  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  553  vi VectorTypes.h
+  554  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  555  vi VectorTypes.h
+  556  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  557  vi VectorTypes.h
+  558  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  559  ./VectorTypesTest.o
+  560  vi VectorTypesTest.cpp 
+  561  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  562  ./VectorTypesTest.o
+  563  vi VectorTypesTest.cpp 
+  564  valgrind ./VectorTypesTest.o
+  565  vi VectorTypes.h
+  566  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  567  vi VectorTypes.h
+  568  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  569  vi VectorTypes.h
+  570  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  571  vi VectorTypes.h
+  572  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  573  ./VectorTypesTest.o
+  574  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  575  ./VectorTypesTest.o
+  576  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  577  vi VectorTypes.h
+  578  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  579  ./VectorTypesTest.o
+  580  vi VectorTypes.h
+  581  vi VectorTypesTest.cpp 
+  582  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  583  ./VectorTypesTest.o
+  584  vi VectorTypesTest.cpp 
+  585  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  586  vi VectorTypesTest.cpp 
+  587  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  588  ./VectorTypesTest.o
+  589  vi VectorTypesTest.cpp 
+  590  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  591  ./VectorTypesTest.o
+  592  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  593  vi VectorTypesTest.cpp 
+  594  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
+  595  1.
+  596  ./VectorTypesTest.o
+  597  time ./VectorTypesTest.o
+  598  grep std::vector ./*
+  599  vi new ./*
+  600  ls
+  601  grep new ./*
+  602  vi FFT.h
+  603  grep IFFT ./*
+  604  vi FFTTest2.cpp 
+  605  grep -l IFFT ./*
+  606  vi < grep -l IFFT ./*
+  607  grep -l IFFT ./* > vi
+  608  grep -l IFFT ./*
+  609  grepIFFT ./*
+  610  grep IFFT ./*
+  611  vi FFTTest2.cpp SigProcPhases.cpp  WavIOTest.cpp
+  612  vi FFT.h
+  613  vi FFTTest2.cpp SigProcPhases.cpp  WavIOTest.cpp
+  614  vi FFT.
+  615  vi FFT.h
+  616  grep IFFT ./*
+  617  vi WavIOTest.cpp
+  618  ls
+  619  vi SigProc.h
+  620  vi WavIOTest.cpp SigProcFreq.cpp SigProc.h
+  621  vi WavIO
+  622  vi WavIO.h
+  623  vi WavIOTest.h
+  624  vi WavIOTest.cpp
+  625  vi WavIO.h
+  626  vi WavIOTest.cpp
+  627  ls *VectorTypes*
+  628  mv VectorTypes.h Array.h
+  629  grep #include VectorTypes.h" ./*
+  630  grep #include "VectorTypes.h" ./*
+  631  grep "VectorTypes.h" ./*
+  632  vi SigProc.h
+  633  vi WavIO.h VectorTypes.h
+  634  vi WavIO.h Array.h
+  635  ls
+  636  mv VectorTypesTest.cpp ArrayTest.cpp
+  637  vi
+  638  ls
+  639  mv WavIO.h ArrayWavIO.cpp
+  640  ls
+  641  mv WavIOTest.cpp ArrayWavIOTest.cpp
+  642  ls
+  643  rm WavIO.o
+  644  rm WavIOTest.o
+  645  ls
+  646  git add .
+  647  git commit
+  648  git push origin master
+  649  l
+  650  ls
+  651  vi SigProcFreq.cpp 
+  652  vi vi
+  653  rm vi
+  654  ls
+  655  vi Array.h
+  656  vi ArrayWavIO.cpp
+  657  vi Array.h
+  658  vi ArrayWavIO.cpp
+  659  vi Array.h
+  660  git add .
+  661  git commit
+  662  git push origin master
+  663  cd Desktop/Fourier
+  664  cd
+  665  cd Desktop/Fourier
+  666  ls
+  667  vi Array.h
+  668  vi ~/.vimrc
+  669  vi .vimrc
+  670  ls -a
+  671  ls -a ~/
+  672  locate .vimrc
+  673  locate vimrc
+  674  vi /etc/vimrc
+  675  cp /etc/vimrc /etc/vimrc.old
+  676  ls -la /etc/vimrc
+  677  vi /etc/vimrc
+  678  ls
+  679  vi Array.h
+  680  vi vectorTest.cpp
+  681  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
+  682  ./vectorTest.o 
+  683  vi vectorTest.cpp
+  684  ArrayTest.cpp
+  685  vi ArrayTest.cpp
+  686  vi Array.h
+  687  vi Cmplx.h
+  688  vi ArrayWavIO.cpp
+  689  vi Array.h
+  690  vi vectorTest.cpp 
+  691  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
+  692  ./vectorTest.o 
+  693  vi Array.h
+  694  vi Cmplx.h
+  695  vi Array.h
+  696  vi ArrayWavIO.cpp
+  697  vi vectorTest.cpp 
+  698  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
+  699  vi vectorTest.cpp 
+  700  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
+  701  ./vectorTest.o 
+  702  vi ArrayWavIO.cpp
+  703  vi Array.h
+  704  vi vectorTest.cpp 
+  705  vi Array.h
+  706  vi ArrayWavIO.cpp
+  707  vi ArrayTest.cpp
+  708  vi ArrayWavIO.cpp
+  709  vi ArrayTest.cpp
+  710  vi ArrayTest2.cpp
+  711  cp ArrayTest.cpp ArrayTest2.cpp 
+  712  vi ArrayTest2.cpp
+  713  vi ArrayTest.cpp
+  714  vi ArrayTest2.cpp
+  715  cd Desktop/Fourier_
+  716  ls Desktop/Fourier
+  717  cd ..
+  718  ls
+  719  cd samtenka/
+  720  ls
+  721  cd Desktop/
+  722  ls
+  723  cd Fourier_pa
+  724  ls
+  725  cd master
+  726  ls
+  727  history
+  728  ls
+  729  g++ ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
+  730  g++ ArrayWavIOTest.cpp -o ArrayWavIOTest.o
+  731  g++ ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
+  732  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
+  733  clear
+  734  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
+  735  vi SigProc.h
+  736  vi SigProcFreq.cpp 
+  737  vi FFT.h
+  738  vi SigProcFreq.cpp 
+  739  vi SigProc.h
+  740  vi FFT.h
+  741  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
+  742  vi SigProcFreq.cpp 
+  743  vi SigProcFreq.cpp SigProc.h
+  744  vi ArrayWavIOTest.cpp
+  745  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
+  746  vi *.h
+  747  pwd
+  748  vi test.h
+  749  mv test.h test.cpp
+  750  vi test.h
+  751  vi test.cpp
+  752  time g++ test.cpp -o test.o
+  753  vi test.cpp
+  754  time g++ test.cpp -o test.o
+  755  vi test.cpp
+  756  time g++ test.cpp -o test.o
+  757  vi test.cpp
+  758  time g++ test.cpp -o test.o
+  759  ./test.o
+  760  time ./test.o
+  761  vi test.cpp
+  762  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
+  763  g++ test.cpp -o test.o
+  764  ./test.o
+  765  vi test.cpp
+  766  g++ test.cpp -o test.o
+  767  ./test.o
+  768  vi test.cpp
+  769  vi test.cpp test.h
+  770  vi test.cpp
+  771  !
+  772  g++ test.cpp -o test.o
+  773  ./test.o
+  774  cp test.cpp test2.cpp
+  775  vi test2.cpp
+  776  g++ test.cpp test2.cpp -o test.o
+  777  ./test.o
+  778  rm test.o
+  779  g++ test.cpp test2.cpp -o test.o
+  780  ./test.o
+  781  vi Array.h test.h
+  782  g++ test.cpp test2.cpp -o test.o
+  783  ./test.o
+  784  cd ..
+  785  ls
+  786  cd ..
+  787  ls
+  788  cd Fourier
+  789  ls
+  790  rm :next
+  791  ls
+  792  vi SigProcPhasesTest.cpp
+  793  firefox&
+  794  cd Desktop/Fourier
+  795  firefox&
+  796  find oooh0148
+  797  find oooh0148.wav
+  798  ps
+  799  kill 43963
+  800  firefo&
+  801  firefox&
+  802  chrome
+  803  dropbo
+  804  dropbox
+  805  find oooh0148.wav
+  806  cd ..
+  807  ls
+  808  cd Downloads/
+  809  ls
+  810  mv oooh0148.wav ../Desktop/Fourier/Audio/
+  811  cd ../Desktop/Fourier/Audio/
+  812  ls
+  813  cd ..
+  814  ls
+  815  vi SigProcPhasesTest.cpp 
+  816  g++ test.cpp test2.cpp -o test.o
+  817  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.cpp
+  818  ls
+  819  vi SigProcPhases.cpp
+  820  vi SigProcPhasesTest.cpp
+  821  vi SigProcPhasesTest.cpp ../Fourier_pa/SigProcPhasesTest.cpp 
+  822  :x
+  823  cd ..
+  824  ls
+  825  vi Fourier_pa
+  826  cd Fourier_pa
+  827  ls
+  828  cd ..
+  829  ls
+  830  vi Fourier
+  831  cd Fourier
+  832  ls
+  833  vi SigProcPhasesTest.cpp ../Fourier_pa/master/SigProcPhasesTest.cpp 
+  834  vi SigProcPhasesTest.cpp
+  835  rm SigProcPhasesTest.cpp
+  836  vi SigProcPhasesTest.cpp
+  837  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  838  vi SigProcPhasesTest.cpp
+  839  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  840  g
+  841  ./test.o
+  842  ./SigProcPhasesTest.o 
+  843  cd Audio
+  844  ls
+  845  firefox&
+  846  cd
+  847  cd Desktop/Fourier/Audio/
+  848  ls
+  849  ls -la
+  850  hexdump oooh0148.wav oooh0148.hex
+  851  hexdump oooh0148.wav > oooh0148.hex
+  852  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
+  853  vi oo*.hex
+  854  cd ..
+  855  ls
+  856  vi Audio/
+  857  cd Audio/
+  858  ls
+  859  hexdump sine1000.copy.wav sine1000.copy.hex
+  860  hexdump sine1000.copy.wav > sine1000.copy.hex
+  861  ls
+  862  vi sine1000.hex sine1000.copy.hex
+  863  cd ..
+  864  ls
+  865  vi Array.h
+  866  hexdump ArrayTest2.wav
+  867  hexdump ArrayTest2.wav ArrayTest2.hex
+  868  hexdump ArrayTest2.wav > ArrayTest2.hex
+  869  vi ArrayTest2.hex
+  870  ls
+  871  vi Array.h
+  872  g
+  873  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  874  ./SigProcPhasesTest.o 
+  875  vi Audio/*randomized.wav
+  876  cd Audio/
+  877  ls
+  878  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
+  879  vi oooh0148.randomized.hex 
+  880  cd ..
+  881  ls
+  882  vi Array.h
+  883  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  884  ./SigProcPhasesTest.o 
+  885  cd Audio/
+  886  ls
+  887  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
+  888  vi Arra
+  889  vi oooh0148.randomized.hex 
+  890  cd ..
+  891  vi oooh0148.randomized.hex 
+  892  vi Array.h
+  893  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  894  ./SigProcPhasesTest.o 
+  895  cd Au
+  896  cd Audio/
+  897  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
+  898  vi oooh0148.randomized.hex 
+  899  vi Array.h
+  900  cd ..
+  901  vi Array.h
+  902  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  903  ./SigProcPhasesTest.o 
+  904  cd Audio/
+  905  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
+  906  vi oooh0148.randomized.hex 
+  907  cd ..
+  908  ls
+  909  vi Array.h
+  910  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  911  ./SigProcPhasesTest.o 
+  912  vi Array.h
+  913  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  914  ./SigProcPhasesTest.o 
+  915  cd Audio/
+  916  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
+  917  vi oooh0148.randomized.hex 
+  918  cd ..
+  919  ls
+  920  git add .
+  921  git commit
+  922  git push origin master
+  923  pwd
+  924  vi Array.h
+  925  cd ..
+  926  ls
+  927  cd Fourier
+  928  ls
+  929  vi ArrayTest.cpp
+  930  vi ArrayTest2.cpp
+  931  g++ -std=c++11 ArrayTest2.cpp -o ArrayTest2.o
+  932  ./ArrayTest2.o
+  933  ls -la *.wav
+  934  cd AU
+  935  cd Audio/
+  936  ls
+  937  vi ooo*.hex
+  938  ls -la ooo*.hex
+  939  python
+  940  pwd
+  941  cd ..
+  942  ls
+  943  cd Au
+  944  cd Audio/
+  945  ls
+  946  vi oooh0148.randomized.hex 
+  947  vi oooh0148.randomized.hex oooh0148.hex
+  948  cd
+  949  ls
+  950  cd Downloads/
+  951  ls
+  952  ls -la *wav
+  953  mv oooh0148.wav ../Desktop/Fourier/Audio/oooh0148.wav
+  954  cd ../Desktop/Fourier/Audio/oooh0148.wav
+  955  cd ../Desktop/Fourier/Audio/
+  956  ls
+  957  cd .
+  958  ls
+  959  cd ..
+  960  ls
+  961  ./SigProcPhasesTest.o 
+  962  pwd
+  963  vi Array.h
+  964  !
+  965  g++ -std=c++11 ArrayTest2.cpp -o ArrayTest2.o
+  966  ./SigProcPhasesTest.o 
+  967  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  968  ./SigProcPhasesTest.o 
+  969  ls
+  970  vi README.md 
+  971  git add .
+  972  git commit
+  973  git push origin master
+  974  ls
+  975  wc *.cpp *.h
+  976  wc -l *.cpp *.h
+  977  vi SigProc.h SigProcPhasesTest.cpp 
+  978  git push origin master
+  979  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  980  ./SigProcPhasesTest.o 
+  981  git add .
+  982  git commit
+  983  git push origin master
+  984  vi SigProc.h
+  985  vi SigProcPhasesTest.cpp
+  986  git push origin master
+  987  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  988  ./SigProcPhasesTest.o 
+  989  ./SigProcPhasesTest.o >SigProcPhasesTest.dat
+  990  vi *.dat
+  991  vi SigProcPhasesTest.cpp
+  992  vi SigProc.h
+  993  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+  994  ./SigProcPhasesTest.o >SigProcPhasesTest.dat
+  995  git add .
+  996  git commit
+  997  git push origin master
+  998  cd Desktop/Fourier
+  999  ls
+ 1000  vi SigProcPhasesTest.cpp
+ 1001  cd Desktop/Fourier
+ 1002  vi SigProcPhasesTest.cpp 
+ 1003  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+ 1004  vi SigProcPhasesTest.cpp 
+ 1005  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+ 1006  ./SigProcPhasesTest.o 
+ 1007  git add .
+ 1008  git commit
+ 1009  git push origin master
+ 1010  vi SigProcPhasesTest.cpp 
+ 1011  git push origin master
+ 1012  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+ 1013  ./SigProcPhasesTest.o 
+ 1014  git add .
+ 1015  git commit
+ 1016  git push origin master
+ 1017  vi SigProcPhasesTest.cpp 
+ 1018  vi SigProc.h
+ 1019  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+ 1020  ./SigProcPhasesTest.o 
+ 1021  vi SigProc.h
+ 1022  ./SigProcPhasesTest.o 
+ 1023  vi SigProc.h
+ 1024  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+ 1025  ./SigProcPhasesTest.o 
+ 1026  vi SigProc.h
+ 1027  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
+ 1028  ./SigProcPhasesTest.o 
+ 1029  git add .
+ 1030  git commit
+ 1031  git push origin master
+ 1032  vi SigProc.h
+ 1033  ls
+ 1034  vi CmplxTest.cpp
+ 1035  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
+ 1036  ./CmplxTest.o
+ 1037  vi CmplxTest.cpp
+ 1038  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
+ 1039  ./CmplxTest.o
+ 1040  vi CmplxTest.cpp
+ 1041  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
+ 1042  ./CmplxTest.o
+ 1043  ls
+ 1044  git add .
+ 1045  git commit
+ 1046  vi SigProc.h
+ 1047  vi SigProcPhasesTest.cpp
+ 1048  vi SigProc.h
+ 1049  vi Cmplx.h
+ 1050  vi CmplxTest.cpp
+ 1051  git commit
+ 1052  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
+ 1053  ./CmplxTest.o
+ 1054  vi CmplxTest.cpp
+ 1055  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
+ 1056  ./CmplxTest.o
+ 1057  vi CmplxTest.cpp
+ 1058  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
+ 1059  ./CmplxTest.o
+ 1060  vi CmplxTest.cpp
+ 1061  ls
+ 1062  vi SigProcPhasesTest.cpp 
+ 1063  SigPro*.h
+ 1064  v SigPro*.h
+ 1065  vi SigPro*.h
+ 1066  history > out

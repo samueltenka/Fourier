@@ -2,6 +2,8 @@
 #define CMPLX_H
 
 #include <math.h>
+const float tau=6.283185;
+
 
 struct Cmplx {
    float re,im;
@@ -25,11 +27,15 @@ struct Cmplx {
    Cmplx operator~() const { return Cmplx(re, -im); } //complex conjugation
    float mag2() const { return re*re+im*im; }
    float mag() const {return sqrt(mag2());}
+   float phase() const {
+      if(im>0) {return tau/4+atan(-re/im);}
+      else if(im<0) {return -tau/4+atan(re/-im);}
+      else {return re>0 ? 0.0 : -tau/2;}
+   }
 };
 
 
 
-const float tau=6.283185;
 #include "expi_table.h"
 inline Cmplx unit(float phase) {
    //returns exp(i*phase) for 0<=phase<tau

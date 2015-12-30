@@ -17,7 +17,8 @@ void phase_align(const Array<Cmplx> &in, Array<Cmplx> &out) {
    Array<Cmplx> f(inf2(in.len));
    FFT(in,f); Cmplx* const fa=f.data;
    for(int k=0; k<f.len; ++k) {
-      fa[k]=Cmplx(fa[k].mag(),0.0);
+      //TODO: note: we multiply by a phase so this function should just copy.
+      fa[k]=Cmplx(fa[k].mag(),0.0)*unit(fa[k].phase());
    }
    IFFT(f,out);
 }
