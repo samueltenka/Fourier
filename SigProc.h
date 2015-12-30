@@ -32,7 +32,7 @@ void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out, const float drif
    float factor=0.0;
    for(int k=0; k<f.len/2; ++k) {
       factor += (randfloat()-0.5)*drift_speed/f.len;
-      Cmplx phase=unit(factor*tau);
+      Cmplx phase=fa[k].phase();//unit(factor*tau);
       fa[k] = Cmplx(fa[k].mag(),0.0) * phase;
       fa[f.len-1-k] = Cmplx(fa[f.len-1-k].mag(),0.0) * (~phase);
    }
