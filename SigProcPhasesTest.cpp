@@ -7,7 +7,7 @@ void try_brownian_constant(const Array<Cmplx> &in, float drift_speed, const char
    Array<Cmplx> out(inf2(in.len));
    phase_randomize(in, out, drift_speed);
    Array<short> shorts(out);
-   print_phases(out);
+   //print_phases(out);
    shorts.write_to(filename);
 }
 
@@ -16,10 +16,10 @@ int main(int argc, char** argv) {
    Array<Cmplx> cmplxs(shorts);
    //print_phases(cmplxs);
 
-   //Array<Cmplx> cmplxs3(cmplxs.len);
-   //phase_align(cmplxs, cmplxs3);
-   //Array<short> shorts3(cmplxs3);
-   //shorts3.write_to("Audio/oooh0148.aligned.wav");
+   Array<Cmplx> cmplxs3(cmplxs.len);
+   phase_align(cmplxs, cmplxs3);
+   Array<short> shorts3(cmplxs3);
+   shorts3.write_to("Audio/sine1000.aligned.wav");
 
    char fnm[] = "Audio/sine1000.randomized.brown00100.wav";
    /*for(float i=10.0; i<100000.0; i*=1.5) {
