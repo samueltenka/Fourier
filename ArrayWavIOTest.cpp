@@ -23,7 +23,7 @@ void copy(const char* filename_in, const char* filename_out) {
    Array<Cmplx> cmplxs2(len2);
    IFFT(fourier,cmplxs2);
   
-   Array<short> shorts2(cmplxs); 
+   Array<short> shorts2(cmplxs2); 
    shorts2.write_to(filename_out);
 }
 
