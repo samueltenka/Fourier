@@ -29,10 +29,13 @@ int main(int argc, char** argv) {
   //1. Analyze white noise
   Array<Cmplx> f(len);
   FFT(c,f);
-  for(int i=0; i<f.len/2; ++i) {
+  for(int i=1; i<f.len/2; ++i) {
      float dph=f.data[f.len-i].phase() + f.data[i].phase();
      if(dph!=0.0) {std::cout << "dph " << dph << "\n";}
   }
+  //for(int i=0; i<f.len; ++i) {
+  //   f.data[i] = Cmplx(f.data[i].mag(),0.0);
+  //}
 
   //2. Synthesize white noise
   Array<Cmplx> c2(len);
@@ -41,7 +44,7 @@ int main(int argc, char** argv) {
   //3. Compare
   Cmplx* const c2a = c2.data;
   for(int j=0; j<len; ++j) {
-     print(c2a[j]*(1.0/len) - ca[j]);
+     print(c2a[j] - ca[j]);
   }
 
   return 0;

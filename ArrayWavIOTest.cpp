@@ -15,6 +15,11 @@ void copy(const char* filename_in, const char* filename_out) {
 
    Array<Cmplx> fourier(len2);
    FFT(cmplxs,fourier);
+
+   for(int i=0; i<fourier.len; ++i) {
+      fourier.data[i] = Cmplx(fourier.data[i].mag(),0.0);
+   }
+
    Array<Cmplx> cmplxs2(len2);
    IFFT(fourier,cmplxs2);
   

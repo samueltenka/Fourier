@@ -1,1000 +1,6143 @@
-  135  vi OPTTSP.cpp 
-  136  make zoo
-  137  vi Coor.h
-  138  make zoo
-  139  ./zoo -m OPTTSP <cc22
-  140  time ./zoo -m OPTTSP <cc22
-  141  vi OPTTSP.cpp 
-  142  cd ..
-  143  ls
-  144  mkdir 281_P4_
-  145  cp E281_P4/* 281_P4_/
-  146  cd E281_P4/
-  147  ls
-  148  vi OPTTSP.cpp 
-  149  time ./zoo -m OPTTSP <cc22
-  150  time ./zoo -m OPTTSP <coors
-  151  time ./zoo -m FASTTSP <coors
-  152  nano coors
-  153  time ./zoo -m OPTTSP <coors
-  154  time ./zoo -m FASTTSP <coors
-  155  vi OPTTSP.cpp
-  156  pwd
-  157  vi OPTTSP.cpp
-  158  cd Desktop/E281_P4/
-  159  ls
-  160  vi OPTTSP.cpp 
-  161  make zoo
-  162  vi OPTTSP.cpp 
-  163  make zoo
-  164  vi OPTTSP.cpp 
-  165  grep Table ./*
-  166  vi OPTTSP.cpp 
-  167  pwd
-  168  vi OPTTSP.cpp 
-  169  make zoo
-  170  vi OPTTSP.cpp 
-  171  make zoo
-  172  vi OPTTSP.cpp 
-  173  make zoo
-  174  vi OPTTSP.cpp 
-  175  make zoo
-  176  vi OPTTSP.cpp 
-  177  make zoo
-  178  vi OPTTSP.cpp 
-  179  make zoo
-  180  vi OPTTSP.cpp 
-  181  make zoo
-  182  vi MST.h
-  183  make zoo
-  184  cp MST.h MSTO.h
-  185  vi MSTO.h 
-  186  vi MST.h
-  187  vi MSTO.h 
-  188  vi OPTTSP.cpp 
-  189  make zoo
-  190  vi MSTO.h OPTTSP.cpp 
-  191  make zoo
-  192  vi MSTO.h
-  193  make zoo
-  194  vi MSTO.h
-  195  vi Makefile 
-  196  make zoo
-  197  vi MSTO.h 
-  198  make zoo
-  199  vi MSTO.h 
-  200  vi MST.h
-  201  vi MSTO.h 
-  202  make zoo
-  203  vi MST.h
-  204  make zoo
-  205  vi MST.h
-  206  make zoo
-  207  vi MST.h
-  208  make zoo
-  209  clear
-  210  make zoo
-  211  vi MSTO.h
-  212  make zoo
-  213  ./zoo -m OPTTSP <cc22
-  214  time ./zoo -m OPTTSP <cc22
-  215  time ./zoo -m MST <cc22
-  216  time ./zoo -m OPTTSP <cc23
-  217  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
-  218  firefox&
-  219  time ./zoo -m OPTTSP <cc22
-  220  time ./zoo -m FASTTSP <cc22
-  221  time ./zoo -m FASTTSP <cc21
-  222  time ./zoo -m OPTTSP <cc21
-  223  cd ..
-  224  ls
-  225  mkdir 281_P4__
-  226  cp E281_P4/* 281_P4__
-  227  vi E281_P4/
-  228  cd E281_P4/
-  229  ./zoo -m OPTTSP <cc22
-  230  ./zoo -m OPTTSP <coors
-  231  ./zoo -m FASTTSP <coors
-  232  ./zoo -m MST <coors
-  233  vi MST.h MSTO.h
-  234  vi Main.cpp 
-  235  vi MST.h MSTO.h
-  236  vi Coor.h 
-  237  ./zoo -m MST <coors
-  238  ./zoo -m MST <cc20
-  239  ./zoo -m MST <cc21
-  240  ./zoo -m MST <cc22
-  241  ./zoo -m MST <cc24
-  242  vi Coor.g
-  243  vi Coor.h
-  244  vi gencoors.py 
-  245  python gencoors.py 
-  246  vi gencoors.py 
-  247  python gencoors.py 
-  248  nano cc10
-  249  ./zoo -m MST <cc24
-  250  nano cc24
-  251  vi MST.h
-  252  make zoo
-  253  ./zoo -m MST <cc24
-  254  vi Coor.h
-  255  make zoo
-  256  ./zoo -m MST <cc24
-  257  vi Coor.h
-  258  make zoo
-  259  vi MST.h
-  260  make zoo
-  261  ./zoo -m MST <cc24
-  262  vi Coor.h
-  263  vi MST.h
-  264  make zoo
-  265  ./zoo -m MST <cc24
-  266  vi MST.h
-  267  vi Coor.h
-  268  make zoo
-  269  ./zoo -m MST <cc24
-  270  vi Coor.h
-  271  vi MST.h
-  272  make zoo
-  273  vi Coor.h
-  274  make zoo
-  275  vi MSTO.h
-  276  make zoo
-  277  ./zoo -m MST <cc24
-  278  vi gencoors.py 
-  279  python gencoors.py 
-  280  ./zoo -m MST <cc24
-  281  vi gencoors.py 
-  282  python gencoors.py 
-  283  ./zoo -m MST <cc24
-  284  vi FileReader.h 
-  285  ./zoo -m MST <cc24
-  286  ./zoo -m OPTTSP <cc24
-  287  ./zoo -m OPTTSP <cc22
-  288  ./zoo -m FASTTSP <cc22
-  289  ./zoo -m FASTTSP <cc20
-  290  ./zoo -m OPTTSP <cc20
-  291  ./zoo -m OPTTSP <cc21
-  292  ./zoo -m OPTTSP <cc22
-  293  time ./zoo -m OPTTSP <cc22
-  294  ls
-  295  cd Desktop/E281_P4/
-  296  ls
-  297  vi MST.h 
-  298  cd Desktop/
-  299  cd E281_P4/
-  300  ls
-  301  make zoo
-  302  ./zoo < coor
-  303  ./zoo -h < coors
-  304  ./zoo -m MST < coors
-  305  ./zoo -m MST < cc10
-  306  ./zoo -m MST < cc24
-  307  ./zoo -m FASTTSP < cc20
-  308  ./zoo -m OPTTSP < cc20
-  309  ./zoo -m OPTTSP < cc21
-  310  cd ../Final/
-  311  ls
-  312  make zoo
-  313  ./zoo -h
-  314  ./zoo -h < coors
-  315  ./zoo -m MST < coors
-  316  ./zoo -m OPTTSP < coors
-  317  ./zoo -m OPTTSP < cc20
-  318  ./zoo -m OPTTSP < cc21
-  319  make zoo
-  320  ./zoo -m OPTTSP < cc21
-  321  time ./zoo -m OPTTSP < cc21
-  322  vi gencoors.py 
-  323  python gencoors.py 
-  324  time ./zoo -m OPTTSP < cc21
-  325  make zoo
-  326  time ./zoo -m OPTTSP < cc21
-  327  make zoo
-  328  time ./zoo -m OPTTSP < cc21
-  329  ls
-  330  ls ../
-  331  time ../E281_P4/zoo -m MST < coors
-  332  time ../E281_P4/zoo -m MST < cc21
-  333  time ../E281_P4/zoo -m OPTTSP < cc21
-  334  time ../281_P4__/zoo -m OPTTSP < cc21
-  335  pwd
-  336  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
-  337  time ./zoo -m OPTTSP < cc20
-  338  time ./zoo -m FASTTSP < cc20
-  339  make zoo
-  340  time ./zoo -m OPTTSP < cc20
-  341  time ./zoo -m FASTTSP < cc20
-  342  time ./zoo -m FASTTSP < cc19
-  343  time ./zoo -m OPTTSP < cc19
-  344  time ./zoo -m OPTTSP < cc21
-  345  make zoo
-  346  time ./zoo -m OPTTSP < cc19
-  347  time ./zoo -m OPTTSP < cc20
-  348  time ./zoo -m OPTTSP < cc21
-  349  make zoo
-  350  time ./zoo -m OPTTSP < cc21
-  351  time ./zoo -m OPTTSP < cc20
-  352  time ./zoo -m OPTTSP < cc19
-  353  make zoo
-  354  time ./zoo -m OPTTSP < cc19
-  355  time ./zoo -m OPTTSP < cc20
-  356  time ./zoo -m OPTTSP < cc21
-  357  time ./zoo -m OPTTSP < cc18
-  358  time ./zoo -m OPTTSP < cc21
-  359  time ./zoo -m FASTTSP < cc21
-  360  paw
-  361  pwd
-  362  make zoo
-  363  time ./zoo -m FASTTSP < cc21
-  364  time ./zoo -m OPTTSP < cc21
-  365  make zoo
-  366  time ./zoo -m OPTTSP < cc21
-  367  make zoo
-  368  time ./zoo -m OPTTSP < cc21
-  369  make zoo
-  370  time ./zoo -m OPTTSP < cc21
-  371  make zoo
-  372  time ./zoo -m OPTTSP < cc21
-  373  make zoo
-  374  time ./zoo -m OPTTSP < cc21
-  375  make zoo
-  376  time ./zoo -m OPTTSP < cc21
-  377  make zoo
-  378  time ./zoo -m OPTTSP < cc21
-  379  make zoo
-  380  time ./zoo -m OPTTSP < cc21
-  381  make zoo
-  382  time ./zoo -m OPTTSP < cc21
-  383  make zoo
-  384  time ./zoo -m OPTTSP < cc21
-  385  make zoo
-  386  time ./zoo -m OPTTSP < cc21
-  387  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
-  388  ./zoo -m OPTTSP <coors
-  389  make zoo
-  390  ./zoo -m OPTTSP <coors
-  391  ./zoo -m FASTTSP <coors
-  392  make zoo
-  393  ./zoo -m OPTTSP <coors
-  394  ./zoo -m FASTTSP <coors
-  395  make zoo
-  396  ./zoo -m FASTTSP <coors
-  397  make zoo
-  398  ./zoo -m FASTTSP <coors
-  399  ./zoo -m OPTTSP <coors
-  400  make zoo
-  401  ./zoo -m OPTTSP <coors
-  402  ./zoo -m OPTTSP <cc20
-  403  ./zoo -m FASTTSP <cc20
-  404  ./zoo -m FASTTSP <coors
-  405  ./zoo -m OPTTSP <coors
-  406  ./zoo -m MST <coors
-  407  dos2unix *; tar cvfz ./submit.tar.gz *.cpp *.h Makefile test*.txt
-  408  cd Desktop/
-  409  cd Fourier
-  410  ls
-  411  cd Audio/
-  412  ls
-  413  vi WavReader.h
-  414  vi WavReaderTest.cpp 
-  415  grep Table ./*
-  416  g++ -std=c++11 Main.cpp -o zoo
-  417  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  418  vi WavReader.h
-  419  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  420  ./WavReaderTest.o
-  421  vi WavReaderTest.o
-  422  vi WavReaderTest.cpp
-  423  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  424  ./WavReaderTest.o
-  425  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  426  ls
-  427  mv WavReader* ../
-  428  ls
-  429  vi out
-  430  mv out sine1000.hex
-  431  ls
-  432  rm *.aup
-  433  ls
-  434  cd ..
-  435  ls
-  436  vi WavReaderTest.cpp
-  437  python
-  438  vi WavReaderTest.cpp
-  439  vi WavReader.cpp
-  440  vi WavReader.h
-  441  vi WavReaderTest.cpp
-  442  vi WavReaderTest.cpp CmplxTest2.cpp
-  443  vi WavReaderTest.cpp FFTTest.cpp
-  444  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  445  vi WavReaderTest.cpp FFTTest.cpp
-  446  vi WavReader.h
-  447  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  448  vi WavReaderTest.cpp
-  449  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  450  ./WavReaderTest.o
-  451  vi WavReaderTest.cpp
-  452  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  453  ./WavReaderTest.o
-  454  vi WavReaderTest.cpp
-  455  vi WavReader.h
-  456  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  457  ./WavReaderTest.o
-  458  vi WavReader.h
-  459  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  460  ./WavReaderTest.o
-  461  vi WavReader.h
-  462  vi WavReaderTest.cpp 
-  463  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  464  ./WavReaderTest.o
-  465  vi WavReader.
-  466  vi WavReader.h
-  467  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  468  ./WavReaderTest.o
-  469  vi WavReader.h
-  470  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  471  ./WavReaderTest.o
-  472  python
-  473  vi WavReader.h
-  474  ./WavReaderTest.o
-  475  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  476  ./WavReaderTest.o
-  477  vi WavReader.h
-  478  ./WavReaderTest.o
-  479  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  480  ./WavReaderTest.o
-  481  vi WavReader.h
-  482  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  483  vi WavReader.h
-  484  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  485  ./WavReaderTest.o
-  486  vi WavReader.h
-  487  ./WavReaderTest.o
-  488  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  489  ./WavReaderTest.o
-  490  cd Audio/
-  491  vi *.hex
-  492  cd ..
-  493  iv WavReader.h
-  494  vi WavReader.h
-  495  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  496  ./WavReaderTest.o
-  497  vi WavReader.h
-  498  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  499  ./WavReaderTest.o
-  500  vi WavReader.h
-  501  vi WavReaderTest.cpp 
-  502  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  503  ./WavReaderTest.o
-  504  vi WavReaderTest.cpp 
-  505  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  506  ./WavReaderTest.o
-  507  python
-  508  vi WavReaderTest.cpp 
-  509  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  510  ./WavReaderTest.o
-  511  vi WavReaderTest.cpp
-  512  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  513  ./WavReaderTest.o
-  514  vi WavReaderTest.cpp
-  515  g++ -std=c++11 WavReaderTest.cpp -o WavReaderTest.o
-  516  ./WavReaderTest.o
-  517  vi
-  518  ls
-  519  cd Audio/
-  520  ls
-  521  audacity&
-  522  cd Desktop/Fourier
-  523  ls
-  524  cd Audio/
-  525  ls
-  526  audacity&
-  527  cd Desktop/Fourier
-  528  ls
-  529  vi SigProc.h SigProcPhases.cpp SigProcTest.cpp 
-  530  vi vectorTest.cpp 
-  531  g++ vectorTest.cpp -o vectorTest.o
-  532  ./vectorTest.o
-  533  time ./vectorTest.o
-  534  vi vectorTest.cpp 
-  535  g++ vectorTest.cpp -o vectorTest.o
-  536  ./vectorTest.o
-  537  time ./vectorTest.o
-  538  vi vectorTest.cpp 
-  539  g++ vectorTest.cpp -o vectorTest.o
-  540  vi vectorTest.cpp 
-  541  g++ vectorTest.cpp -o vectorTest.o
-  542  ./vectorTest.o
-  543  time ./vectorTest.o
-  544  vi VectorTypes.h
-  545  vi VectorTypesTest.cpp
-  546  g++ vectorTest.cpp -o vectorTest.o
-  547  g++ VectorTypesTest.cpp -o VectorTypesTest.o
-  548  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
-  549  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  550  vi VectorTypesTest.cpp
-  551  vi VectorTypes.h
-  552  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  553  vi VectorTypes.h
-  554  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  555  vi VectorTypes.h
-  556  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  557  vi VectorTypes.h
-  558  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  559  ./VectorTypesTest.o
-  560  vi VectorTypesTest.cpp 
-  561  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  562  ./VectorTypesTest.o
-  563  vi VectorTypesTest.cpp 
-  564  valgrind ./VectorTypesTest.o
-  565  vi VectorTypes.h
-  566  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  567  vi VectorTypes.h
-  568  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  569  vi VectorTypes.h
-  570  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  571  vi VectorTypes.h
-  572  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  573  ./VectorTypesTest.o
-  574  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  575  ./VectorTypesTest.o
-  576  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  577  vi VectorTypes.h
-  578  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  579  ./VectorTypesTest.o
-  580  vi VectorTypes.h
-  581  vi VectorTypesTest.cpp 
-  582  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  583  ./VectorTypesTest.o
-  584  vi VectorTypesTest.cpp 
-  585  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  586  vi VectorTypesTest.cpp 
-  587  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  588  ./VectorTypesTest.o
-  589  vi VectorTypesTest.cpp 
-  590  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  591  ./VectorTypesTest.o
-  592  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  593  vi VectorTypesTest.cpp 
-  594  g++ -std=c++11 VectorTypesTest.cpp -o VectorTypesTest.o
-  595  1.
-  596  ./VectorTypesTest.o
-  597  time ./VectorTypesTest.o
-  598  grep std::vector ./*
-  599  vi new ./*
-  600  ls
-  601  grep new ./*
-  602  vi FFT.h
-  603  grep IFFT ./*
-  604  vi FFTTest2.cpp 
-  605  grep -l IFFT ./*
-  606  vi < grep -l IFFT ./*
-  607  grep -l IFFT ./* > vi
-  608  grep -l IFFT ./*
-  609  grepIFFT ./*
-  610  grep IFFT ./*
-  611  vi FFTTest2.cpp SigProcPhases.cpp  WavIOTest.cpp
-  612  vi FFT.h
-  613  vi FFTTest2.cpp SigProcPhases.cpp  WavIOTest.cpp
-  614  vi FFT.
-  615  vi FFT.h
-  616  grep IFFT ./*
-  617  vi WavIOTest.cpp
-  618  ls
-  619  vi SigProc.h
-  620  vi WavIOTest.cpp SigProcFreq.cpp SigProc.h
-  621  vi WavIO
-  622  vi WavIO.h
-  623  vi WavIOTest.h
-  624  vi WavIOTest.cpp
-  625  vi WavIO.h
-  626  vi WavIOTest.cpp
-  627  ls *VectorTypes*
-  628  mv VectorTypes.h Array.h
-  629  grep #include VectorTypes.h" ./*
-  630  grep #include "VectorTypes.h" ./*
-  631  grep "VectorTypes.h" ./*
-  632  vi SigProc.h
-  633  vi WavIO.h VectorTypes.h
-  634  vi WavIO.h Array.h
-  635  ls
-  636  mv VectorTypesTest.cpp ArrayTest.cpp
-  637  vi
-  638  ls
-  639  mv WavIO.h ArrayWavIO.cpp
-  640  ls
-  641  mv WavIOTest.cpp ArrayWavIOTest.cpp
-  642  ls
-  643  rm WavIO.o
-  644  rm WavIOTest.o
-  645  ls
-  646  git add .
-  647  git commit
-  648  git push origin master
-  649  l
-  650  ls
-  651  vi SigProcFreq.cpp 
-  652  vi vi
-  653  rm vi
-  654  ls
-  655  vi Array.h
-  656  vi ArrayWavIO.cpp
-  657  vi Array.h
-  658  vi ArrayWavIO.cpp
-  659  vi Array.h
-  660  git add .
-  661  git commit
-  662  git push origin master
-  663  cd Desktop/Fourier
-  664  cd
-  665  cd Desktop/Fourier
-  666  ls
-  667  vi Array.h
-  668  vi ~/.vimrc
-  669  vi .vimrc
-  670  ls -a
-  671  ls -a ~/
-  672  locate .vimrc
-  673  locate vimrc
-  674  vi /etc/vimrc
-  675  cp /etc/vimrc /etc/vimrc.old
-  676  ls -la /etc/vimrc
-  677  vi /etc/vimrc
-  678  ls
-  679  vi Array.h
-  680  vi vectorTest.cpp
-  681  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
-  682  ./vectorTest.o 
-  683  vi vectorTest.cpp
-  684  ArrayTest.cpp
-  685  vi ArrayTest.cpp
-  686  vi Array.h
-  687  vi Cmplx.h
-  688  vi ArrayWavIO.cpp
-  689  vi Array.h
-  690  vi vectorTest.cpp 
-  691  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
-  692  ./vectorTest.o 
-  693  vi Array.h
-  694  vi Cmplx.h
-  695  vi Array.h
-  696  vi ArrayWavIO.cpp
-  697  vi vectorTest.cpp 
-  698  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
-  699  vi vectorTest.cpp 
-  700  g++ -std=c++11 vectorTest.cpp -o vectorTest.o
-  701  ./vectorTest.o 
-  702  vi ArrayWavIO.cpp
-  703  vi Array.h
-  704  vi vectorTest.cpp 
-  705  vi Array.h
-  706  vi ArrayWavIO.cpp
-  707  vi ArrayTest.cpp
-  708  vi ArrayWavIO.cpp
-  709  vi ArrayTest.cpp
-  710  vi ArrayTest2.cpp
-  711  cp ArrayTest.cpp ArrayTest2.cpp 
-  712  vi ArrayTest2.cpp
-  713  vi ArrayTest.cpp
-  714  vi ArrayTest2.cpp
-  715  cd Desktop/Fourier_
-  716  ls Desktop/Fourier
-  717  cd ..
-  718  ls
-  719  cd samtenka/
-  720  ls
-  721  cd Desktop/
-  722  ls
-  723  cd Fourier_pa
-  724  ls
-  725  cd master
-  726  ls
-  727  history
-  728  ls
-  729  g++ ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
-  730  g++ ArrayWavIOTest.cpp -o ArrayWavIOTest.o
-  731  g++ ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
-  732  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
-  733  clear
-  734  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
-  735  vi SigProc.h
-  736  vi SigProcFreq.cpp 
-  737  vi FFT.h
-  738  vi SigProcFreq.cpp 
-  739  vi SigProc.h
-  740  vi FFT.h
-  741  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
-  742  vi SigProcFreq.cpp 
-  743  vi SigProcFreq.cpp SigProc.h
-  744  vi ArrayWavIOTest.cpp
-  745  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
-  746  vi *.h
-  747  pwd
-  748  vi test.h
-  749  mv test.h test.cpp
-  750  vi test.h
-  751  vi test.cpp
-  752  time g++ test.cpp -o test.o
-  753  vi test.cpp
-  754  time g++ test.cpp -o test.o
-  755  vi test.cpp
-  756  time g++ test.cpp -o test.o
-  757  vi test.cpp
-  758  time g++ test.cpp -o test.o
-  759  ./test.o
-  760  time ./test.o
-  761  vi test.cpp
-  762  g++ -std=c++11 ArrayWavIOTest.cpp SigProcFreq.cpp -o ArrayWavIOTest.o
-  763  g++ test.cpp -o test.o
-  764  ./test.o
-  765  vi test.cpp
-  766  g++ test.cpp -o test.o
-  767  ./test.o
-  768  vi test.cpp
-  769  vi test.cpp test.h
-  770  vi test.cpp
-  771  !
-  772  g++ test.cpp -o test.o
-  773  ./test.o
-  774  cp test.cpp test2.cpp
-  775  vi test2.cpp
-  776  g++ test.cpp test2.cpp -o test.o
-  777  ./test.o
-  778  rm test.o
-  779  g++ test.cpp test2.cpp -o test.o
-  780  ./test.o
-  781  vi Array.h test.h
-  782  g++ test.cpp test2.cpp -o test.o
-  783  ./test.o
-  784  cd ..
-  785  ls
-  786  cd ..
-  787  ls
-  788  cd Fourier
-  789  ls
-  790  rm :next
-  791  ls
-  792  vi SigProcPhasesTest.cpp
-  793  firefox&
-  794  cd Desktop/Fourier
-  795  firefox&
-  796  find oooh0148
-  797  find oooh0148.wav
-  798  ps
-  799  kill 43963
-  800  firefo&
-  801  firefox&
-  802  chrome
-  803  dropbo
-  804  dropbox
-  805  find oooh0148.wav
-  806  cd ..
-  807  ls
-  808  cd Downloads/
-  809  ls
-  810  mv oooh0148.wav ../Desktop/Fourier/Audio/
-  811  cd ../Desktop/Fourier/Audio/
-  812  ls
-  813  cd ..
-  814  ls
-  815  vi SigProcPhasesTest.cpp 
-  816  g++ test.cpp test2.cpp -o test.o
-  817  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.cpp
-  818  ls
-  819  vi SigProcPhases.cpp
-  820  vi SigProcPhasesTest.cpp
-  821  vi SigProcPhasesTest.cpp ../Fourier_pa/SigProcPhasesTest.cpp 
-  822  :x
-  823  cd ..
-  824  ls
-  825  vi Fourier_pa
-  826  cd Fourier_pa
-  827  ls
-  828  cd ..
-  829  ls
-  830  vi Fourier
-  831  cd Fourier
-  832  ls
-  833  vi SigProcPhasesTest.cpp ../Fourier_pa/master/SigProcPhasesTest.cpp 
-  834  vi SigProcPhasesTest.cpp
-  835  rm SigProcPhasesTest.cpp
-  836  vi SigProcPhasesTest.cpp
-  837  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  838  vi SigProcPhasesTest.cpp
-  839  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  840  g
-  841  ./test.o
-  842  ./SigProcPhasesTest.o 
-  843  cd Audio
-  844  ls
-  845  firefox&
-  846  cd
-  847  cd Desktop/Fourier/Audio/
-  848  ls
-  849  ls -la
-  850  hexdump oooh0148.wav oooh0148.hex
-  851  hexdump oooh0148.wav > oooh0148.hex
-  852  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
-  853  vi oo*.hex
-  854  cd ..
-  855  ls
-  856  vi Audio/
-  857  cd Audio/
-  858  ls
-  859  hexdump sine1000.copy.wav sine1000.copy.hex
-  860  hexdump sine1000.copy.wav > sine1000.copy.hex
-  861  ls
-  862  vi sine1000.hex sine1000.copy.hex
-  863  cd ..
-  864  ls
-  865  vi Array.h
-  866  hexdump ArrayTest2.wav
-  867  hexdump ArrayTest2.wav ArrayTest2.hex
-  868  hexdump ArrayTest2.wav > ArrayTest2.hex
-  869  vi ArrayTest2.hex
-  870  ls
-  871  vi Array.h
-  872  g
-  873  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  874  ./SigProcPhasesTest.o 
-  875  vi Audio/*randomized.wav
-  876  cd Audio/
-  877  ls
-  878  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
-  879  vi oooh0148.randomized.hex 
-  880  cd ..
-  881  ls
-  882  vi Array.h
-  883  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  884  ./SigProcPhasesTest.o 
-  885  cd Audio/
-  886  ls
-  887  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
-  888  vi Arra
-  889  vi oooh0148.randomized.hex 
-  890  cd ..
-  891  vi oooh0148.randomized.hex 
-  892  vi Array.h
-  893  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  894  ./SigProcPhasesTest.o 
-  895  cd Au
-  896  cd Audio/
-  897  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
-  898  vi oooh0148.randomized.hex 
-  899  vi Array.h
-  900  cd ..
-  901  vi Array.h
-  902  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  903  ./SigProcPhasesTest.o 
-  904  cd Audio/
-  905  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
-  906  vi oooh0148.randomized.hex 
-  907  cd ..
-  908  ls
-  909  vi Array.h
-  910  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  911  ./SigProcPhasesTest.o 
-  912  vi Array.h
-  913  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  914  ./SigProcPhasesTest.o 
-  915  cd Audio/
-  916  hexdump oooh0148.randomized.wav > oooh0148.randomized.hex
-  917  vi oooh0148.randomized.hex 
-  918  cd ..
-  919  ls
-  920  git add .
-  921  git commit
-  922  git push origin master
-  923  pwd
-  924  vi Array.h
-  925  cd ..
-  926  ls
-  927  cd Fourier
-  928  ls
-  929  vi ArrayTest.cpp
-  930  vi ArrayTest2.cpp
-  931  g++ -std=c++11 ArrayTest2.cpp -o ArrayTest2.o
-  932  ./ArrayTest2.o
-  933  ls -la *.wav
-  934  cd AU
-  935  cd Audio/
-  936  ls
-  937  vi ooo*.hex
-  938  ls -la ooo*.hex
-  939  python
-  940  pwd
-  941  cd ..
-  942  ls
-  943  cd Au
-  944  cd Audio/
-  945  ls
-  946  vi oooh0148.randomized.hex 
-  947  vi oooh0148.randomized.hex oooh0148.hex
-  948  cd
-  949  ls
-  950  cd Downloads/
-  951  ls
-  952  ls -la *wav
-  953  mv oooh0148.wav ../Desktop/Fourier/Audio/oooh0148.wav
-  954  cd ../Desktop/Fourier/Audio/oooh0148.wav
-  955  cd ../Desktop/Fourier/Audio/
-  956  ls
-  957  cd .
-  958  ls
-  959  cd ..
-  960  ls
-  961  ./SigProcPhasesTest.o 
-  962  pwd
-  963  vi Array.h
-  964  !
-  965  g++ -std=c++11 ArrayTest2.cpp -o ArrayTest2.o
-  966  ./SigProcPhasesTest.o 
-  967  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  968  ./SigProcPhasesTest.o 
-  969  ls
-  970  vi README.md 
-  971  git add .
-  972  git commit
-  973  git push origin master
-  974  ls
-  975  wc *.cpp *.h
-  976  wc -l *.cpp *.h
-  977  vi SigProc.h SigProcPhasesTest.cpp 
-  978  git push origin master
-  979  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  980  ./SigProcPhasesTest.o 
-  981  git add .
-  982  git commit
-  983  git push origin master
-  984  vi SigProc.h
-  985  vi SigProcPhasesTest.cpp
-  986  git push origin master
-  987  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  988  ./SigProcPhasesTest.o 
-  989  ./SigProcPhasesTest.o >SigProcPhasesTest.dat
-  990  vi *.dat
-  991  vi SigProcPhasesTest.cpp
-  992  vi SigProc.h
-  993  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
-  994  ./SigProcPhasesTest.o >SigProcPhasesTest.dat
-  995  git add .
-  996  git commit
-  997  git push origin master
-  998  cd Desktop/Fourier
-  999  ls
- 1000  vi SigProcPhasesTest.cpp
- 1001  cd Desktop/Fourier
- 1002  vi SigProcPhasesTest.cpp 
- 1003  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1004  vi SigProcPhasesTest.cpp 
- 1005  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1006  ./SigProcPhasesTest.o 
- 1007  git add .
- 1008  git commit
- 1009  git push origin master
- 1010  vi SigProcPhasesTest.cpp 
- 1011  git push origin master
- 1012  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1013  ./SigProcPhasesTest.o 
- 1014  git add .
- 1015  git commit
- 1016  git push origin master
- 1017  vi SigProcPhasesTest.cpp 
- 1018  vi SigProc.h
- 1019  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1020  ./SigProcPhasesTest.o 
- 1021  vi SigProc.h
- 1022  ./SigProcPhasesTest.o 
- 1023  vi SigProc.h
- 1024  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1025  ./SigProcPhasesTest.o 
- 1026  vi SigProc.h
- 1027  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1028  ./SigProcPhasesTest.o 
- 1029  git add .
- 1030  git commit
- 1031  git push origin master
- 1032  vi SigProc.h
- 1033  ls
- 1034  vi CmplxTest.cpp
- 1035  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
- 1036  ./CmplxTest.o
- 1037  vi CmplxTest.cpp
- 1038  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
- 1039  ./CmplxTest.o
- 1040  vi CmplxTest.cpp
- 1041  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
- 1042  ./CmplxTest.o
- 1043  ls
- 1044  git add .
- 1045  git commit
- 1046  vi SigProc.h
- 1047  vi SigProcPhasesTest.cpp
- 1048  vi SigProc.h
- 1049  vi Cmplx.h
- 1050  vi CmplxTest.cpp
- 1051  git commit
- 1052  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
- 1053  ./CmplxTest.o
- 1054  vi CmplxTest.cpp
- 1055  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
- 1056  ./CmplxTest.o
- 1057  vi CmplxTest.cpp
- 1058  g++ -std=c++11 CmplxTest.cpp -o CmplxTest.o
- 1059  ./CmplxTest.o
- 1060  vi CmplxTest.cpp
- 1061  ls
- 1062  vi SigProcPhasesTest.cpp 
- 1063  SigPro*.h
- 1064  v SigPro*.h
- 1065  vi SigPro*.h
- 1066  history > out
- 1067  vi out
- 1068  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1069  ./SigProcPhasesTest.o 
- 1070  git add .
- 1071  git commit
- 1072  git push origin master
- 1073  v SigPro*.h
- 1074  vi SigPro*.h
- 1075  git push origin master
- 1076  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1077  ./SigProcPhasesTest.o 
- 1078  git add .
- 1079  git commit
- 1080  git push origin master
- 1081  vi SigPro*.h
- 1082  git push origin master
- 1083  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1084  ./SigProcPhasesTest.o 
- 1085  git add .
- 1086  git commit
- 1087  git push origin master
- 1088  vi SigPro*.h
- 1089  g++ -std=c++11 SigProcPhasesTest.cpp -o SigProcPhasesTest.o
- 1090  ./SigProcPhasesTest.o 
- 1091  git add .
- 1092  git commit
- 1093  git push origin master
- 1094  vi SigPro*.h
- 1095  ls
- 1096  vi FFTTest.cpp
- 1097  g++ -std=c++11 FFTTest.cpp -o FFTTest.o
- 1098  vi FFTTest.cpp
- 1099  g++ -std=c++11 FFTTest.cpp -o FFTTest.o
- 1100  vi FFTTest.cpp
- 1101  g++ -std=c++11 FFTTest.cpp -o FFTTest.o
- 1102  vi FFTTest.cpp
- 1103  g++ -std=c++11 FFTTest.cpp -o FFTTest.o
- 1104  vi FFTTest.cpp
- 1105  g++ -std=c++11 FFTTest.cpp -o FFTTest.o
- 1106  vi FFTTest.cpp
- 1107  g++ -std=c++11 FFTTest.cpp -o FFTTest.o
- 1108  ./FFTTest.o
- 1109  vi FFTTest.cpp
- 1110  g++ -std=c++11 FFTTest.cpp -o FFTTest.o
- 1111  ./FFTTest.o
- 1112  git add .
- 1113  git commit
- 1114  ls
- 1115  git push origin master
- 1116  vi SigProc.h
- 1117  vi FFTTest2.cpp
- 1118  g++ -std=c++11 FFTTest2.cpp -o FFTTest2.o
- 1119  vi FFTTest2.cpp
- 1120  g++ -std=c++11 FFTTest2.cpp -o FFTTest2.o
- 1121  vi FFTTest2.cpp
- 1122  g++ -std=c++11 FFTTest2.cpp -o FFTTest2.o
- 1123  ./FFTTest2.o
- 1124  ./FFTTest2.o >out
- 1125  vi out
- 1126  vi FFTTest2.cpp
- 1127  g++ -std=c++11 FFTTest2.cpp -o FFTTest2.o
- 1128  ./FFTTest2.o >out
- 1129  vi out
- 1130  ls
- 1131  vi SigProcPhases.cpp
- 1132  vi SigProc.h
- 1133  g++ -std=c++11 FFTTest2.cpp -o FFTTest2.o
- 1134  history > out
+dph 0.0009
+dph 0.0008
+dph 0.0005
+dph 0.0006
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0006
+dph 0.0005
+dph 0.0002
+dph 0.0005
+dph 0.0002
+dph 0.0004
+dph 0.0006
+dph 0.0006
+dph 0.0009
+dph 0.0004
+dph 0.0007
+dph 0.0004
+dph 0.0007
+dph 0.0004
+dph 0.0004
+dph 0.0007
+dph 0.0002
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0006
+dph 0.0006
+dph 0.0005
+dph 0.0006
+dph 0.0009
+dph 0.0006
+dph 0.0006
+dph 0.0007
+dph 0.0003
+dph 0.0005
+dph 0.0004
+dph 0.0005
+dph 0.0006
+dph 0.0004
+dph 0.0003
+dph 0.0006
+dph 0.0005
+dph 0.0003
+dph 0.0005
+dph 0.0007
+dph 0.0005
+dph 0.0005
+dph 0.0008
+dph 0.0005
+dph 0.0006
+dph 0.0008
+dph 0.0006
+dph 0.0002
+dph 0.0007
+dph 0.0004
+dph 0.0007
+dph 0.0006
+dph 0.0004
+dph 0.0004
+dph 0.0011
+dph 0.0005
+dph 0.0008
+dph 0.0010
+dph 0.0006
+dph 0.0008
+dph 0.0006
+dph -0.0005
+dph 0.0008
+dph 0.0010
+dph 0.0005
+dph 0.0004
+dph 0.0005
+dph 0.0005
+dph 0.0003
+dph 0.0006
+dph 0.0008
+dph 0.0001
+dph 0.0008
+dph 0.0005
+dph 0.0005
+dph 0.0006
+dph 0.0008
+dph 0.0009
+dph 0.0001
+dph 0.0005
+dph 0.0005
+dph 0.0009
+dph 0.0004
+dph 0.0006
+dph 0.0005
+dph 0.0004
+dph 0.0005
+dph 0.0004
+dph 0.0006
+dph 0.0005
+dph 0.0007
+dph 0.0005
+dph 0.0007
+dph 0.0011
+dph 0.0005
+dph 0.0005
+dph 0.0007
+dph 0.0005
+dph 0.0006
+dph 0.0008
+dph 0.0004
+dph 0.0002
+dph 0.0005
+dph 0.0007
+dph 0.0001
+dph 0.0005
+dph 0.0004
+dph 0.0006
+dph 0.0002
+dph 0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0013
+dph 0.0008
+dph 0.0005
+dph 0.0009
+dph 0.0011
+dph 0.0006
+dph 0.0006
+dph 0.0007
+dph 0.0005
+dph 0.0005
+dph 0.0007
+dph 0.0005
+dph 0.0006
+dph 0.0001
+dph 0.0005
+dph 0.0008
+dph 0.0007
+dph 0.0010
+dph 0.0008
+dph 0.0008
+dph 0.0004
+dph 0.0003
+dph 0.0008
+dph 0.0004
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0003
+dph 0.0010
+dph 0.0004
+dph 0.0007
+dph 0.0005
+dph 0.0007
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0006
+dph 0.0006
+dph 0.0006
+dph 0.0010
+dph 0.0008
+dph 0.0005
+dph 0.0002
+dph 0.0003
+dph 0.0004
+dph 0.0004
+dph 0.0005
+dph 0.0007
+dph 0.0004
+dph 0.0002
+dph 0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0004
+dph 0.0006
+dph 0.0003
+dph 0.0006
+dph 0.0004
+dph 0.0003
+dph 0.0006
+dph 0.0006
+dph 0.0005
+dph 0.0006
+dph 0.0006
+dph 0.0007
+dph 0.0005
+dph 0.0007
+dph 0.0003
+dph 0.0007
+dph 0.0001
+dph 0.0006
+dph 0.0008
+dph 0.0006
+dph 0.0006
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0009
+dph 0.0004
+dph 0.0007
+dph 0.0009
+dph 0.0006
+dph 0.0006
+dph 0.0008
+dph 0.0007
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph 0.0011
+dph 0.0004
+dph 0.0006
+dph 0.0013
+dph 0.0009
+dph 0.0005
+dph 0.0010
+dph 0.0006
+dph 0.0007
+dph 0.0003
+dph 0.0003
+dph 0.0016
+dph 0.0003
+dph 0.0003
+dph 0.0006
+dph 0.0014
+dph 0.0007
+dph 0.0006
+dph 0.0007
+dph 0.0005
+dph -0.0003
+dph 0.0010
+dph 0.0006
+dph 0.0008
+dph 0.0008
+dph 0.0006
+dph 0.0003
+dph 0.0008
+dph 0.0008
+dph 0.0017
+dph 0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0007
+dph 0.0005
+dph 0.0010
+dph 0.0006
+dph -0.0002
+dph 0.0008
+dph 0.0005
+dph 0.0006
+dph 0.0009
+dph 0.0009
+dph 0.0005
+dph 0.0007
+dph 0.0005
+dph 0.0004
+dph 0.0006
+dph 0.0006
+dph 0.0009
+dph -0.0002
+dph 0.0003
+dph 0.0003
+dph 0.0005
+dph 0.0007
+dph 0.0003
+dph 0.0004
+dph 0.0013
+dph 0.0006
+dph 0.0001
+dph 0.0006
+dph 0.0006
+dph 0.0005
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0006
+dph 0.0014
+dph 0.0033
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph -0.0000
+dph 0.0005
+dph 0.0010
+dph 0.0007
+dph 0.0002
+dph 0.0007
+dph 0.0002
+dph 0.0007
+dph 0.0006
+dph 0.0004
+dph 0.0009
+dph 0.0007
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0011
+dph 0.0008
+dph 0.0005
+dph 0.0006
+dph 0.0007
+dph 0.0009
+dph 0.0003
+dph -0.0006
+dph 0.0004
+dph 0.0011
+dph 0.0003
+dph -0.0002
+dph 0.0007
+dph 0.0003
+dph 0.0006
+dph 0.0006
+dph 0.0005
+dph 0.0004
+dph -0.0009
+dph 0.0007
+dph 0.0005
+dph 0.0003
+dph 0.0007
+dph 0.0007
+dph 0.0006
+dph 0.0004
+dph 0.0008
+dph 0.0009
+dph 0.0007
+dph -0.0008
+dph 0.0005
+dph -0.0010
+dph 0.0006
+dph 0.0006
+dph 0.0012
+dph 0.0006
+dph 0.0006
+dph 0.0008
+dph 0.0004
+dph 0.0006
+dph 0.0004
+dph 0.0004
+dph 0.0004
+dph 0.0007
+dph 0.0006
+dph 0.0006
+dph 0.0008
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph 0.0004
+dph 0.0006
+dph 0.0007
+dph 0.0009
+dph 0.0004
+dph 0.0004
+dph 0.0009
+dph -0.0003
+dph 0.0002
+dph 0.0007
+dph 0.0005
+dph 0.0009
+dph 0.0008
+dph 0.0006
+dph 0.0003
+dph 0.0005
+dph 0.0006
+dph 0.0007
+dph -0.0002
+dph 0.0008
+dph 0.0007
+dph 0.0014
+dph 0.0005
+dph 0.0004
+dph 0.0005
+dph 0.0002
+dph 0.0006
+dph 0.0006
+dph 0.0004
+dph 0.0011
+dph 0.0008
+dph 0.0005
+dph 0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0008
+dph 0.0004
+dph 0.0005
+dph 0.0007
+dph 0.0002
+dph -0.0002
+dph 0.0005
+dph 0.0004
+dph 0.0003
+dph 0.0004
+dph -0.0029
+dph 0.0008
+dph 0.0004
+dph 0.0004
+dph 0.0006
+dph 0.0008
+dph 0.0008
+dph 0.0006
+dph 0.0005
+dph 0.0017
+dph 0.0000
+dph 0.0009
+dph 0.0004
+dph 0.0037
+dph 0.0009
+dph 0.0009
+dph 0.0003
+dph 0.0006
+dph 0.0009
+dph 0.0006
+dph 0.0007
+dph 0.0003
+dph 0.0003
+dph 0.0010
+dph 0.0010
+dph 0.0018
+dph 0.0013
+dph 0.0005
+dph 0.0002
+dph 0.0008
+dph 0.0019
+dph 0.0007
+dph 0.0012
+dph 0.0010
+dph 0.0019
+dph 0.0005
+dph 0.0005
+dph 0.0004
+dph 0.0005
+dph 0.0007
+dph 0.0015
+dph 0.0003
+dph 0.0006
+dph 0.0012
+dph 0.0002
+dph 0.0006
+dph 0.0004
+dph 0.0005
+dph 0.0006
+dph -0.0007
+dph 0.0005
+dph 0.0010
+dph 0.0003
+dph 0.0013
+dph 0.0005
+dph -0.0005
+dph 0.0006
+dph 0.0003
+dph 0.0005
+dph 0.0009
+dph 0.0008
+dph 0.0005
+dph 0.0004
+dph -0.0003
+dph -0.0009
+dph 0.0007
+dph 0.0009
+dph 0.0009
+dph 0.0003
+dph 0.0005
+dph 0.0006
+dph 0.0009
+dph 0.0000
+dph 0.0003
+dph 0.0002
+dph 0.0006
+dph 0.0008
+dph 0.0004
+dph 0.0006
+dph 0.0003
+dph 0.0003
+dph 0.0002
+dph 0.0006
+dph 0.0011
+dph 0.0005
+dph 0.0009
+dph 0.0004
+dph 0.0009
+dph 0.0004
+dph 0.0005
+dph 0.0008
+dph 0.0021
+dph 0.0004
+dph 0.0002
+dph 0.0004
+dph 0.0007
+dph 0.0005
+dph 0.0002
+dph 0.0007
+dph -0.0001
+dph 0.0008
+dph 0.0006
+dph 0.0006
+dph 0.0001
+dph 0.0006
+dph 0.0005
+dph 0.0003
+dph 0.0008
+dph 0.0010
+dph 0.0006
+dph -0.0006
+dph 0.0003
+dph 0.0005
+dph 0.0019
+dph 0.0006
+dph 0.0003
+dph 0.0005
+dph 0.0005
+dph 0.0003
+dph 0.0006
+dph -0.0003
+dph 0.0008
+dph 0.0006
+dph 0.0012
+dph 0.0013
+dph 0.0009
+dph 0.0009
+dph 0.0007
+dph 0.0003
+dph 0.0006
+dph 0.0006
+dph 0.0004
+dph 0.0003
+dph 0.0003
+dph 0.0010
+dph 0.0005
+dph 0.0006
+dph 0.0003
+dph 0.0010
+dph 0.0006
+dph 0.0006
+dph 0.0001
+dph 0.0006
+dph 0.0006
+dph 0.0006
+dph 0.0006
+dph 0.0005
+dph 0.0002
+dph 0.0010
+dph 0.0001
+dph 0.0005
+dph 0.0007
+dph 0.0007
+dph 0.0008
+dph 0.0006
+dph 0.0009
+dph 0.0009
+dph 0.0004
+dph 0.0006
+dph 0.0013
+dph 0.0008
+dph 0.0005
+dph 0.0010
+dph 0.0008
+dph 0.0007
+dph 0.0002
+dph 0.0004
+dph 0.0005
+dph 0.0003
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph 0.0019
+dph 0.0003
+dph 0.0007
+dph 0.0002
+dph 0.0001
+dph 0.0012
+dph -0.0012
+dph 0.0008
+dph 0.0005
+dph 0.0005
+dph 0.0031
+dph 0.0007
+dph 0.0005
+dph 0.0003
+dph 0.0004
+dph 0.0006
+dph -0.0000
+dph 0.0005
+dph 0.0004
+dph 0.0012
+dph 0.0007
+dph 0.0006
+dph 0.0007
+dph 0.0004
+dph 0.0004
+dph 0.0025
+dph 0.0005
+dph 0.0010
+dph 0.0015
+dph 0.0004
+dph 0.0004
+dph 0.0005
+dph -6.2822
+dph 0.0005
+dph 0.0007
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0010
+dph 0.0006
+dph 0.0004
+dph -0.0003
+dph 0.0007
+dph -0.0002
+dph 0.0010
+dph -0.0000
+dph 0.0005
+dph 0.0007
+dph 0.0017
+dph 0.0006
+dph 0.0006
+dph 0.0004
+dph 0.0006
+dph 0.0006
+dph 0.0003
+dph 0.0003
+dph 0.0004
+dph 0.0010
+dph 0.0011
+dph 0.0005
+dph 0.0007
+dph 0.0011
+dph 0.0004
+dph 0.0004
+dph 0.0006
+dph 0.0002
+dph 0.0010
+dph 0.0010
+dph 0.0002
+dph 0.0008
+dph 0.0008
+dph 0.0004
+dph 0.0013
+dph 0.0005
+dph 0.0005
+dph 0.0007
+dph 0.0005
+dph 0.0002
+dph 0.0005
+dph 0.0008
+dph -0.0002
+dph -0.0000
+dph 0.0005
+dph 0.0003
+dph 0.0011
+dph 0.0006
+dph 0.0005
+dph 0.0007
+dph 0.0007
+dph 0.0011
+dph 0.0006
+dph 0.0002
+dph 0.0004
+dph 0.0002
+dph 0.0008
+dph 0.0007
+dph 0.0006
+dph 0.0006
+dph 0.0007
+dph 0.0002
+dph 0.0006
+dph 0.0005
+dph 0.0007
+dph 0.0003
+dph 0.0008
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph 0.0006
+dph 0.0007
+dph 0.0003
+dph 0.0003
+dph 0.0006
+dph 0.0006
+dph 0.0006
+dph 0.0008
+dph 0.0003
+dph 0.0003
+dph 0.0004
+dph 0.0006
+dph 0.0003
+dph 0.0003
+dph 0.0002
+dph 0.0003
+dph 0.0006
+dph 0.0002
+dph 0.0003
+dph 0.0004
+dph -0.0001
+dph 0.0007
+dph 0.0009
+dph 0.0006
+dph 0.0006
+dph 0.0004
+dph 0.0008
+dph 0.0004
+dph 0.0007
+dph 0.0004
+dph 0.0005
+dph 0.0002
+dph 0.0006
+dph 0.0007
+dph 0.0003
+dph 0.0007
+dph 0.0024
+dph 0.0008
+dph 0.0003
+dph 0.0008
+dph 0.0005
+dph 0.0005
+dph 0.0006
+dph 0.0003
+dph 0.0006
+dph 0.0004
+dph 0.0006
+dph 0.0006
+dph 0.0004
+dph 0.0005
+dph 0.0008
+dph 0.0012
+dph -0.0010
+dph 0.0007
+dph 0.0006
+dph 0.0007
+dph 0.0013
+dph 0.0005
+dph 0.0007
+dph 0.0002
+dph 0.0004
+dph 0.0007
+dph 0.0006
+dph 0.0008
+dph 0.0008
+dph 0.0002
+dph 0.0007
+dph 0.0003
+dph -0.0017
+dph 0.0004
+dph 0.0018
+dph 0.0007
+dph -0.0006
+dph -0.0007
+dph 0.0001
+dph 0.0001
+dph 0.0003
+dph 0.0006
+dph 0.0006
+dph 0.0006
+dph 0.0007
+dph 0.0001
+dph 0.0010
+dph 0.0000
+dph 0.0040
+dph 0.0002
+dph 0.0006
+dph 0.0011
+dph 0.0001
+dph 0.0005
+dph 0.0008
+dph 0.0005
+dph 0.0006
+dph 0.0004
+dph 0.0008
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0007
+dph 0.0005
+dph 0.0002
+dph 0.0009
+dph 0.0005
+dph 0.0007
+dph 0.0006
+dph 0.0007
+dph 0.0005
+dph 0.0005
+dph 0.0007
+dph -0.0009
+dph 0.0006
+dph 0.0004
+dph 0.0005
+dph 0.0007
+dph 0.0001
+dph 0.0010
+dph 0.0003
+dph -0.0004
+dph 0.0010
+dph 0.0007
+dph 0.0003
+dph 0.0006
+dph 0.0007
+dph 0.0008
+dph 0.0007
+dph 0.0005
+dph 0.0006
+dph 0.0011
+dph 0.0012
+dph 0.0009
+dph 0.0006
+dph 0.0008
+dph 0.0008
+dph 0.0005
+dph -0.0000
+dph 0.0005
+dph 0.0005
+dph 0.0014
+dph 0.0006
+dph 0.0004
+dph 0.0008
+dph 0.0014
+dph 0.0006
+dph -0.0003
+dph 0.0011
+dph 0.0003
+dph 0.0005
+dph 0.0039
+dph 0.0003
+dph 0.0012
+dph 0.0008
+dph 0.0011
+dph 0.0009
+dph 0.0016
+dph 0.0010
+dph 0.0006
+dph 0.0013
+dph 0.0005
+dph 0.0003
+dph 0.0006
+dph 0.0005
+dph 0.0007
+dph 0.0001
+dph 0.0007
+dph 0.0012
+dph 0.0024
+dph 0.0008
+dph 0.0007
+dph 0.0005
+dph 0.0010
+dph 0.0008
+dph 0.0009
+dph 0.0006
+dph 0.0008
+dph 0.0008
+dph 0.0008
+dph -0.0006
+dph 0.0006
+dph 0.0007
+dph 0.0008
+dph 0.0007
+dph 0.0011
+dph 0.0006
+dph 0.0003
+dph 0.0006
+dph 0.0006
+dph 0.0000
+dph 0.0014
+dph -0.0007
+dph 0.0003
+dph 0.0013
+dph 0.0007
+dph 0.0009
+dph 0.0005
+dph 0.0004
+dph 0.0002
+dph 0.0009
+dph 0.0003
+dph 0.0008
+dph 0.0004
+dph 0.0012
+dph 0.0006
+dph 0.0010
+dph -0.0038
+dph -0.0002
+dph 0.0008
+dph -0.0005
+dph 0.0006
+dph 0.0004
+dph 0.0006
+dph 0.0003
+dph 0.0003
+dph -0.0000
+dph 0.0008
+dph 0.0012
+dph 0.0009
+dph 0.0014
+dph 0.0004
+dph 0.0006
+dph 0.0007
+dph 0.0002
+dph 0.0004
+dph 0.0007
+dph 0.0008
+dph 0.0006
+dph 0.0006
+dph -0.0006
+dph 0.0007
+dph 0.0004
+dph 0.0001
+dph 0.0006
+dph 0.0004
+dph 0.0008
+dph 0.0010
+dph 0.0003
+dph 0.0010
+dph -0.0008
+dph 0.0004
+dph 0.0007
+dph 0.0007
+dph 0.0007
+dph 0.0004
+dph 0.0009
+dph 0.0004
+dph 0.0007
+dph 0.0005
+dph 0.0002
+dph 0.0004
+dph 0.0010
+dph 0.0021
+dph 0.0005
+dph 0.0013
+dph 0.0008
+dph 0.0007
+dph -0.0005
+dph 0.0007
+dph 0.0008
+dph 0.0071
+dph 0.0005
+dph 0.0002
+dph 0.0027
+dph 0.0004
+dph -0.0002
+dph 0.0003
+dph 0.0004
+dph 0.0010
+dph 0.0001
+dph -0.0001
+dph 0.0005
+dph 0.0004
+dph 0.0007
+dph 0.0016
+dph 0.0006
+dph 0.0008
+dph -0.0001
+dph -0.0006
+dph 0.0009
+dph 0.0006
+dph 0.0011
+dph 0.0006
+dph 0.0013
+dph -0.0009
+dph 0.0005
+dph 0.0007
+dph 0.0004
+dph 0.0007
+dph 0.0004
+dph 0.0007
+dph 0.0002
+dph 0.0006
+dph 0.0006
+dph 0.0004
+dph 0.0009
+dph 0.0006
+dph -0.0007
+dph 0.0009
+dph 0.0006
+dph -0.0016
+dph 0.0006
+dph 0.0016
+dph 0.0011
+dph 0.0004
+dph 0.0005
+dph 0.0012
+dph -0.0008
+dph 0.0008
+dph -0.0003
+dph 0.0005
+dph 0.0009
+dph 0.0003
+dph 0.0004
+dph 0.0008
+dph 0.0012
+dph 0.0001
+dph 0.0006
+dph 0.0001
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0001
+dph 0.0008
+dph 0.0003
+dph 0.0004
+dph 0.0003
+dph 0.0003
+dph 0.0007
+dph 0.0008
+dph 0.0008
+dph 0.0000
+dph 0.0035
+dph 0.0010
+dph -0.0002
+dph 0.0005
+dph 0.0005
+dph 0.0012
+dph 0.0004
+dph 0.0002
+dph 0.0005
+dph 0.0014
+dph 0.0007
+dph 0.0002
+dph 0.0006
+dph 0.0008
+dph 0.0007
+dph 0.0019
+dph 0.0014
+dph 0.0000
+dph 0.0009
+dph 0.0002
+dph 0.0009
+dph -0.0004
+dph 0.0004
+dph 0.0009
+dph 0.0008
+dph -0.0001
+dph 0.0003
+dph 0.0004
+dph 0.0001
+dph 0.0004
+dph 0.0050
+dph 0.0010
+dph 0.0008
+dph 0.0009
+dph 0.0007
+dph 0.0011
+dph -0.0000
+dph 0.0008
+dph -0.0010
+dph 0.0002
+dph 0.0007
+dph 0.0012
+dph 0.0004
+dph 0.0007
+dph 0.0000
+dph 0.0006
+dph 0.0006
+dph -0.0003
+dph 0.0002
+dph 0.0005
+dph 0.0007
+dph 0.0004
+dph 0.0002
+dph 0.0007
+dph 0.0004
+dph 0.0005
+dph 0.0012
+dph 0.0008
+dph 0.0009
+dph 0.0005
+dph 0.0013
+dph 0.0006
+dph 0.0003
+dph 0.0013
+dph 0.0006
+dph 0.0003
+dph 0.0005
+dph -0.0001
+dph -0.0007
+dph 0.0021
+dph 0.0003
+dph -0.0002
+dph 0.0004
+dph 0.0008
+dph 0.0006
+dph 0.0007
+dph 0.0003
+dph 0.0003
+dph 0.0013
+dph 0.0005
+dph 0.0007
+dph 0.0012
+dph 0.0002
+dph 0.0006
+dph 0.0010
+dph 0.0008
+dph -0.0013
+dph 0.0003
+dph 0.0010
+dph 0.0007
+dph 0.0003
+dph -0.0002
+dph 0.0008
+dph 0.0009
+dph 0.0004
+dph 0.0018
+dph -0.0018
+dph 0.0006
+dph 0.0006
+dph 0.0006
+dph 0.0001
+dph 0.0004
+dph 0.0047
+dph 0.0006
+dph 0.0003
+dph -0.0000
+dph 0.0006
+dph 0.0009
+dph 0.0013
+dph 0.0006
+dph 0.0005
+dph 0.0008
+dph 0.0009
+dph 0.0001
+dph 0.0020
+dph -0.0007
+dph 0.0008
+dph 0.0005
+dph 0.0010
+dph 0.0006
+dph 0.0007
+dph 0.0008
+dph 0.0005
+dph 0.0008
+dph 0.0003
+dph -0.0000
+dph 0.0006
+dph 0.0002
+dph 0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0003
+dph 0.0001
+dph 0.0017
+dph 0.0004
+dph 0.0013
+dph 0.0006
+dph 0.0004
+dph 0.0006
+dph 0.0005
+dph 0.0003
+dph -0.0002
+dph 0.0006
+dph 0.0004
+dph 0.0008
+dph 0.0014
+dph 0.0006
+dph 0.0005
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0016
+dph 0.0007
+dph 0.0004
+dph 0.0001
+dph 0.0004
+dph 0.0008
+dph 0.0005
+dph -0.0001
+dph 0.0004
+dph 0.0004
+dph -0.0000
+dph 0.0008
+dph 0.0004
+dph 0.0003
+dph 0.0007
+dph 0.0007
+dph 0.0006
+dph 0.0006
+dph 0.0001
+dph 0.0008
+dph 0.0005
+dph 0.0002
+dph 0.0007
+dph 0.0002
+dph 0.0004
+dph 0.0007
+dph 0.0006
+dph -0.0003
+dph 0.0009
+dph 0.0018
+dph 0.0009
+dph 0.0008
+dph 0.0007
+dph 0.0000
+dph 0.0008
+dph 0.0006
+dph 0.0006
+dph 0.0015
+dph 0.0011
+dph 0.0004
+dph 0.0000
+dph 0.0001
+dph 0.0002
+dph 0.0002
+dph 0.0010
+dph 0.0007
+dph -0.0013
+dph 0.0008
+dph 0.0003
+dph 0.0001
+dph 0.0002
+dph 0.0007
+dph -0.0006
+dph 0.0005
+dph 0.0003
+dph 0.0008
+dph 0.0005
+dph 0.0007
+dph 0.0013
+dph 0.0005
+dph 0.0002
+dph 0.0006
+dph 0.0000
+dph 0.0010
+dph 0.0005
+dph -0.0005
+dph 0.0012
+dph 0.0018
+dph 0.0005
+dph 0.0003
+dph 0.0008
+dph 0.0013
+dph 0.0004
+dph 0.0001
+dph 0.0006
+dph 0.0011
+dph 0.0010
+dph 0.0009
+dph 0.0012
+dph 0.0006
+dph 0.0007
+dph 0.0007
+dph 0.0004
+dph 0.0016
+dph 0.0014
+dph 0.0010
+dph 0.0018
+dph 0.0002
+dph 0.0010
+dph 0.0007
+dph 0.0014
+dph 0.0004
+dph 0.0009
+dph 0.0005
+dph 0.0001
+dph 0.0001
+dph 0.0000
+dph 0.0008
+dph -0.0012
+dph 0.0006
+dph 0.0013
+dph 0.0008
+dph 0.0041
+dph -0.0000
+dph 0.0001
+dph 0.0001
+dph 0.0000
+dph 0.0006
+dph 0.0005
+dph 0.0017
+dph 0.0005
+dph -0.0006
+dph 0.0009
+dph 0.0010
+dph 0.0005
+dph 0.0009
+dph 0.0008
+dph -0.0007
+dph 0.0004
+dph 0.0002
+dph 0.0010
+dph 0.0004
+dph 0.0003
+dph 0.0005
+dph 0.0010
+dph 0.0007
+dph 0.0007
+dph 0.0002
+dph 0.0006
+dph 0.0007
+dph 0.0008
+dph 0.0009
+dph 0.0039
+dph -0.0000
+dph 0.0004
+dph -0.0004
+dph 0.0005
+dph 0.0007
+dph 0.0003
+dph 0.0005
+dph 0.0005
+dph 0.0002
+dph 0.0006
+dph -0.0014
+dph 0.0006
+dph 0.0006
+dph 0.0010
+dph 0.0003
+dph -0.0006
+dph 0.0006
+dph 0.0004
+dph 0.0006
+dph 0.0008
+dph 0.0018
+dph 0.0008
+dph 0.0017
+dph -0.0009
+dph -0.0074
+dph 0.0006
+dph 0.0007
+dph 0.0001
+dph 0.0006
+dph 0.0005
+dph 0.0026
+dph -0.0000
+dph 0.0007
+dph 0.0002
+dph 0.0004
+dph 0.0007
+dph 0.0004
+dph 0.0006
+dph 0.0014
+dph -0.0008
+dph 0.0017
+dph 0.0006
+dph 0.0009
+dph 0.0003
+dph 0.0007
+dph 0.0006
+dph -0.0001
+dph 0.0008
+dph 0.0003
+dph 0.0006
+dph 0.0018
+dph 0.0012
+dph 0.0006
+dph 0.0004
+dph -0.0002
+dph 0.0009
+dph 0.0008
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0002
+dph 0.0008
+dph 0.0006
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph 0.0010
+dph 0.0004
+dph 0.0001
+dph 0.0002
+dph 0.0005
+dph 0.0004
+dph 0.0004
+dph -0.0001
+dph 0.0004
+dph 0.0005
+dph 0.0007
+dph 0.0040
+dph 0.0009
+dph 0.0001
+dph 0.0001
+dph 0.0002
+dph 0.0003
+dph 0.0006
+dph -0.0000
+dph 0.0015
+dph 0.0003
+dph 0.0009
+dph 0.0027
+dph 0.0004
+dph 0.0023
+dph 0.0008
+dph 0.0003
+dph 0.0002
+dph 0.0008
+dph 0.0012
+dph 0.0015
+dph 0.0016
+dph 0.0006
+dph 0.0010
+dph 0.0008
+dph 0.0005
+dph 0.0000
+dph 0.0005
+dph 0.0001
+dph 0.0001
+dph 0.0009
+dph 0.0002
+dph -0.0005
+dph 0.0006
+dph -0.0015
+dph 0.0003
+dph -0.0092
+dph 0.0014
+dph 0.0001
+dph 0.0002
+dph 0.0004
+dph 0.0004
+dph 0.0007
+dph 0.0002
+dph 0.0003
+dph 0.0019
+dph 0.0004
+dph 0.0002
+dph 0.0008
+dph 0.0006
+dph 0.0002
+dph 0.0008
+dph 0.0007
+dph -0.0003
+dph 0.0009
+dph 0.0008
+dph 0.0007
+dph 0.0000
+dph 0.0005
+dph 0.0003
+dph 0.0014
+dph 0.0012
+dph -0.0007
+dph 0.0002
+dph 0.0005
+dph 0.0010
+dph 0.0006
+dph 0.0005
+dph 0.0003
+dph 0.0006
+dph -0.0009
+dph 0.0008
+dph 0.0007
+dph -0.0007
+dph 0.0009
+dph 0.0003
+dph 0.0007
+dph 0.0002
+dph 0.0013
+dph 0.0002
+dph 0.0010
+dph 0.0005
+dph 0.0004
+dph -0.0002
+dph -0.0010
+dph 0.0004
+dph 0.0005
+dph 0.0009
+dph 0.0004
+dph -0.0006
+dph 0.0009
+dph 0.0016
+dph 0.0006
+dph 0.0008
+dph 0.0005
+dph 0.0009
+dph -0.0000
+dph 0.0008
+dph 0.0017
+dph 0.0007
+dph 0.0008
+dph 0.0008
+dph 0.0000
+dph 0.0004
+dph 0.0005
+dph 0.0007
+dph 0.0004
+dph 0.0011
+dph 0.0009
+dph 0.0003
+dph -0.0002
+dph 0.0003
+dph 0.0005
+dph 0.0006
+dph 0.0005
+dph -0.0035
+dph 0.0003
+dph 0.0006
+dph -0.0003
+dph -0.0006
+dph -0.0002
+dph 0.0007
+dph 0.0009
+dph 0.0012
+dph -0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0006
+dph -0.0002
+dph 0.0008
+dph 0.0009
+dph 0.0016
+dph 0.0009
+dph 0.0013
+dph 0.0008
+dph 0.0017
+dph 0.0004
+dph 0.0003
+dph 0.0003
+dph -0.0002
+dph 0.0007
+dph 0.0012
+dph 0.0006
+dph 0.0004
+dph 0.0004
+dph -0.0000
+dph 0.0005
+dph 0.0006
+dph 0.0005
+dph 0.0018
+dph 0.0003
+dph 0.0003
+dph 0.0009
+dph 0.0005
+dph 0.0006
+dph 0.0015
+dph 0.0007
+dph -0.0001
+dph 0.0007
+dph 0.0014
+dph 0.0008
+dph 0.0005
+dph 0.0008
+dph 0.0017
+dph 0.0011
+dph 0.0005
+dph 0.0009
+dph 0.0005
+dph 0.0006
+dph -0.0004
+dph 0.0008
+dph 0.0014
+dph 0.0008
+dph 0.0008
+dph 0.0004
+dph 0.0003
+dph 0.0008
+dph 0.0016
+dph 0.0009
+dph 0.0005
+dph 0.0003
+dph 0.0002
+dph -0.0006
+dph -0.0001
+dph -0.0009
+dph 0.0008
+dph 0.0006
+dph 0.0005
+dph -0.0001
+dph 0.0003
+dph 0.0007
+dph -0.0002
+dph 0.0003
+dph 0.0002
+dph 0.0004
+dph 0.0012
+dph 0.0004
+dph 0.0004
+dph 0.0013
+dph 0.0001
+dph 0.0009
+dph 0.0009
+dph -0.0002
+dph -0.0005
+dph 0.0017
+dph 0.0003
+dph -0.0009
+dph -0.0006
+dph -0.0004
+dph -0.0004
+dph 0.0009
+dph 0.0005
+dph 0.0004
+dph 0.0004
+dph 0.0003
+dph 0.0008
+dph 0.0003
+dph 0.0005
+dph 0.0006
+dph 0.0005
+dph 0.0007
+dph 0.0003
+dph 0.0005
+dph 0.0005
+dph 0.0004
+dph 0.0005
+dph 0.0007
+dph -0.0006
+dph 0.0010
+dph -0.0036
+dph 0.0005
+dph 0.0006
+dph 0.0007
+dph 0.0008
+dph 0.0004
+dph -0.0004
+dph 0.0004
+dph 0.0004
+dph -0.0002
+dph 0.0005
+dph 0.0008
+dph 0.0003
+dph 0.0013
+dph 0.0009
+dph 0.0008
+dph 0.0006
+dph 0.0007
+dph 0.0008
+dph 0.0005
+dph 0.0019
+dph -0.0004
+dph 0.0003
+dph 0.0008
+dph 0.0005
+dph 0.0005
+dph 0.0004
+dph 0.0008
+dph 0.0007
+dph -0.0003
+dph 0.0005
+dph 0.0005
+dph 0.0001
+dph 0.0059
+dph 0.0007
+dph 0.0000
+dph 0.0004
+dph 0.0001
+dph 0.0012
+dph -0.0003
+dph 0.0002
+dph 0.0005
+dph 0.0007
+dph 0.0005
+dph -0.0007
+dph 0.0008
+dph 0.0005
+dph 0.0006
+dph 0.0004
+dph 0.0007
+dph 0.0005
+dph 0.0013
+dph -0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0009
+dph 0.0003
+dph 0.0006
+dph 0.0007
+dph 0.0005
+dph 0.0000
+dph 0.0009
+dph 0.0003
+dph 0.0005
+dph 0.0000
+dph 0.0000
+dph 0.0006
+dph 0.0005
+dph 0.0014
+dph 0.0005
+dph 0.0015
+dph 0.0001
+dph 0.0016
+dph 0.0003
+dph 0.0005
+dph 0.0007
+dph 0.0010
+dph 0.0005
+dph -0.0002
+dph 0.0001
+dph 0.0000
+dph 0.0009
+dph 0.0011
+dph 0.0010
+dph 0.0005
+dph 0.0013
+dph 0.0012
+dph 0.0004
+dph 0.0004
+dph 0.0009
+dph 0.0004
+dph 0.0009
+dph 0.0001
+dph -0.0014
+dph 0.0012
+dph 0.0002
+dph 0.0005
+dph 0.0028
+dph 0.0005
+dph 0.0006
+dph 0.0007
+dph 0.0018
+dph -0.0001
+dph 0.0003
+dph -0.0005
+dph -0.0051
+dph 0.0008
+dph 0.0005
+dph 0.0007
+dph 0.0011
+dph -0.0001
+dph 0.0002
+dph 0.0006
+dph 0.0008
+dph 0.0003
+dph 0.0007
+dph 0.0005
+dph 0.0012
+dph 0.0007
+dph 0.0007
+dph -0.0000
+dph 0.0006
+dph 0.0005
+dph 0.0010
+dph 0.0009
+dph 0.0013
+dph 0.0008
+dph 0.0009
+dph 0.0009
+dph 0.0008
+dph 0.0007
+dph 0.0002
+dph 0.0001
+dph 0.0007
+dph 0.0007
+dph 0.0006
+dph 0.0018
+dph -0.0007
+dph 0.0002
+dph 0.0007
+dph 0.0003
+dph 0.0007
+dph 0.0002
+dph 0.0006
+dph 0.0006
+dph 0.0005
+dph 0.0004
+dph 0.0010
+dph 0.0007
+dph 0.0006
+dph 0.0010
+dph 0.0007
+dph 0.0009
+dph -0.0000
+dph 0.0002
+dph 0.0004
+dph 0.0016
+dph 0.0004
+dph 0.0008
+dph 0.0002
+dph 0.0009
+dph 0.0010
+dph 0.0003
+dph -0.0006
+dph 0.0007
+dph 0.0008
+dph 0.0007
+dph 0.0003
+dph 0.0004
+dph 0.0001
+dph 0.0007
+dph 0.0005
+dph 0.0007
+dph 0.0007
+dph -0.0005
+dph 0.0007
+dph 0.0013
+dph 0.0018
+dph 0.0007
+dph 0.0007
+dph 0.0005
+dph 0.0006
+dph 0.0008
+dph 0.0008
+dph 0.0004
+dph 0.0007
+dph 0.0013
+dph 0.0009
+dph 0.0001
+dph 0.0002
+dph 0.0005
+dph 0.0011
+dph -0.0001
+dph 0.0000
+dph 0.0001
+dph 0.0003
+dph 0.0007
+dph 0.0011
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0006
+dph 0.0006
+dph 0.0008
+dph 0.0003
+dph 0.0006
+dph 0.0007
+dph 0.0005
+dph 0.0005
+dph 0.0017
+dph 0.0014
+dph 0.0008
+dph 0.0011
+dph 0.0007
+dph 0.0004
+dph 0.0004
+dph 0.0009
+dph 0.0009
+dph 0.0004
+dph 0.0005
+dph 0.0007
+dph -0.0001
+dph 0.0014
+dph 0.0005
+dph 0.0005
+dph 0.0005
+dph -0.0001
+dph 0.0005
+dph 0.0006
+dph 0.0008
+dph 0.0005
+dph 0.0008
+dph 0.0011
+dph 0.0010
+dph 0.0014
+dph 0.0006
+dph 0.0014
+dph 0.0008
+dph 0.0007
+dph -0.0009
+dph 0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0004
+dph 0.0006
+dph 0.0009
+dph 0.0006
+dph 0.0019
+dph 0.0004
+dph 0.0015
+dph 0.0018
+dph 0.0010
+dph -0.0001
+dph 0.0006
+dph -0.0002
+dph 0.0005
+dph 0.0016
+dph 0.0015
+dph 0.0006
+dph 0.0004
+dph 0.0009
+dph 0.0006
+dph -0.0003
+dph 0.0000
+dph 0.0003
+dph 0.0002
+dph 0.0006
+dph 0.0003
+dph 0.0011
+dph 0.0006
+dph 0.0001
+dph 0.0006
+dph -0.0002
+dph -0.0002
+dph 0.0006
+dph 0.0006
+dph 0.0007
+dph 0.0003
+dph 0.0011
+dph 0.0003
+dph 0.0007
+dph 0.0007
+dph 0.0008
+dph 0.0005
+dph 0.0003
+dph 0.0005
+dph 0.0005
+dph 0.0006
+dph 0.0011
+dph 0.0008
+dph 0.0009
+dph 0.0015
+dph 0.0005
+dph -0.0007
+dph 0.0005
+dph 0.0009
+dph 0.0007
+dph 0.0015
+dph 0.0010
+dph 0.0007
+dph -0.0003
+dph -0.0002
+dph 0.0004
+dph 0.0003
+dph 0.0013
+dph 0.0008
+dph 0.0002
+dph 0.0007
+dph 0.0002
+dph 0.0001
+dph 0.0008
+dph 0.0009
+dph 0.0006
+dph 0.0010
+dph 0.0028
+dph 0.0003
+dph 0.0005
+dph 0.0010
+dph 0.0000
+dph 0.0004
+dph 0.0002
+dph -0.0004
+dph 0.0010
+dph 0.0017
+dph -0.0001
+dph 0.0010
+dph 0.0004
+dph -0.0002
+dph 0.0011
+dph 0.0008
+dph 0.0005
+dph 0.0009
+dph 0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0004
+dph 0.0009
+dph 0.0007
+dph 0.0037
+dph 0.0010
+dph -0.0001
+dph 0.0006
+dph 0.0007
+dph 0.0006
+dph 0.0007
+dph 0.0002
+dph 0.0006
+dph -0.0005
+dph 0.0008
+dph 0.0020
+dph 0.0005
+dph 0.0011
+dph -0.0000
+dph 0.0006
+dph 0.0004
+dph 0.0001
+dph 0.0005
+dph 0.0003
+dph -0.0002
+dph 0.0004
+dph 0.0021
+dph 0.0003
+dph 0.0003
+dph 0.0005
+dph 0.0009
+dph 0.0011
+dph 0.0011
+dph -0.0006
+dph 0.0003
+dph 0.0002
+dph 0.0009
+dph 0.0009
+dph 0.0031
+dph -0.0001
+dph -0.0007
+dph 0.0005
+dph -0.0003
+dph 0.0021
+dph 0.0010
+dph 0.0010
+dph 0.0007
+dph 0.0001
+dph 0.0010
+dph 0.0002
+dph 0.0005
+dph 0.0011
+dph 0.0001
+dph 0.0007
+dph 0.0003
+dph 0.0005
+dph 0.0004
+dph 0.0009
+dph 0.0001
+dph 0.0003
+dph 0.0012
+dph 0.0007
+dph 0.0007
+dph 0.0006
+dph 0.0005
+dph 0.0007
+dph 0.0004
+dph 0.0014
+dph 0.0013
+dph -0.0004
+dph 0.0004
+dph 0.0008
+dph 0.0001
+dph 0.0005
+dph 0.0011
+dph 0.0009
+dph -0.0005
+dph -0.0003
+dph 0.0003
+dph 0.0008
+dph 0.0010
+dph 0.0009
+dph 0.0025
+dph -0.0001
+dph 0.0008
+dph -0.0002
+dph -0.0011
+dph -0.0000
+dph 0.0008
+dph 0.0009
+dph 0.0003
+dph 0.0004
+dph 0.0015
+dph 0.0006
+dph 0.0000
+dph 0.0016
+dph 0.0004
+dph 0.0016
+dph 0.0005
+dph 0.0007
+dph 0.0012
+dph 0.0011
+dph 0.0010
+dph 0.0002
+dph 0.0007
+dph 0.0006
+dph -0.0009
+dph 0.0014
+dph -0.0002
+dph 0.0006
+dph 0.0024
+dph 0.0003
+dph -0.0003
+dph 0.0015
+dph 0.0009
+52.5995	+	0.0000i
+5.2001	+	0.0001i
+2.9802	+	-0.0004i
+1.6097	+	0.0001i
+0.5630	+	-0.0004i
+-0.2712	+	0.0001i
+1.0436	+	-0.0003i
+1.3916	+	0.0001i
+0.1564	+	-0.0003i
+-1.1267	+	0.0001i
+-1.8367	+	-0.0000i
+-0.3182	+	0.0001i
+-1.9254	+	-0.0002i
+0.0484	+	0.0000i
+-0.0444	+	-0.0002i
+0.7356	+	0.0003i
+0.6119	+	-0.0001i
+-0.9938	+	-0.0002i
+-0.5434	+	0.0002i
+-1.7546	+	-0.0001i
+-0.0667	+	-0.0001i
+-0.6340	+	-0.0003i
+1.9555	+	0.0001i
+-0.5511	+	0.0003i
+2.7615	+	-0.0002i
+1.1571	+	-0.0001i
+0.3403	+	0.0000i
+0.7665	+	0.0003i
+-1.6113	+	-0.0002i
+0.7977	+	-0.0001i
+0.1540	+	0.0001i
+-0.6442	+	0.0001i
+0.8100	+	-0.0001i
+0.1394	+	-0.0000i
+-0.2457	+	0.0001i
+-0.7618	+	0.0001i
+-0.3147	+	0.0000i
+0.1371	+	0.0000i
+0.7046	+	-0.0000i
+0.0836	+	0.0001i
+-0.5649	+	-0.0002i
+0.4277	+	-0.0000i
+-0.4110	+	0.0002i
+-0.2056	+	-0.0001i
+0.1743	+	0.0001i
+0.9579	+	-0.0001i
+0.0423	+	-0.0003i
+-0.5695	+	-0.0001i
+-2.1573	+	0.0000i
+-0.7773	+	-0.0002i
+1.4640	+	0.0001i
+0.6523	+	-0.0003i
+0.5969	+	-0.0001i
+-0.1386	+	0.0001i
+1.6626	+	-0.0001i
+2.2594	+	-0.0001i
+1.4527	+	-0.0001i
+0.4488	+	0.0002i
+2.2377	+	0.0002i
+0.1250	+	-0.0000i
+0.9100	+	-0.0001i
+1.5994	+	-0.0002i
+1.5549	+	0.0002i
+1.7498	+	-0.0000i
+-0.4644	+	-0.0000i
+0.5819	+	0.0001i
+1.0847	+	-0.0000i
+1.2723	+	0.0001i
+1.1600	+	-0.0000i
+1.1094	+	-0.0003i
+-0.7879	+	-0.0000i
+-2.7857	+	-0.0002i
+-1.3983	+	0.0001i
+-0.3895	+	-0.0004i
+-0.2910	+	0.0000i
+-0.2311	+	-0.0000i
+-0.4137	+	-0.0001i
+-0.9493	+	0.0001i
+-1.1619	+	-0.0001i
+0.1972	+	-0.0002i
+-0.5670	+	0.0000i
+-0.0501	+	-0.0001i
+-0.1759	+	0.0001i
+0.6773	+	-0.0001i
+2.4343	+	-0.0001i
+2.2887	+	-0.0002i
+0.7844	+	-0.0001i
+0.4290	+	0.0002i
+0.1569	+	-0.0001i
+-1.7148	+	0.0002i
+-0.8531	+	-0.0002i
+-0.2780	+	0.0001i
+-0.7532	+	-0.0001i
+-1.7164	+	0.0000i
+-0.9131	+	0.0000i
+1.7447	+	0.0000i
+0.5171	+	-0.0002i
+1.5654	+	-0.0000i
+-0.8730	+	-0.0000i
+0.2291	+	-0.0002i
+0.9850	+	-0.0001i
+1.8101	+	0.0002i
+0.2409	+	-0.0002i
+0.4064	+	0.0000i
+-1.9091	+	0.0000i
+0.5089	+	-0.0000i
+-0.0630	+	0.0001i
+0.6689	+	-0.0000i
+1.1556	+	-0.0001i
+1.3594	+	-0.0000i
+0.5768	+	0.0001i
+1.4312	+	-0.0001i
+1.3509	+	-0.0000i
+0.1127	+	0.0001i
+0.3351	+	0.0002i
+-0.1998	+	0.0001i
+-1.6550	+	0.0000i
+0.9288	+	-0.0001i
+0.8317	+	0.0002i
+1.2108	+	0.0001i
+-1.1741	+	0.0000i
+0.4371	+	-0.0000i
+0.6420	+	0.0000i
+-0.4512	+	-0.0003i
+-0.8563	+	0.0001i
+-0.3259	+	0.0003i
+-0.1660	+	0.0000i
+0.7011	+	0.0003i
+0.0280	+	-0.0001i
+0.1907	+	-0.0000i
+0.1493	+	0.0001i
+0.3485	+	0.0001i
+1.5894	+	-0.0002i
+1.3107	+	0.0000i
+1.4492	+	0.0001i
+-0.7391	+	-0.0003i
+-0.3517	+	-0.0000i
+-1.4688	+	-0.0000i
+-0.6213	+	0.0001i
+1.5209	+	-0.0001i
+0.6981	+	0.0001i
+1.3526	+	-0.0001i
+-0.1810	+	-0.0002i
+0.0421	+	-0.0000i
+0.6135	+	0.0000i
+0.6146	+	-0.0002i
+1.1414	+	-0.0002i
+0.7158	+	0.0001i
+1.3072	+	-0.0001i
+1.0179	+	-0.0001i
+1.7119	+	0.0000i
+-0.0404	+	-0.0001i
+1.0802	+	0.0001i
+1.1457	+	0.0001i
+0.1373	+	0.0001i
+-0.2490	+	-0.0003i
+-0.7343	+	-0.0001i
+0.4592	+	-0.0004i
+-0.2705	+	0.0001i
+0.3762	+	0.0002i
+0.8625	+	-0.0000i
+-1.9411	+	-0.0001i
+-2.0078	+	0.0000i
+2.2780	+	-0.0000i
+1.6051	+	0.0000i
+-0.2059	+	-0.0001i
+1.0766	+	0.0001i
+-1.0884	+	0.0001i
+1.0550	+	0.0000i
+0.4673	+	-0.0001i
+-0.2481	+	-0.0001i
+0.4556	+	-0.0001i
+1.7326	+	0.0001i
+-0.7936	+	0.0001i
+0.0922	+	-0.0001i
+-0.5294	+	0.0000i
+0.9039	+	-0.0000i
+0.6437	+	0.0002i
+-0.2389	+	0.0001i
+-1.6148	+	-0.0001i
+-0.0562	+	0.0000i
+-0.9359	+	-0.0003i
+-0.3693	+	0.0000i
+1.6882	+	-0.0001i
+1.0601	+	0.0000i
+2.2414	+	-0.0002i
+-1.1656	+	-0.0001i
+-0.4189	+	0.0003i
+-1.0474	+	0.0000i
+1.2668	+	0.0000i
+1.2723	+	-0.0001i
+0.5355	+	0.0002i
+0.6828	+	-0.0002i
+0.2103	+	0.0003i
+1.1289	+	0.0002i
+-2.1088	+	0.0002i
+1.0987	+	-0.0000i
+0.9740	+	-0.0000i
+-0.0037	+	0.0001i
+-0.8847	+	0.0001i
+-0.5884	+	-0.0001i
+-1.1287	+	0.0002i
+0.5044	+	-0.0001i
+-1.2502	+	-0.0001i
+1.4192	+	-0.0002i
+0.2139	+	-0.0000i
+0.3100	+	0.0001i
+0.2280	+	-0.0001i
+-0.0242	+	0.0000i
+0.8947	+	-0.0001i
+1.1045	+	-0.0000i
+0.2974	+	0.0000i
+0.8297	+	-0.0001i
+-0.2887	+	-0.0002i
+0.4563	+	0.0003i
+-0.4039	+	-0.0002i
+-0.4732	+	0.0001i
+1.3500	+	-0.0000i
+-1.2271	+	0.0001i
+-1.5948	+	0.0001i
+-0.6770	+	0.0001i
+0.3786	+	-0.0003i
+-0.1455	+	-0.0000i
+-2.5282	+	-0.0000i
+0.1721	+	-0.0001i
+1.5966	+	-0.0002i
+1.1317	+	0.0001i
+-1.4373	+	-0.0001i
+1.1552	+	0.0000i
+-1.2527	+	-0.0002i
+0.7699	+	0.0000i
+-1.5743	+	0.0000i
+0.9774	+	-0.0001i
+-1.3452	+	0.0000i
+-0.2868	+	-0.0000i
+0.0083	+	0.0000i
+0.1245	+	-0.0000i
+1.2578	+	0.0000i
+-0.0544	+	-0.0001i
+1.3734	+	0.0002i
+-0.6302	+	0.0001i
+1.0297	+	-0.0001i
+2.0330	+	0.0001i
+-0.6358	+	0.0000i
+1.2060	+	-0.0000i
+0.7259	+	-0.0000i
+0.3794	+	-0.0001i
+0.5501	+	0.0000i
+1.1684	+	-0.0001i
+1.7220	+	0.0001i
+1.7260	+	0.0001i
+0.6032	+	0.0001i
+-0.0462	+	0.0001i
+-1.0817	+	0.0001i
+0.4015	+	0.0000i
+0.9980	+	0.0000i
+-0.2108	+	-0.0003i
+0.3173	+	-0.0000i
+0.8508	+	-0.0002i
+2.4355	+	-0.0000i
+2.3946	+	-0.0000i
+1.0647	+	-0.0002i
+0.0548	+	0.0001i
+1.0330	+	-0.0003i
+1.5677	+	-0.0000i
+-1.1705	+	0.0002i
+0.4260	+	0.0000i
+2.1083	+	0.0000i
+0.4594	+	0.0001i
+-0.5718	+	0.0000i
+1.3717	+	-0.0001i
+-1.2816	+	-0.0002i
+-0.9774	+	0.0000i
+-0.1183	+	0.0001i
+0.2309	+	-0.0001i
+-1.4010	+	0.0001i
+0.0845	+	-0.0001i
+-1.0970	+	0.0001i
+0.7802	+	-0.0000i
+-1.4691	+	-0.0001i
+-2.3067	+	-0.0001i
+-2.2657	+	-0.0002i
+-1.1540	+	-0.0000i
+-2.6078	+	0.0001i
+0.1253	+	-0.0000i
+-0.1970	+	0.0001i
+-0.3124	+	-0.0001i
+-1.5891	+	0.0003i
+-1.3389	+	-0.0001i
+-0.4546	+	0.0001i
+-0.5155	+	-0.0000i
+1.8763	+	-0.0002i
+0.5009	+	-0.0002i
+-0.6436	+	-0.0002i
+0.7254	+	-0.0001i
+0.3328	+	-0.0005i
+-0.8947	+	-0.0000i
+-2.4657	+	-0.0000i
+0.4893	+	-0.0001i
+-1.1787	+	-0.0001i
+-2.0301	+	-0.0000i
+-0.3328	+	0.0001i
+-2.0857	+	0.0001i
+0.0293	+	-0.0000i
+0.6478	+	-0.0001i
+0.3337	+	0.0001i
+1.1714	+	-0.0001i
+0.4920	+	0.0003i
+-1.1990	+	-0.0000i
+1.1202	+	-0.0004i
+1.4386	+	0.0000i
+-0.6152	+	0.0001i
+0.3442	+	0.0000i
+-1.9241	+	0.0002i
+-2.1256	+	-0.0000i
+-2.6902	+	-0.0000i
+-2.1521	+	-0.0000i
+-0.2136	+	-0.0001i
+0.4614	+	-0.0001i
+1.0211	+	0.0001i
+0.7124	+	-0.0000i
+0.7982	+	0.0001i
+0.1473	+	0.0001i
+0.0574	+	-0.0003i
+0.6568	+	0.0002i
+-0.4530	+	0.0001i
+-1.0424	+	0.0001i
+-0.8920	+	-0.0002i
+-0.6681	+	-0.0001i
+-1.0104	+	0.0001i
+0.0572	+	0.0001i
+-2.1954	+	0.0002i
+-2.4225	+	-0.0000i
+-1.4208	+	0.0001i
+0.8685	+	0.0001i
+-1.4668	+	-0.0002i
+1.3060	+	-0.0001i
+0.2012	+	0.0001i
+-1.9106	+	-0.0002i
+0.5228	+	0.0002i
+0.0917	+	0.0001i
+2.0872	+	0.0001i
+1.2551	+	0.0000i
+1.2796	+	0.0000i
+1.7504	+	-0.0003i
+0.5537	+	-0.0000i
+0.6875	+	-0.0000i
+-0.0157	+	0.0000i
+-0.1096	+	-0.0000i
+-0.8833	+	0.0001i
+-0.3536	+	0.0002i
+-0.2309	+	-0.0001i
+0.2288	+	-0.0000i
+0.2069	+	0.0001i
+1.1169	+	0.0001i
+-0.2878	+	0.0001i
+-0.3297	+	0.0000i
+-1.4742	+	-0.0001i
+-0.2071	+	-0.0002i
+0.3701	+	0.0001i
+-1.7100	+	0.0001i
+-0.8252	+	-0.0001i
+-0.6941	+	-0.0001i
+1.9435	+	-0.0001i
+-1.9755	+	0.0001i
+-0.5143	+	0.0002i
+-0.3148	+	-0.0001i
+-0.1936	+	0.0001i
+0.9194	+	-0.0000i
+-0.5198	+	-0.0000i
+-1.1304	+	-0.0000i
+-1.4221	+	0.0001i
+-1.8775	+	0.0001i
+0.2635	+	-0.0002i
+-0.3596	+	-0.0001i
+-0.7519	+	-0.0001i
+-2.2518	+	0.0001i
+-0.2683	+	-0.0000i
+0.8326	+	0.0000i
+0.5738	+	-0.0000i
+0.0393	+	0.0000i
+-0.7522	+	-0.0000i
+-0.3201	+	-0.0003i
+-1.2130	+	0.0002i
+-0.7644	+	-0.0002i
+-0.1361	+	0.0003i
+-0.4262	+	-0.0000i
+0.7445	+	0.0000i
+0.7823	+	-0.0000i
+0.1124	+	-0.0000i
+-0.1483	+	-0.0000i
+-0.7049	+	-0.0001i
+-1.4549	+	0.0001i
+0.9823	+	0.0000i
+-0.0150	+	0.0001i
+0.1021	+	0.0000i
+1.8792	+	0.0001i
+0.4112	+	0.0003i
+1.1745	+	-0.0002i
+-1.2695	+	0.0000i
+0.8775	+	0.0001i
+1.2247	+	0.0001i
+-0.8280	+	-0.0001i
+0.4551	+	-0.0001i
+-1.1131	+	-0.0001i
+-0.5564	+	0.0002i
+1.5731	+	-0.0003i
+-0.9091	+	0.0000i
+1.3334	+	-0.0001i
+0.7687	+	0.0001i
+-1.3439	+	0.0001i
+0.3143	+	-0.0002i
+0.3644	+	-0.0000i
+-0.7823	+	0.0001i
+-2.0602	+	0.0002i
+-2.5038	+	-0.0002i
+-2.6243	+	0.0001i
+-0.9076	+	-0.0001i
+2.2008	+	-0.0002i
+1.8780	+	-0.0001i
+0.1713	+	0.0001i
+-0.5789	+	-0.0000i
+0.1309	+	0.0001i
+0.0086	+	0.0000i
+0.0718	+	-0.0000i
+1.8664	+	-0.0000i
+1.6196	+	0.0001i
+-0.6178	+	0.0001i
+-0.9260	+	-0.0001i
+-2.2703	+	0.0002i
+-0.6513	+	0.0000i
+-0.1735	+	0.0002i
+-0.0277	+	0.0000i
+-0.4288	+	0.0002i
+-1.4623	+	0.0001i
+0.2628	+	0.0002i
+-0.9970	+	-0.0002i
+-1.1885	+	0.0002i
+-0.9493	+	-0.0000i
+-0.7927	+	-0.0001i
+-1.4708	+	0.0000i
+-1.0303	+	-0.0002i
+-0.7378	+	0.0001i
+0.5995	+	0.0001i
+-0.9963	+	-0.0001i
+0.4329	+	0.0001i
+-1.9926	+	0.0001i
+0.5271	+	-0.0001i
+-1.3824	+	0.0000i
+0.4675	+	-0.0002i
+-0.8126	+	-0.0001i
+2.1602	+	-0.0000i
+-1.0166	+	0.0001i
+-0.2645	+	-0.0001i
+-0.3974	+	-0.0001i
+-0.1011	+	-0.0000i
+0.3551	+	0.0000i
+-0.5732	+	-0.0000i
+0.1397	+	0.0002i
+-0.2915	+	-0.0001i
+-1.3920	+	0.0001i
+-1.0765	+	-0.0000i
+0.8286	+	-0.0003i
+-0.5113	+	0.0001i
+-0.0751	+	0.0000i
+-0.7470	+	-0.0001i
+-2.1607	+	0.0001i
+-2.0806	+	-0.0000i
+0.1699	+	-0.0001i
+0.6496	+	-0.0001i
+-0.5397	+	-0.0002i
+-1.2275	+	0.0001i
+1.4054	+	-0.0001i
+0.9015	+	-0.0000i
+0.9312	+	0.0000i
+0.4523	+	-0.0002i
+0.5710	+	-0.0001i
+-1.9478	+	0.0003i
+-0.0119	+	0.0002i
+-0.4478	+	0.0000i
+0.8886	+	-0.0000i
+1.6658	+	0.0001i
+1.2242	+	-0.0001i
+-0.5771	+	0.0003i
+0.2215	+	-0.0001i
+1.4949	+	0.0002i
+1.2759	+	-0.0000i
+2.4096	+	0.0002i
+1.8289	+	-0.0002i
+-0.8427	+	0.0001i
+-1.5611	+	-0.0001i
+0.3133	+	0.0001i
+0.2565	+	0.0001i
+-0.2416	+	-0.0000i
+-1.8249	+	0.0000i
+-1.2354	+	0.0002i
+0.2075	+	0.0001i
+-1.7452	+	-0.0002i
+-2.5619	+	0.0000i
+0.1245	+	-0.0001i
+-0.5185	+	0.0002i
+-2.4027	+	0.0002i
+0.1619	+	-0.0001i
+0.9299	+	-0.0002i
+-0.6227	+	-0.0001i
+-0.6447	+	-0.0002i
+-0.7698	+	0.0002i
+-0.2419	+	0.0000i
+0.9467	+	0.0002i
+-0.4001	+	-0.0002i
+-1.4684	+	-0.0001i
+0.7505	+	-0.0003i
+-0.4695	+	0.0004i
+0.0090	+	-0.0002i
+-0.7717	+	0.0000i
+0.7269	+	-0.0001i
+0.8984	+	0.0003i
+1.8313	+	0.0001i
+0.6370	+	0.0002i
+-0.6250	+	-0.0001i
+0.2081	+	-0.0000i
+0.7463	+	-0.0002i
+-0.1142	+	0.0002i
+-1.8897	+	0.0002i
+-1.1147	+	-0.0002i
+-0.6786	+	-0.0000i
+0.5169	+	0.0000i
+1.6029	+	0.0001i
+0.3399	+	0.0001i
+-1.4085	+	0.0000i
+0.7420	+	0.0002i
+0.9510	+	0.0001i
+0.3334	+	0.0000i
+0.0669	+	0.0001i
+0.9500	+	0.0004i
+-1.6612	+	0.0000i
+0.0687	+	0.0000i
+-1.7431	+	-0.0001i
+-2.1117	+	0.0001i
+-1.2355	+	-0.0000i
+-1.1848	+	-0.0001i
+-1.1123	+	-0.0001i
+-1.6074	+	0.0001i
+-0.5488	+	0.0000i
+0.1222	+	-0.0000i
+-0.1969	+	-0.0002i
+-1.1326	+	0.0000i
+0.4800	+	-0.0001i
+0.9281	+	-0.0002i
+1.7213	+	0.0002i
+-1.0139	+	-0.0000i
+-1.0302	+	-0.0001i
+0.6776	+	0.0000i
+0.0092	+	-0.0003i
+-0.9389	+	0.0002i
+-0.0887	+	-0.0000i
+-1.5820	+	-0.0001i
+-0.9102	+	-0.0002i
+-1.4363	+	0.0000i
+-0.9238	+	0.0002i
+-2.0269	+	0.0001i
+-1.9027	+	-0.0001i
+-1.1936	+	0.0001i
+-2.0642	+	-0.0000i
+-1.3168	+	-0.0000i
+0.2552	+	-0.0002i
+0.0995	+	0.0001i
+-0.4016	+	-0.0001i
+0.7887	+	-0.0002i
+0.2626	+	0.0002i
+0.2321	+	-0.0002i
+-0.9462	+	0.0001i
+1.4588	+	-0.0001i
+1.1574	+	0.0004i
+-0.9175	+	0.0000i
+1.1125	+	-0.0000i
+-1.2419	+	-0.0001i
+1.5593	+	0.0002i
+-1.2349	+	-0.0001i
+-1.3303	+	0.0002i
+-1.1985	+	0.0000i
+-1.6809	+	0.0000i
+0.0706	+	0.0000i
+-1.2603	+	0.0001i
+-2.2863	+	-0.0001i
+0.3770	+	-0.0000i
+0.0458	+	-0.0001i
+-0.3418	+	-0.0001i
+-1.2448	+	0.0000i
+0.8212	+	-0.0001i
+1.0244	+	0.0001i
+0.0866	+	0.0001i
+-0.5098	+	0.0001i
+0.4324	+	-0.0000i
+0.7083	+	-0.0000i
+0.3156	+	0.0001i
+-0.0752	+	-0.0000i
+-0.9697	+	0.0000i
+-1.3811	+	0.0002i
+0.5502	+	0.0000i
+2.4773	+	-0.0002i
+1.8691	+	-0.0001i
+0.0651	+	0.0001i
+-0.9130	+	-0.0001i
+-2.0194	+	-0.0001i
+-1.4665	+	0.0001i
+-1.6064	+	0.0001i
+0.2192	+	-0.0003i
+-0.2067	+	-0.0001i
+-0.3806	+	0.0000i
+0.7980	+	0.0001i
+-0.9047	+	-0.0002i
+-0.1614	+	-0.0002i
+-1.2048	+	0.0001i
+-1.0789	+	-0.0000i
+-0.6669	+	0.0003i
+0.2927	+	0.0001i
+-1.8343	+	-0.0002i
+-1.3857	+	-0.0000i
+-1.8148	+	0.0002i
+0.3744	+	-0.0002i
+0.9074	+	-0.0001i
+-0.7442	+	-0.0000i
+0.4239	+	0.0000i
+-0.9048	+	0.0000i
+0.7051	+	0.0001i
+0.6471	+	0.0000i
+0.5455	+	0.0000i
+0.9160	+	0.0000i
+0.0129	+	-0.0003i
+-0.9064	+	0.0003i
+-0.0665	+	0.0000i
+1.6139	+	-0.0001i
+-0.1561	+	0.0001i
+-0.6957	+	0.0002i
+-0.3685	+	-0.0000i
+-0.0901	+	0.0003i
+0.8599	+	0.0000i
+-2.6306	+	0.0002i
+-1.1119	+	-0.0000i
+-0.5871	+	-0.0001i
+0.5114	+	-0.0001i
+-0.4372	+	0.0000i
+0.0929	+	0.0001i
+-0.6379	+	-0.0001i
+0.3948	+	-0.0004i
+-0.4309	+	-0.0002i
+0.7426	+	-0.0003i
+-0.6560	+	-0.0001i
+-0.4501	+	0.0001i
+-0.3603	+	-0.0001i
+-1.2957	+	0.0002i
+0.3879	+	0.0002i
+-0.2157	+	-0.0001i
+-0.0129	+	0.0001i
+0.1474	+	0.0000i
+-0.4540	+	0.0001i
+-0.2210	+	0.0000i
+0.0855	+	0.0001i
+1.1288	+	-0.0001i
+0.8242	+	0.0001i
+-1.7544	+	-0.0001i
+0.4891	+	0.0000i
+-0.3851	+	0.0001i
+1.1617	+	0.0000i
+-1.1717	+	0.0001i
+0.9473	+	0.0001i
+1.4310	+	-0.0002i
+-1.3912	+	0.0001i
+-1.3457	+	-0.0000i
+-2.4115	+	-0.0001i
+-1.5955	+	0.0002i
+0.2379	+	0.0002i
+-0.2184	+	-0.0001i
+-0.0526	+	0.0001i
+-2.2068	+	0.0003i
+-1.1741	+	-0.0000i
+-1.6607	+	-0.0000i
+-2.8891	+	0.0001i
+0.2761	+	-0.0001i
+0.9079	+	-0.0000i
+0.6895	+	-0.0001i
+1.2033	+	0.0000i
+-1.1565	+	0.0000i
+-1.5097	+	0.0003i
+-0.2036	+	0.0001i
+0.8723	+	0.0001i
+0.5276	+	0.0003i
+-0.2073	+	-0.0001i
+-1.0318	+	0.0000i
+-0.0341	+	0.0003i
+-1.1989	+	-0.0002i
+-0.7021	+	0.0003i
+-1.6848	+	0.0001i
+0.3550	+	-0.0001i
+0.8346	+	0.0002i
+2.2072	+	0.0001i
+2.6219	+	-0.0003i
+0.8361	+	-0.0001i
+-0.6956	+	-0.0001i
+-1.0539	+	-0.0002i
+-0.1957	+	-0.0002i
+1.1583	+	-0.0002i
+-0.2827	+	-0.0004i
+-0.6359	+	0.0000i
+-1.2356	+	-0.0002i
+0.1419	+	-0.0001i
+-1.0632	+	0.0000i
+0.3683	+	-0.0002i
+1.5942	+	0.0001i
+2.0815	+	-0.0000i
+-0.2493	+	0.0002i
+2.2287	+	-0.0004i
+0.0193	+	0.0003i
+0.5103	+	0.0000i
+-2.1525	+	0.0001i
+1.1976	+	-0.0000i
+1.1630	+	-0.0001i
+0.2947	+	-0.0000i
+-0.0960	+	0.0001i
+-0.1876	+	0.0001i
+0.8369	+	0.0001i
+-0.3578	+	0.0001i
+0.8153	+	0.0004i
+-1.2518	+	-0.0000i
+1.8566	+	-0.0000i
+-0.8014	+	0.0002i
+0.7835	+	0.0000i
+1.6157	+	-0.0000i
+0.6146	+	0.0004i
+0.3214	+	0.0002i
+-1.1184	+	-0.0001i
+1.5758	+	0.0001i
+0.8341	+	-0.0003i
+-1.0971	+	0.0002i
+-2.3581	+	0.0003i
+-0.6029	+	-0.0002i
+-0.5964	+	-0.0001i
+-0.4813	+	0.0002i
+0.5701	+	-0.0001i
+-0.4001	+	0.0001i
+-0.0304	+	0.0002i
+-0.9139	+	-0.0001i
+0.2777	+	-0.0000i
+-1.4827	+	-0.0000i
+-0.7920	+	-0.0002i
+-1.2348	+	-0.0000i
+-0.2017	+	-0.0001i
+-0.0679	+	-0.0000i
+1.1220	+	-0.0001i
+0.8916	+	0.0001i
+-1.5460	+	-0.0004i
+-0.8756	+	0.0001i
+-0.8333	+	-0.0001i
+0.8696	+	0.0002i
+1.6432	+	0.0001i
+0.4914	+	0.0002i
+0.4437	+	0.0000i
+1.1787	+	-0.0000i
+2.0321	+	-0.0002i
+1.6635	+	-0.0002i
+1.1711	+	-0.0002i
+-2.0817	+	0.0001i
+-0.9699	+	-0.0000i
+-1.8930	+	-0.0001i
+0.0209	+	-0.0002i
+-2.6172	+	0.0002i
+-1.2220	+	-0.0002i
+-1.5016	+	-0.0000i
+-1.1050	+	-0.0002i
+-0.3447	+	0.0000i
+-1.3821	+	0.0001i
+-0.5397	+	0.0001i
+-0.5657	+	-0.0001i
+0.2143	+	-0.0000i
+0.8670	+	0.0001i
+-1.1689	+	0.0001i
+-0.9729	+	-0.0000i
+0.9121	+	-0.0001i
+0.8627	+	0.0001i
+0.8596	+	-0.0001i
+-0.0166	+	-0.0003i
+0.5375	+	-0.0001i
+-0.9154	+	-0.0000i
+-0.3112	+	-0.0001i
+-0.7643	+	-0.0003i
+-2.3715	+	0.0002i
+-1.9271	+	0.0005i
+-1.8209	+	-0.0001i
+-0.6734	+	-0.0001i
+0.7046	+	-0.0000i
+-0.3966	+	-0.0001i
+-1.7012	+	0.0000i
+-0.8055	+	-0.0002i
+2.1269	+	-0.0001i
+0.4526	+	0.0001i
+0.2083	+	-0.0001i
+1.2428	+	-0.0004i
+0.5495	+	-0.0000i
+-0.9959	+	-0.0000i
+0.0677	+	-0.0000i
+-0.2066	+	0.0001i
+-1.1840	+	-0.0001i
+-1.3336	+	0.0001i
+0.3115	+	-0.0001i
+-0.3559	+	0.0000i
+2.2255	+	-0.0001i
+1.0764	+	-0.0000i
+0.0898	+	-0.0001i
+1.7609	+	-0.0000i
+0.0182	+	0.0001i
+-0.3210	+	-0.0004i
+1.1929	+	-0.0001i
+0.3238	+	0.0003i
+0.2665	+	0.0001i
+-0.2057	+	-0.0002i
+0.6907	+	-0.0000i
+0.4338	+	0.0000i
+1.6392	+	0.0002i
+0.7072	+	0.0004i
+-0.1019	+	-0.0000i
+0.1353	+	-0.0000i
+-0.3584	+	0.0002i
+-2.1391	+	0.0003i
+-1.1994	+	0.0001i
+0.5089	+	0.0002i
+1.5650	+	0.0002i
+0.4041	+	-0.0001i
+-1.5623	+	-0.0000i
+0.2000	+	0.0000i
+-0.3702	+	-0.0001i
+-0.0119	+	0.0002i
+-0.6959	+	0.0003i
+1.4890	+	0.0002i
+0.0780	+	-0.0000i
+1.5530	+	-0.0001i
+0.6266	+	-0.0001i
+1.5474	+	-0.0001i
+0.4302	+	-0.0001i
+1.1503	+	0.0002i
+0.2761	+	-0.0000i
+-0.1855	+	0.0002i
+-0.2231	+	0.0002i
+-0.8963	+	-0.0001i
+0.5483	+	0.0002i
+0.2563	+	-0.0000i
+-0.9876	+	0.0001i
+-0.3133	+	-0.0000i
+-1.7021	+	0.0002i
+0.6044	+	-0.0003i
+0.9220	+	-0.0002i
+-0.1222	+	-0.0002i
+-0.0464	+	0.0000i
+1.3512	+	-0.0002i
+-0.8956	+	0.0002i
+0.3233	+	-0.0002i
+0.0012	+	-0.0002i
+-2.1670	+	0.0000i
+-1.0992	+	-0.0000i
+2.7928	+	-0.0003i
+1.3192	+	-0.0002i
+1.3226	+	-0.0001i
+1.2505	+	-0.0001i
+-0.8639	+	0.0000i
+-0.3854	+	0.0001i
+1.3623	+	-0.0002i
+2.2330	+	-0.0000i
+0.1858	+	0.0000i
+-0.1339	+	-0.0001i
+0.8206	+	-0.0002i
+2.2120	+	0.0002i
+-0.7225	+	0.0002i
+0.4301	+	-0.0001i
+-0.1504	+	0.0000i
+-0.0523	+	-0.0001i
+0.2780	+	-0.0001i
+0.5150	+	-0.0001i
+-0.3186	+	-0.0002i
+-1.2707	+	0.0001i
+2.1071	+	0.0000i
+1.7219	+	-0.0002i
+2.1871	+	-0.0003i
+-0.2678	+	0.0000i
+2.5530	+	-0.0003i
+1.4542	+	-0.0000i
+2.2587	+	-0.0002i
+0.3444	+	-0.0002i
+-0.6645	+	-0.0002i
+-0.5010	+	0.0001i
+-1.5757	+	0.0001i
+1.0128	+	0.0001i
+0.8385	+	0.0002i
+2.3928	+	-0.0002i
+-0.5758	+	0.0001i
+1.7336	+	-0.0005i
+-0.6622	+	-0.0000i
+0.1164	+	-0.0002i
+-1.4730	+	0.0003i
+0.3521	+	-0.0000i
+-1.4413	+	0.0001i
+-1.4934	+	0.0000i
+-1.1858	+	0.0002i
+-0.5084	+	0.0002i
+-0.8836	+	0.0002i
+2.0267	+	0.0000i
+-0.7439	+	0.0001i
+1.1543	+	-0.0001i
+-1.1702	+	-0.0001i
+-0.9788	+	0.0000i
+-0.8955	+	-0.0001i
+-1.1842	+	-0.0000i
+-1.9599	+	-0.0002i
+-0.7759	+	-0.0000i
+-0.2683	+	0.0000i
+-0.6521	+	0.0000i
+-0.3055	+	0.0002i
+1.0753	+	0.0000i
+1.4482	+	-0.0003i
+0.3609	+	-0.0000i
+1.2996	+	-0.0000i
+-1.8384	+	0.0003i
+-0.8021	+	-0.0001i
+0.5163	+	-0.0001i
+-0.6057	+	0.0003i
+-1.1713	+	0.0000i
+-1.4222	+	0.0000i
+-1.5794	+	0.0002i
+-1.0293	+	0.0002i
+-1.3253	+	0.0001i
+-0.3603	+	-0.0001i
+0.8055	+	-0.0001i
+0.2388	+	-0.0001i
+-2.5109	+	-0.0000i
+-0.4962	+	0.0001i
+-0.2401	+	0.0001i
+-2.6465	+	0.0003i
+-0.6849	+	-0.0001i
+1.6216	+	-0.0002i
+0.9853	+	-0.0001i
+0.6028	+	-0.0002i
+1.1921	+	0.0001i
+-0.2166	+	0.0000i
+-1.3613	+	-0.0002i
+-0.4008	+	0.0001i
+0.5807	+	-0.0002i
+2.1273	+	0.0002i
+1.5231	+	-0.0001i
+-0.2903	+	0.0001i
+0.1192	+	-0.0002i
+-0.2715	+	-0.0001i
+-0.5065	+	0.0002i
+-0.1243	+	-0.0001i
+-0.2578	+	-0.0001i
+0.1440	+	-0.0001i
+-1.2344	+	0.0001i
+-0.5878	+	0.0002i
+-0.7711	+	-0.0003i
+-0.2737	+	0.0003i
+0.7403	+	-0.0000i
+-1.7617	+	0.0003i
+-0.4742	+	0.0002i
+-2.1241	+	0.0001i
+-0.0633	+	0.0000i
+0.2380	+	0.0002i
+-0.8213	+	0.0003i
+0.5318	+	0.0005i
+-0.0959	+	-0.0000i
+1.5525	+	0.0000i
+-0.1988	+	0.0002i
+-0.8246	+	-0.0002i
+-1.7433	+	-0.0001i
+1.1126	+	-0.0004i
+-0.9646	+	0.0001i
+-1.5363	+	-0.0003i
+0.1452	+	-0.0001i
+-0.9333	+	0.0001i
+1.0205	+	-0.0000i
+-0.3894	+	0.0001i
+-0.1762	+	0.0001i
+0.7864	+	-0.0001i
+0.5424	+	-0.0002i
+0.7805	+	0.0004i
+-1.2384	+	-0.0001i
+-1.3109	+	0.0004i
+0.5758	+	-0.0000i
+-0.4462	+	0.0002i
+2.6362	+	-0.0001i
+-0.0880	+	0.0003i
+0.0378	+	-0.0001i
+-1.5925	+	0.0003i
+-1.5736	+	0.0000i
+1.4617	+	-0.0001i
+-0.4034	+	0.0000i
+0.1982	+	0.0001i
+0.3371	+	-0.0000i
+-0.3620	+	0.0001i
+-0.0015	+	-0.0001i
+-0.2043	+	-0.0002i
+0.9024	+	0.0001i
+-0.2391	+	0.0003i
+0.6044	+	0.0000i
+0.5899	+	0.0004i
+2.8742	+	-0.0002i
+0.8286	+	-0.0000i
+2.6398	+	-0.0003i
+0.2148	+	0.0003i
+0.1706	+	-0.0003i
+0.9619	+	0.0001i
+-0.9689	+	-0.0001i
+0.6180	+	-0.0001i
+0.5114	+	-0.0004i
+-1.0655	+	0.0002i
+-0.5150	+	0.0001i
+0.8629	+	0.0001i
+-0.9072	+	-0.0002i
+-1.6059	+	-0.0000i
+-0.7028	+	-0.0001i
+0.2960	+	-0.0000i
+0.4797	+	0.0003i
+0.7752	+	0.0001i
+0.7272	+	0.0002i
+0.3356	+	0.0001i
+1.2067	+	0.0002i
+-1.0578	+	0.0004i
+-0.2779	+	0.0021i
+-0.1609	+	-0.0000i
+0.8405	+	0.0002i
+-1.1463	+	0.0000i
+0.5078	+	0.0000i
+-0.2710	+	0.0004i
+1.4176	+	-0.0001i
+-1.0029	+	-0.0000i
+-0.7297	+	-0.0001i
+0.2123	+	-0.0002i
+-1.5050	+	0.0002i
+-0.3887	+	-0.0001i
+1.1039	+	-0.0002i
+0.0414	+	0.0002i
+1.0198	+	0.0001i
+-1.9808	+	0.0002i
+1.4177	+	-0.0002i
+0.3429	+	-0.0001i
+-0.9910	+	0.0000i
+0.5590	+	-0.0004i
+-0.0224	+	-0.0003i
+0.1182	+	0.0000i
+0.4398	+	-0.0002i
+0.1622	+	0.0001i
+0.3577	+	-0.0000i
+-2.7395	+	0.0002i
+-1.8032	+	-0.0001i
+1.5498	+	0.0001i
+0.0579	+	-0.0001i
+0.0677	+	0.0001i
+0.1323	+	0.0001i
+-0.1706	+	-0.0001i
+-0.7495	+	0.0001i
+0.2410	+	0.0001i
+-0.1394	+	0.0004i
+-1.1875	+	-0.0002i
+-1.7184	+	0.0002i
+-0.0235	+	0.0001i
+-0.1789	+	0.0001i
+0.0083	+	0.0002i
+1.5761	+	-0.0000i
+1.8524	+	-0.0000i
+1.7317	+	0.0002i
+0.9611	+	0.0000i
+1.4647	+	0.0001i
+1.1725	+	0.0001i
+1.6587	+	0.0004i
+-0.1351	+	-0.0002i
+0.8556	+	-0.0001i
+0.7365	+	-0.0004i
+-0.9920	+	0.0000i
+0.1229	+	-0.0000i
+0.0029	+	0.0000i
+-1.1513	+	-0.0000i
+-1.0606	+	0.0000i
+-0.5617	+	-0.0001i
+-0.5853	+	-0.0001i
+1.1275	+	0.0001i
+-0.5299	+	-0.0002i
+1.3162	+	-0.0003i
+-1.6610	+	0.0001i
+-0.2441	+	0.0002i
+0.6555	+	-0.0001i
+-0.7385	+	-0.0001i
+1.7231	+	-0.0001i
+0.4733	+	-0.0003i
+0.0758	+	0.0001i
+1.2706	+	-0.0001i
+-1.3961	+	0.0000i
+-0.9240	+	0.0000i
+0.6012	+	0.0000i
+-1.4983	+	0.0001i
+-2.3226	+	-0.0000i
+0.1326	+	0.0001i
+-0.8365	+	0.0000i
+0.6935	+	-0.0002i
+-0.9069	+	-0.0000i
+0.8130	+	-0.0000i
+-1.0897	+	-0.0000i
+-0.4197	+	0.0002i
+0.6631	+	-0.0001i
+0.4263	+	-0.0001i
+-0.3903	+	-0.0003i
+1.3697	+	-0.0000i
+0.6457	+	-0.0001i
+0.9157	+	-0.0000i
+0.0145	+	-0.0002i
+0.2670	+	0.0002i
+-1.0940	+	0.0001i
+0.4373	+	-0.0002i
+-0.5854	+	-0.0003i
+-1.1530	+	-0.0002i
+-1.9643	+	-0.0002i
+0.9866	+	-0.0002i
+-0.6336	+	0.0001i
+0.1502	+	-0.0001i
+-0.6410	+	0.0002i
+0.9960	+	-0.0001i
+0.6219	+	0.0003i
+0.9485	+	0.0000i
+-1.0506	+	-0.0003i
+-0.7213	+	0.0000i
+0.2022	+	0.0001i
+0.1589	+	0.0001i
+-0.1566	+	-0.0001i
+1.1645	+	0.0000i
+-1.9899	+	0.0002i
+-0.5358	+	-0.0000i
+-1.2127	+	-0.0002i
+-0.9442	+	-0.0001i
+-1.5593	+	0.0001i
+-1.1577	+	0.0002i
+0.8328	+	0.0000i
+0.1034	+	-0.0001i
+0.3453	+	0.0002i
+-0.1314	+	-0.0002i
+-1.8452	+	0.0001i
+-1.5737	+	0.0004i
+-1.2439	+	0.0000i
+-0.7484	+	-0.0002i
+-0.4278	+	-0.0000i
+-0.6093	+	0.0001i
+1.0493	+	-0.0001i
+1.2769	+	0.0001i
+0.1825	+	-0.0002i
+-0.7984	+	0.0002i
+0.3219	+	-0.0003i
+-0.6728	+	0.0000i
+-2.2279	+	-0.0000i
+0.3255	+	-0.0000i
+0.3128	+	0.0003i
+-1.1443	+	-0.0003i
+-0.0060	+	0.0000i
+0.8549	+	-0.0001i
+-1.2973	+	0.0000i
+0.8213	+	-0.0001i
+1.1784	+	0.0000i
+-0.6819	+	-0.0001i
+-1.2504	+	0.0001i
+-0.5011	+	0.0003i
+0.5156	+	-0.0001i
+0.0026	+	-0.0001i
+0.2761	+	0.0001i
+-0.6528	+	0.0002i
+0.2334	+	-0.0001i
+-0.1359	+	-0.0000i
+0.8917	+	-0.0002i
+0.3299	+	-0.0002i
+0.6961	+	-0.0002i
+0.0671	+	0.0001i
+-0.4404	+	-0.0001i
+-0.1301	+	0.0002i
+1.4827	+	-0.0001i
+0.5880	+	-0.0002i
+1.4674	+	-0.0001i
+0.1850	+	0.0000i
+0.2286	+	-0.0000i
+-0.7591	+	0.0001i
+-0.0246	+	0.0001i
+1.6742	+	0.0004i
+1.4821	+	-0.0002i
+-0.0603	+	-0.0004i
+-0.1527	+	-0.0000i
+0.2877	+	0.0001i
+-0.6791	+	0.0003i
+-1.0845	+	0.0003i
+-0.3879	+	-0.0002i
+-0.0472	+	0.0000i
+-2.0516	+	0.0002i
+-0.4808	+	-0.0001i
+0.5875	+	0.0001i
+0.3559	+	0.0002i
+0.9215	+	-0.0002i
+-0.5749	+	0.0004i
+-1.2600	+	0.0001i
+-0.5365	+	0.0002i
+-1.9090	+	0.0003i
+-0.9669	+	0.0001i
+1.2122	+	0.0001i
+-0.3652	+	0.0005i
+0.9321	+	0.0001i
+-0.5845	+	-0.0001i
+-0.5243	+	-0.0001i
+0.6630	+	-0.0001i
+1.4212	+	-0.0000i
+-1.6901	+	-0.0001i
+-1.9549	+	-0.0000i
+-1.1978	+	0.0002i
+-0.3739	+	0.0002i
+1.0896	+	0.0002i
+0.3559	+	0.0001i
+0.5282	+	0.0000i
+-0.0451	+	0.0001i
+-1.2664	+	-0.0001i
+0.1435	+	0.0000i
+-0.9697	+	0.0001i
+0.3538	+	0.0001i
+-0.3571	+	0.0001i
+1.1134	+	0.0000i
+-0.5888	+	-0.0000i
+1.9662	+	-0.0002i
+-0.1470	+	-0.0001i
+1.1567	+	-0.0002i
+-0.2204	+	0.0000i
+0.9781	+	0.0002i
+2.4197	+	-0.0001i
+1.6235	+	-0.0001i
+-0.2401	+	0.0002i
+1.3346	+	-0.0003i
+1.2666	+	-0.0000i
+0.6543	+	-0.0000i
+0.9113	+	0.0001i
+0.2637	+	-0.0002i
+1.0948	+	0.0002i
+-0.5189	+	-0.0000i
+0.1506	+	-0.0003i
+0.4759	+	0.0002i
+-0.2195	+	-0.0002i
+-0.5654	+	0.0001i
+-0.4722	+	-0.0002i
+-0.4312	+	0.0002i
+0.2632	+	-0.0004i
+-0.4816	+	0.0003i
+0.3861	+	-0.0002i
+-0.0921	+	-0.0001i
+-0.3866	+	-0.0001i
+0.3097	+	0.0000i
+0.2637	+	-0.0003i
+-0.7295	+	0.0002i
+-0.5256	+	-0.0001i
+-0.3438	+	0.0002i
+-0.2072	+	-0.0000i
+-0.4801	+	-0.0000i
+0.8870	+	-0.0000i
+0.2658	+	0.0002i
+0.8895	+	0.0002i
+1.2675	+	-0.0001i
+0.9378	+	-0.0000i
+1.4254	+	-0.0001i
+0.4360	+	0.0001i
+0.7182	+	0.0002i
+0.7955	+	-0.0001i
+1.1739	+	0.0001i
+1.4410	+	0.0001i
+1.3236	+	0.0002i
+1.0977	+	-0.0001i
+0.5477	+	0.0001i
+0.9630	+	-0.0001i
+1.6703	+	-0.0001i
+0.8023	+	-0.0002i
+-0.1445	+	0.0001i
+0.2913	+	0.0002i
+0.8414	+	-0.0001i
+-0.4007	+	-0.0001i
+-0.5052	+	0.0000i
+-0.3690	+	0.0000i
+1.6631	+	-0.0003i
+-0.5051	+	0.0002i
+1.2415	+	-0.0000i
+0.1737	+	0.0001i
+-0.7926	+	0.0003i
+1.0680	+	0.0000i
+0.2561	+	0.0005i
+0.4156	+	-0.0001i
+-1.8148	+	0.0002i
+1.7149	+	0.0001i
+0.8203	+	-0.0002i
+1.8011	+	0.0003i
+0.8425	+	-0.0002i
+-0.4793	+	0.0001i
+0.4867	+	0.0002i
+1.4276	+	-0.0001i
+0.6777	+	-0.0001i
+0.0521	+	0.0001i
+-1.0219	+	0.0002i
+-1.5935	+	0.0000i
+-0.7236	+	0.0001i
+-0.9760	+	-0.0002i
+-1.0406	+	0.0002i
+-1.0335	+	-0.0003i
+-1.5677	+	0.0001i
+-0.6266	+	-0.0002i
+-0.9942	+	0.0002i
+-0.9614	+	-0.0003i
+-0.9013	+	-0.0001i
+-0.2493	+	0.0002i
+-0.2049	+	-0.0001i
+-0.9782	+	0.0003i
+0.2192	+	0.0001i
+0.1372	+	0.0004i
+1.8125	+	0.0002i
+1.3631	+	-0.0002i
+-0.2231	+	0.0001i
+-1.0152	+	0.0000i
+0.5998	+	0.0001i
+-2.5578	+	0.0004i
+0.3180	+	0.0002i
+1.0309	+	0.0002i
+0.7550	+	-0.0001i
+-0.4608	+	-0.0003i
+1.0949	+	0.0000i
+1.8626	+	-0.0001i
+0.9630	+	0.0000i
+1.9742	+	-0.0001i
+0.5218	+	0.0002i
+1.4285	+	-0.0001i
+0.9190	+	0.0003i
+1.7973	+	-0.0003i
+1.1445	+	-0.0000i
+-0.8823	+	0.0002i
+-0.8911	+	0.0002i
+1.1418	+	-0.0001i
+0.4483	+	0.0003i
+1.3597	+	0.0003i
+1.7525	+	-0.0002i
+1.4894	+	-0.0003i
+1.1306	+	0.0001i
+0.1996	+	-0.0001i
+-0.8909	+	0.0000i
+0.4008	+	0.0001i
+-0.3993	+	-0.0000i
+1.1101	+	-0.0002i
+0.3271	+	0.0002i
+1.4307	+	-0.0000i
+-1.6317	+	-0.0001i
+-0.2354	+	-0.0003i
+-0.6669	+	-0.0001i
+-0.2668	+	0.0003i
+-1.2180	+	0.0001i
+2.1264	+	-0.0003i
+1.1653	+	-0.0002i
+0.6855	+	-0.0001i
+2.2696	+	-0.0002i
+0.6923	+	-0.0001i
+-0.0309	+	0.0001i
+0.0910	+	0.0003i
+-0.0952	+	-0.0000i
+-0.5128	+	0.0003i
+-0.0184	+	0.0000i
+-0.2090	+	0.0003i
+1.3550	+	-0.0002i
+0.9989	+	-0.0001i
+0.9384	+	-0.0001i
+-1.3274	+	-0.0001i
+1.9244	+	0.0002i
+-0.1844	+	-0.0001i
+-0.4318	+	-0.0001i
+0.1867	+	-0.0000i
+-0.8918	+	-0.0001i
+-1.5683	+	-0.0001i
+-0.5624	+	0.0000i
+0.4689	+	0.0000i
+-0.3331	+	0.0000i
+0.8282	+	-0.0001i
+-2.6515	+	-0.0001i
+-1.2467	+	0.0001i
+-2.6242	+	0.0001i
+-0.5873	+	0.0004i
+-0.0013	+	0.0004i
+-1.7096	+	0.0002i
+0.6197	+	0.0001i
+0.1701	+	-0.0004i
+0.7823	+	0.0001i
+-1.0533	+	0.0002i
+-0.0962	+	0.0004i
+-0.4647	+	0.0002i
+-0.0215	+	0.0002i
+0.8536	+	0.0001i
+-0.2360	+	0.0001i
+-0.6678	+	0.0000i
+0.9605	+	-0.0000i
+0.9585	+	0.0000i
+-0.9922	+	-0.0000i
+-0.4567	+	-0.0001i
+0.9636	+	0.0001i
+0.3372	+	0.0000i
+-0.3421	+	0.0001i
+0.2356	+	-0.0002i
+-0.6949	+	0.0000i
+0.2354	+	-0.0004i
+-1.0168	+	0.0001i
+-1.3177	+	-0.0004i
+-1.6942	+	0.0000i
+-1.5932	+	0.0001i
+-1.7325	+	0.0002i
+-0.0086	+	-0.0002i
+2.1094	+	-0.0003i
+0.9875	+	-0.0001i
+1.5404	+	-0.0002i
+-1.3100	+	-0.0004i
+-1.1681	+	0.0002i
+-0.3523	+	0.0001i
+0.0809	+	-0.0001i
+0.8749	+	-0.0002i
+0.9140	+	-0.0000i
+1.0760	+	0.0001i
+1.2455	+	0.0001i
+0.9804	+	0.0000i
+1.5095	+	-0.0002i
+1.6903	+	-0.0002i
+0.4074	+	-0.0000i
+0.2950	+	-0.0001i
+-0.4075	+	0.0003i
+0.3998	+	-0.0002i
+-0.9419	+	0.0003i
+-2.9894	+	0.0003i
+0.8676	+	0.0001i
+0.6801	+	-0.0002i
+1.6041	+	-0.0002i
+1.2259	+	-0.0002i
+-0.7411	+	-0.0003i
+0.2457	+	-0.0001i
+0.0881	+	0.0000i
+-1.3354	+	0.0001i
+-0.7413	+	0.0003i
+-0.1185	+	0.0001i
+0.3843	+	-0.0000i
+0.1643	+	0.0001i
+-0.3595	+	0.0001i
+0.2993	+	0.0000i
+0.0939	+	-0.0001i
+-1.3576	+	0.0001i
+-1.0522	+	-0.0000i
+0.8385	+	-0.0001i
+-0.3781	+	0.0001i
+1.1570	+	0.0001i
+-1.8367	+	-0.0001i
+-1.0120	+	-0.0001i
+-1.4485	+	0.0002i
+-0.2132	+	0.0002i
+0.6103	+	-0.0002i
+-1.0969	+	0.0001i
+0.9376	+	-0.0004i
+1.6619	+	-0.0002i
+1.1255	+	-0.0000i
+-0.7999	+	0.0001i
+0.7593	+	-0.0001i
+2.2797	+	-0.0000i
+1.3715	+	-0.0001i
+1.3512	+	-0.0002i
+0.9137	+	-0.0001i
+-1.8323	+	0.0003i
+-2.0193	+	0.0003i
+0.3460	+	-0.0001i
+-1.1712	+	-0.0000i
+-1.0756	+	0.0001i
+0.2441	+	-0.0001i
+0.2238	+	0.0002i
+-0.3941	+	0.0001i
+0.3745	+	0.0003i
+-0.0202	+	0.0001i
+0.6054	+	-0.0001i
+0.7908	+	0.0001i
+-0.8537	+	0.0001i
+1.3884	+	-0.0000i
+-0.8891	+	-0.0001i
+-0.2825	+	0.0002i
+-0.2756	+	-0.0001i
+0.0407	+	0.0002i
+-0.4576	+	0.0000i
+-0.6883	+	0.0002i
+1.1100	+	0.0001i
+0.1478	+	0.0003i
+-0.3633	+	-0.0003i
+-1.1089	+	0.0000i
+0.5431	+	-0.0002i
+0.2556	+	-0.0000i
+-0.0388	+	0.0002i
+-0.1481	+	0.0001i
+-1.2283	+	0.0003i
+0.5860	+	0.0000i
+-1.3768	+	-0.0001i
+-1.5046	+	0.0002i
+-0.0458	+	0.0001i
+-1.1726	+	0.0000i
+-2.5716	+	0.0000i
+-0.9843	+	0.0001i
+-0.5841	+	-0.0001i
+-0.2290	+	-0.0002i
+-0.4735	+	0.0004i
+0.3721	+	-0.0001i
+1.4830	+	-0.0004i
+1.3689	+	0.0000i
+-0.5163	+	0.0000i
+0.3372	+	0.0004i
+1.1249	+	-0.0002i
+-0.0224	+	0.0001i
+-1.5868	+	0.0001i
+-1.4222	+	0.0003i
+-0.7160	+	0.0001i
+-0.7027	+	-0.0002i
+0.1394	+	0.0000i
+0.7138	+	0.0002i
+1.7543	+	0.0000i
+-0.0758	+	-0.0003i
+1.2080	+	-0.0004i
+-1.7782	+	-0.0001i
+0.3802	+	-0.0002i
+-1.5053	+	0.0002i
+0.8421	+	0.0000i
+-0.1902	+	-0.0001i
+-0.1009	+	-0.0004i
+-0.1652	+	-0.0003i
+0.7528	+	-0.0002i
+-1.0951	+	0.0001i
+0.0146	+	0.0000i
+1.1972	+	0.0000i
+-1.3618	+	0.0001i
+0.4899	+	-0.0001i
+-0.8332	+	-0.0001i
+0.0243	+	0.0001i
+-0.7332	+	0.0001i
+-2.5292	+	0.0010i
+0.4733	+	0.0002i
+-0.6692	+	-0.0000i
+-1.8236	+	0.0004i
+-0.0710	+	-0.0001i
+-0.8845	+	-0.0002i
+-1.6454	+	-0.0003i
+-0.5551	+	-0.0002i
+-2.0999	+	0.0000i
+-0.3371	+	-0.0000i
+-0.2165	+	-0.0002i
+-0.2544	+	-0.0004i
+-1.0611	+	0.0003i
+-1.1006	+	0.0000i
+-0.1396	+	-0.0000i
+-0.9832	+	0.0001i
+-0.4457	+	-0.0002i
+-1.3756	+	0.0000i
+-1.4805	+	-0.0000i
+-0.7902	+	-0.0000i
+-0.5774	+	-0.0003i
+0.2231	+	-0.0001i
+-1.6396	+	0.0004i
+0.1155	+	-0.0000i
+-0.7693	+	-0.0000i
+0.1302	+	-0.0001i
+-0.9621	+	-0.0001i
+0.3037	+	-0.0003i
+1.1807	+	-0.0000i
+1.6553	+	-0.0000i
+0.0529	+	0.0002i
+-1.0762	+	0.0001i
+-1.2649	+	0.0002i
+-0.4982	+	0.0001i
+0.0179	+	0.0003i
+0.4524	+	-0.0001i
+0.1079	+	0.0003i
+1.5266	+	0.0002i
+-1.2641	+	0.0001i
+-0.4098	+	-0.0001i
+0.6597	+	-0.0003i
+-0.2190	+	-0.0002i
+0.9220	+	-0.0000i
+1.3799	+	-0.0003i
+-0.9435	+	-0.0000i
+-0.1470	+	0.0000i
+-0.4706	+	0.0002i
+-0.2018	+	0.0002i
+-0.9448	+	0.0003i
+-1.6443	+	-0.0001i
+0.5307	+	-0.0001i
+-0.7556	+	0.0001i
+0.4950	+	-0.0003i
+0.2510	+	-0.0004i
+0.4399	+	-0.0000i
+-1.1386	+	-0.0001i
+-0.9573	+	0.0003i
+0.9039	+	0.0001i
+-1.4281	+	0.0003i
+1.1871	+	0.0000i
+-1.2612	+	0.0000i
+-0.4068	+	0.0001i
+-0.8127	+	-0.0001i
+-0.7698	+	-0.0002i
+-1.0337	+	-0.0002i
+1.1966	+	0.0001i
+1.5666	+	-0.0002i
+2.4822	+	-0.0000i
+0.9121	+	-0.0000i
+1.6890	+	0.0002i
+0.2568	+	-0.0002i
+-0.1350	+	0.0001i
+0.2691	+	0.0002i
+-0.0245	+	0.0001i
+-0.0693	+	-0.0000i
+-0.7082	+	-0.0000i
+-0.5551	+	0.0003i
+-0.4196	+	0.0001i
+-2.0603	+	0.0004i
+1.0095	+	0.0001i
+0.5926	+	0.0002i
+-0.0030	+	-0.0000i
+-0.3956	+	0.0001i
+-0.5034	+	0.0003i
+-0.0173	+	0.0002i
+-0.5225	+	0.0001i
+-1.8963	+	-0.0003i
+-0.9385	+	0.0001i
+1.1463	+	0.0004i
+1.2351	+	-0.0000i
+0.6831	+	0.0001i
+0.2167	+	-0.0000i
+-1.9645	+	0.0001i
+0.3017	+	-0.0000i
+-0.1525	+	-0.0001i
+0.1900	+	0.0001i
+-0.2290	+	0.0001i
+1.9040	+	0.0000i
+1.0030	+	-0.0003i
+1.1301	+	-0.0001i
+1.3241	+	-0.0001i
+0.8364	+	0.0002i
+-1.3647	+	0.0002i
+1.5224	+	-0.0001i
+-0.5911	+	-0.0000i
+2.7959	+	-0.0002i
+-1.3906	+	0.0003i
+-1.7497	+	-0.0003i
+-0.9719	+	-0.0001i
+-1.5479	+	0.0002i
+0.3879	+	-0.0000i
+0.1418	+	0.0000i
+0.4432	+	-0.0001i
+-2.0607	+	-0.0003i
+-2.1572	+	0.0001i
+-0.4707	+	-0.0002i
+-1.5746	+	0.0002i
+-0.6274	+	-0.0004i
+-2.1657	+	0.0002i
+-1.0457	+	0.0002i
+-1.3032	+	-0.0003i
+0.2977	+	0.0000i
+1.0148	+	-0.0001i
+-0.2408	+	0.0000i
+-0.4477	+	0.0002i
+1.4088	+	0.0001i
+0.9682	+	-0.0000i
+1.6723	+	0.0001i
+1.6261	+	0.0002i
+1.0180	+	0.0002i
+-1.4417	+	0.0006i
+-0.5016	+	0.0004i
+-1.2059	+	0.0001i
+0.5788	+	0.0000i
+-1.4468	+	0.0003i
+0.2483	+	0.0002i
+0.9524	+	0.0001i
+-0.0867	+	0.0001i
+0.0822	+	0.0001i
+0.8331	+	0.0001i
+0.9920	+	0.0000i
+-0.0227	+	-0.0001i
+0.9558	+	-0.0001i
+0.2655	+	0.0000i
+0.8027	+	0.0001i
+1.2312	+	0.0001i
+1.6415	+	-0.0002i
+0.6356	+	-0.0004i
+0.1093	+	-0.0005i
+-0.9199	+	0.0000i
+0.2805	+	-0.0004i
+-1.3345	+	-0.0001i
+0.1153	+	-0.0001i
+1.7377	+	-0.0004i
+-0.0217	+	-0.0004i
+0.1655	+	-0.0002i
+-0.8831	+	-0.0002i
+-0.5426	+	0.0005i
+0.3819	+	-0.0003i
+0.2217	+	-0.0001i
+0.4548	+	-0.0002i
+-0.3395	+	-0.0004i
+1.0652	+	0.0001i
+0.9518	+	-0.0004i
+-2.1375	+	-0.0000i
+-2.2651	+	0.0000i
+-1.7257	+	-0.0002i
+1.3653	+	0.0001i
+1.4030	+	-0.0002i
+-0.3328	+	0.0000i
+0.3896	+	0.0001i
+-0.6785	+	0.0004i
+1.4078	+	-0.0004i
+0.5409	+	-0.0003i
+1.3523	+	-0.0001i
+-0.4843	+	-0.0002i
+1.2288	+	-0.0001i
+1.5181	+	-0.0005i
+0.6334	+	0.0001i
+0.9950	+	-0.0001i
+0.9845	+	-0.0000i
+-0.0079	+	-0.0001i
+-0.2340	+	0.0001i
+-0.8230	+	0.0003i
+0.6298	+	-0.0002i
+-0.1584	+	0.0000i
+-0.4688	+	-0.0000i
+0.3534	+	0.0004i
+-1.1751	+	-0.0000i
+-0.4052	+	0.0003i
+0.6760	+	-0.0003i
+-0.2776	+	0.0003i
+-0.2801	+	-0.0003i
+0.9108	+	-0.0004i
+-0.7662	+	0.0001i
+0.3613	+	-0.0001i
+0.1546	+	-0.0001i
+-0.5721	+	-0.0001i
+0.7245	+	-0.0002i
+-0.9227	+	-0.0001i
+0.3337	+	-0.0000i
+-1.1606	+	0.0000i
+1.3039	+	-0.0001i
+0.1366	+	-0.0003i
+-0.3202	+	0.0001i
+1.4605	+	-0.0002i
+2.9468	+	-0.0005i
+1.9457	+	-0.0002i
+0.9093	+	-0.0003i
+1.7401	+	-0.0004i
+2.0029	+	-0.0006i
+1.4283	+	-0.0002i
+0.9879	+	-0.0001i
+0.9970	+	0.0001i
+-0.6599	+	-0.0002i
+1.6089	+	-0.0001i
+1.5174	+	-0.0004i
+0.6198	+	0.0000i
+-0.2715	+	-0.0005i
+-1.2995	+	-0.0002i
+-0.4397	+	-0.0002i
+-1.8501	+	0.0001i
+-0.5360	+	-0.0001i
+-0.0043	+	-0.0004i
+-2.1864	+	-0.0001i
+-1.0219	+	-0.0000i
+0.0012	+	-0.0004i
+0.3514	+	-0.0001i
+0.7395	+	0.0001i
+1.0445	+	0.0001i
+0.9910	+	0.0000i
+0.1933	+	-0.0001i
+1.7225	+	-0.0000i
+-0.1586	+	0.0000i
+-1.5311	+	0.0004i
+-2.7433	+	0.0001i
+-2.4700	+	0.0003i
+-1.4811	+	-0.0001i
+-1.6562	+	0.0002i
+1.0300	+	0.0004i
+1.2082	+	-0.0000i
+1.3464	+	0.0001i
+0.9031	+	-0.0004i
+0.7847	+	-0.0004i
+-0.9462	+	0.0002i
+-0.1720	+	0.0003i
+-1.6936	+	0.0002i
+0.4625	+	0.0003i
+0.6774	+	-0.0001i
+0.4356	+	-0.0002i
+-0.8978	+	-0.0001i
+-0.8385	+	-0.0001i
+-0.9008	+	-0.0002i
+0.4893	+	-0.0004i
+-1.1026	+	0.0001i
+-1.7626	+	-0.0003i
+-1.5416	+	0.0004i
+-0.2713	+	-0.0000i
+-2.0993	+	0.0002i
+-1.1468	+	-0.0000i
+-0.3734	+	0.0000i
+0.6844	+	-0.0001i
+0.9920	+	-0.0000i
+0.3371	+	0.0000i
+1.1666	+	-0.0000i
+0.5794	+	-0.0004i
+0.1690	+	-0.0000i
+1.3746	+	-0.0002i
+-0.0391	+	0.0001i
+1.8019	+	-0.0006i
+-1.2767	+	0.0002i
+1.7595	+	-0.0001i
+-1.2767	+	0.0001i
+-0.7714	+	-0.0003i
+-0.3804	+	-0.0005i
+0.6726	+	-0.0005i
+-0.0790	+	0.0001i
+0.7578	+	-0.0003i
+-0.6484	+	-0.0002i
+1.3854	+	-0.0002i
+-1.9171	+	0.0002i
+-0.0667	+	-0.0002i
+0.6932	+	-0.0005i
+1.1497	+	-0.0001i
+-1.6165	+	0.0002i
+0.9036	+	0.0001i
+0.0590	+	0.0001i
+1.8240	+	0.0001i
+-0.4147	+	0.0006i
+0.7247	+	-0.0001i
+2.5514	+	-0.0003i
+0.0262	+	-0.0001i
+-0.7255	+	-0.0002i
+0.0931	+	-0.0002i
+0.6326	+	-0.0004i
+-0.9758	+	0.0001i
+-2.2045	+	-0.0001i
+-1.0387	+	-0.0001i
+0.0297	+	-0.0000i
+-0.2329	+	0.0001i
+0.0405	+	-0.0001i
+-0.7410	+	0.0006i
+-0.6469	+	-0.0003i
+0.0738	+	0.0002i
+-0.5613	+	0.0002i
+1.1581	+	0.0001i
+1.1473	+	-0.0000i
+2.3340	+	-0.0002i
+1.6183	+	-0.0003i
+0.4369	+	-0.0002i
+0.5532	+	-0.0002i
+0.5254	+	-0.0002i
+0.0888	+	0.0000i
+0.2067	+	-0.0003i
+0.6257	+	-0.0003i
+0.6286	+	-0.0002i
+-1.0131	+	-0.0002i
+1.3554	+	0.0003i
+-0.5109	+	-0.0003i
+0.2014	+	-0.0001i
+0.4414	+	-0.0001i
+-1.6351	+	-0.0000i
+-1.1242	+	0.0002i
+-0.8545	+	-0.0001i
+1.4503	+	-0.0001i
+-0.4618	+	0.0001i
+2.1079	+	0.0001i
+2.2592	+	0.0001i
+1.2551	+	-0.0001i
+1.1279	+	0.0001i
+0.8007	+	-0.0001i
+1.2797	+	-0.0002i
+0.3964	+	-0.0004i
+1.6179	+	-0.0006i
+-0.5143	+	0.0002i
+2.4769	+	-0.0002i
+1.4988	+	-0.0004i
+1.5794	+	-0.0004i
+1.1916	+	-0.0001i
+-0.3323	+	0.0001i
+-1.5107	+	0.0001i
+-0.8505	+	0.0001i
+-0.9504	+	0.0005i
+-0.4865	+	0.0004i
+0.3812	+	0.0001i
+-0.2011	+	0.0001i
+0.7094	+	0.0001i
+0.4132	+	0.0002i
+0.6898	+	-0.0000i
+1.4372	+	-0.0000i
+1.4468	+	-0.0000i
+0.6594	+	0.0004i
+1.7589	+	0.0001i
+2.6662	+	-0.0009i
+0.5952	+	-0.0000i
+-1.1369	+	0.0002i
+1.2835	+	-0.0001i
+-0.8027	+	-0.0000i
+1.2642	+	-0.0001i
+2.1495	+	-0.0004i
+2.0150	+	0.0001i
+0.4902	+	0.0001i
+1.0556	+	0.0002i
+0.5302	+	0.0000i
+1.1407	+	-0.0001i
+2.0209	+	0.0002i
+1.1679	+	0.0000i
+1.3783	+	0.0001i
+0.0916	+	-0.0001i
+0.8283	+	0.0002i
+1.7598	+	0.0001i
+1.7786	+	0.0003i
+1.1447	+	-0.0001i
+0.0204	+	0.0000i
+1.9581	+	-0.0001i
+1.5778	+	-0.0001i
+-0.6501	+	-0.0001i
+-0.9987	+	0.0002i
+-0.9003	+	-0.0002i
+1.4639	+	-0.0002i
+0.5782	+	0.0003i
+0.6412	+	0.0002i
+2.0782	+	-0.0003i
+-0.3659	+	0.0002i
+0.3815	+	0.0003i
+0.0821	+	0.0003i
+-1.1208	+	0.0002i
+-0.7283	+	-0.0002i
+0.6882	+	0.0002i
+-0.6018	+	0.0002i
+0.6956	+	0.0003i
+1.3390	+	-0.0000i
+-1.0954	+	0.0001i
+0.8589	+	0.0001i
+2.5341	+	-0.0004i
+1.3320	+	-0.0002i
+1.9365	+	-0.0004i
+0.3437	+	0.0000i
+1.0272	+	-0.0002i
+-1.0398	+	-0.0001i
+-1.4540	+	-0.0002i
+-1.3138	+	0.0001i
+1.7319	+	-0.0001i
+0.0626	+	0.0005i
+-0.2733	+	-0.0000i
+-0.2319	+	0.0005i
+0.0180	+	-0.0004i
+-0.2043	+	0.0005i
+0.2195	+	-0.0003i
+-0.5806	+	0.0003i
+-1.3880	+	0.0001i
+-0.5424	+	0.0003i
+-1.6756	+	0.0001i
+-0.7600	+	-0.0000i
+-0.1653	+	-0.0004i
+0.2016	+	-0.0001i
+0.2907	+	-0.0002i
+2.4390	+	-0.0002i
+0.6638	+	0.0002i
+-2.9448	+	0.0004i
+-1.8774	+	0.0004i
+0.2378	+	0.0001i
+0.9796	+	0.0002i
+-0.6272	+	0.0001i
+-0.4129	+	-0.0003i
+0.1397	+	-0.0001i
+1.7319	+	0.0005i
+1.4536	+	0.0002i
+2.0379	+	0.0003i
+0.9945	+	0.0000i
+1.6359	+	0.0003i
+1.6792	+	-0.0002i
+1.4648	+	0.0005i
+0.2328	+	-0.0004i
+0.3165	+	-0.0001i
+-0.5744	+	0.0003i
+-0.2283	+	0.0000i
+1.1324	+	-0.0001i
+-0.0904	+	-0.0001i
+0.6760	+	-0.0000i
+1.9204	+	-0.0001i
+1.3484	+	-0.0005i
+-1.4684	+	-0.0001i
+0.2852	+	-0.0005i
+-0.1031	+	-0.0001i
+-0.1801	+	0.0003i
+-0.6382	+	0.0003i
+-0.4623	+	0.0001i
+0.0398	+	0.0001i
+0.5016	+	0.0007i
+-0.8361	+	-0.0002i
+1.8951	+	-0.0002i
+1.3902	+	-0.0001i
+1.0803	+	0.0001i
+0.0826	+	0.0000i
+1.7004	+	-0.0001i
+-1.7411	+	-0.0000i
+-1.8517	+	0.0001i
+0.9080	+	0.0003i
+-2.0476	+	-0.0001i
+-0.6127	+	-0.0002i
+-1.9744	+	0.0001i
+-1.6021	+	0.0002i
+-2.0931	+	-0.0002i
+-0.5835	+	-0.0002i
+-0.4298	+	0.0004i
+0.2089	+	0.0002i
+-0.6561	+	0.0002i
+-0.4214	+	0.0003i
+-0.2510	+	0.0001i
+-1.2965	+	0.0002i
+0.0456	+	-0.0002i
+1.5158	+	-0.0003i
+1.0506	+	-0.0000i
+-0.1829	+	0.0000i
+0.7993	+	-0.0000i
+0.0521	+	-0.0001i
+0.9864	+	-0.0003i
+-0.9066	+	-0.0004i
+0.4543	+	-0.0002i
+-0.9450	+	-0.0000i
+-0.8823	+	0.0002i
+-0.8264	+	-0.0002i
+0.2510	+	0.0000i
+0.0731	+	-0.0001i
+1.0055	+	-0.0001i
+0.3197	+	-0.0000i
+2.3657	+	-0.0005i
+-1.1369	+	0.0002i
+-1.2869	+	0.0000i
+2.2178	+	0.0002i
+0.5597	+	0.0006i
+1.4358	+	0.0004i
+-0.6879	+	0.0005i
+-0.4979	+	0.0004i
+-0.4228	+	0.0002i
+1.1848	+	0.0000i
+0.5691	+	0.0003i
+0.6189	+	0.0003i
+1.1240	+	0.0001i
+0.3679	+	0.0002i
+1.6726	+	-0.0000i
+-0.0563	+	0.0002i
+-0.0445	+	0.0003i
+0.5243	+	0.0003i
+-1.5817	+	0.0003i
+-0.3927	+	-0.0001i
+0.3432	+	-0.0000i
+-0.4207	+	-0.0003i
+0.2721	+	-0.0000i
+-0.1620	+	0.0008i
+-1.3398	+	0.0009i
+0.3025	+	0.0070i
+-0.3398	+	0.0012i
+-0.1621	+	0.0005i
+2.2720	+	0.0002i
+0.5793	+	0.0002i
+1.3431	+	-0.0001i
+2.6071	+	0.0000i
+0.4183	+	0.0004i
+-0.4757	+	0.0001i
+-0.0445	+	0.0002i
+-1.0562	+	-0.0002i
+0.6724	+	-0.0002i
+0.3680	+	0.0001i
+-0.8760	+	-0.0002i
+-0.3810	+	-0.0001i
+0.5693	+	-0.0002i
+2.1847	+	-0.0002i
+0.5774	+	0.0001i
+-1.4977	+	0.0001i
+-0.6880	+	-0.0000i
+-0.5642	+	0.0001i
+-0.4402	+	-0.0001i
+0.2179	+	-0.0002i
+-1.2868	+	0.0003i
+-1.1370	+	0.0001i
+-0.6343	+	0.0004i
+0.3196	+	-0.0003i
+0.0056	+	0.0001i
+0.0730	+	-0.0001i
+0.2509	+	-0.0003i
+-0.8264	+	0.0002i
+0.1178	+	-0.0002i
+1.0550	+	0.0000i
+0.4544	+	-0.0001i
+0.0934	+	0.0001i
+-0.0136	+	0.0001i
+0.0523	+	0.0002i
+-0.2008	+	0.0002i
+-1.1828	+	0.0003i
+-0.9495	+	0.0000i
+-1.4844	+	-0.0002i
+1.0456	+	0.0002i
+-0.2965	+	0.0000i
+-0.2510	+	0.0001i
+-0.4213	+	-0.0000i
+-1.6561	+	0.0004i
+1.2089	+	-0.0001i
+0.5702	+	0.0000i
+0.4164	+	-0.0001i
+0.9070	+	0.0001i
+-0.6020	+	-0.0000i
+1.0257	+	-0.0002i
+0.3872	+	-0.0001i
+-2.0476	+	-0.0001i
+0.9081	+	-0.0000i
+0.1485	+	0.0003i
+0.2589	+	0.0000i
+0.7004	+	-0.0001i
+1.0826	+	0.0000i
+2.0801	+	0.0001i
+1.3900	+	0.0001i
+2.8950	+	-0.0000i
+1.1638	+	0.0004i
+1.5016	+	-0.0002i
+-0.9604	+	0.0001i
+-0.4623	+	0.0001i
+-0.6382	+	0.0000i
+-1.1802	+	-0.0000i
+-1.1031	+	-0.0001i
+0.2853	+	0.0004i
+-1.4684	+	0.0003i
+-0.6517	+	0.0000i
+0.9205	+	-0.0001i
+1.6761	+	0.0000i
+0.9096	+	0.0001i
+0.1323	+	-0.0001i
+0.7718	+	-0.0000i
+-1.5744	+	-0.0000i
+-0.6835	+	-0.0002i
+0.2328	+	0.0003i
+-0.5351	+	0.0000i
+0.6792	+	-0.0001i
+-0.3640	+	-0.0000i
+0.9945	+	-0.0001i
+0.0379	+	0.0001i
+0.4536	+	0.0001i
+-0.2681	+	-0.0002i
+0.1398	+	0.0003i
+1.5871	+	-0.0000i
+-0.6274	+	-0.0002i
+-2.0205	+	-0.0002i
+-1.7622	+	0.0002i
+-2.8774	+	0.0001i
+-0.9448	+	0.0002i
+1.6638	+	-0.0001i
+-0.5611	+	0.0002i
+1.2906	+	-0.0000i
+0.2015	+	0.0001i
+0.8345	+	-0.0002i
+0.2399	+	-0.0001i
+-1.6755	+	0.0003i
+0.4576	+	0.0001i
+-0.3879	+	0.0003i
+1.4195	+	0.0002i
+-0.7806	+	-0.0001i
+-2.2043	+	-0.0001i
+0.0180	+	0.0002i
+1.7680	+	-0.0001i
+-0.2733	+	0.0002i
+-0.9373	+	0.0002i
+-1.2681	+	-0.0000i
+-0.3137	+	0.0001i
+0.5460	+	-0.0003i
+-0.0397	+	-0.0001i
+0.0271	+	0.0001i
+1.3437	+	-0.0000i
+2.9364	+	-0.0003i
+1.3321	+	0.0000i
+2.5341	+	0.0000i
+0.8590	+	0.0001i
+-2.0955	+	-0.0000i
+0.3390	+	0.0000i
+0.6955	+	0.0002i
+1.3983	+	0.0003i
+0.6882	+	-0.0000i
+1.2716	+	-0.0001i
+0.8793	+	-0.0001i
+0.0820	+	-0.0002i
+-0.6185	+	0.0001i
+1.6341	+	0.0001i
+1.0784	+	0.0002i
+-0.3586	+	0.0002i
+0.5783	+	0.0002i
+0.4639	+	-0.0001i
+-0.9003	+	0.0002i
+-0.9986	+	-0.0004i
+1.3497	+	-0.0002i
+-0.4221	+	0.0003i
+0.9581	+	0.0002i
+0.0206	+	0.0001i
+-0.8553	+	0.0000i
+-1.2213	+	-0.0000i
+0.7598	+	0.0002i
+-0.1716	+	-0.0002i
+1.0917	+	-0.0000i
+-1.6217	+	0.0002i
+-0.8323	+	-0.0002i
+-0.9791	+	-0.0002i
+0.1406	+	-0.0001i
+0.5302	+	0.0002i
+-0.9443	+	0.0002i
+-1.5098	+	0.0001i
+0.0149	+	0.0000i
+1.1491	+	-0.0002i
+-0.7360	+	0.0001i
+-0.8028	+	-0.0000i
+-0.7166	+	-0.0000i
+-0.1368	+	-0.0001i
+0.5953	+	0.0001i
+2.6661	+	0.0000i
+0.7588	+	0.0001i
+-1.3406	+	-0.0002i
+-1.5532	+	0.0003i
+1.4372	+	-0.0002i
+-0.3100	+	0.0003i
+-1.5865	+	0.0003i
+0.7094	+	0.0000i
+-1.2011	+	0.0000i
+-0.6187	+	0.0002i
+-1.4864	+	0.0001i
+0.0497	+	-0.0001i
+1.1497	+	0.0002i
+-0.5107	+	0.0001i
+0.6677	+	0.0000i
+1.1917	+	0.0000i
+0.5794	+	-0.0001i
+0.4987	+	-0.0001i
+1.4768	+	-0.0001i
+2.4856	+	-0.0002i
+1.6181	+	-0.0001i
+2.3963	+	0.0000i
+1.2796	+	0.0001i
+1.8006	+	-0.0001i
+2.1279	+	-0.0002i
+-0.7450	+	0.0001i
+1.2592	+	-0.0002i
+1.1079	+	-0.0001i
+-1.4616	+	0.0001i
+2.4504	+	-0.0001i
+0.1456	+	0.0001i
+0.8758	+	0.0000i
+-0.6352	+	0.0000i
+-0.5587	+	0.0000i
+-1.7987	+	0.0000i
+-0.5109	+	0.0001i
+-1.6446	+	-0.0005i
+-1.0131	+	0.0001i
+-1.3715	+	-0.0003i
+-0.3744	+	-0.0003i
+0.2067	+	-0.0002i
+-1.9114	+	-0.0000i
+-0.4749	+	-0.0002i
+-0.4470	+	-0.0001i
+1.4368	+	-0.0002i
+0.6182	+	0.0001i
+-0.6661	+	0.0001i
+-0.8529	+	0.0001i
+-1.8420	+	-0.0001i
+-1.5614	+	0.0002i
+0.0737	+	-0.0003i
+1.3529	+	0.0000i
+-1.7409	+	-0.0000i
+-0.9595	+	0.0001i
+-0.2328	+	0.0000i
+0.0297	+	-0.0002i
+-0.0387	+	0.0000i
+-0.2045	+	-0.0000i
+1.0241	+	-0.0000i
+0.6326	+	-0.0001i
+0.0930	+	-0.0001i
+0.2745	+	-0.0002i
+1.0262	+	-0.0000i
+2.5513	+	-0.0001i
+-0.2755	+	-0.0004i
+-0.4147	+	0.0003i
+-0.1760	+	0.0001i
+1.0590	+	0.0000i
+0.9035	+	-0.0001i
+0.3837	+	0.0001i
+0.1497	+	-0.0003i
+-0.3068	+	-0.0000i
+-2.0667	+	0.0001i
+-1.9171	+	0.0001i
+-0.6145	+	-0.0001i
+-1.6482	+	-0.0001i
+0.7579	+	-0.0002i
+-0.0790	+	-0.0000i
+1.6724	+	0.0000i
+1.6195	+	0.0002i
+1.2288	+	0.0001i
+-1.2765	+	-0.0001i
+0.7595	+	-0.0003i
+-0.2766	+	0.0000i
+-0.1983	+	0.0000i
+-0.0389	+	0.0000i
+1.3746	+	-0.0002i
+1.1691	+	-0.0001i
+2.5794	+	-0.0001i
+1.1664	+	0.0000i
+0.3370	+	0.0000i
+-0.0081	+	-0.0001i
+-0.3156	+	0.0001i
+-1.3735	+	-0.0002i
+-1.1470	+	-0.0000i
+-2.0991	+	0.0004i
+-0.2713	+	0.0001i
+-1.5415	+	-0.0000i
+-0.7626	+	0.0001i
+1.8973	+	0.0001i
+1.4894	+	0.0001i
+0.0993	+	0.0000i
+1.1615	+	-0.0000i
+1.1023	+	-0.0000i
+0.4357	+	-0.0001i
+0.6776	+	0.0001i
+1.4625	+	-0.0001i
+-0.6936	+	0.0001i
+0.8279	+	-0.0002i
+0.0538	+	0.0002i
+-0.2154	+	-0.0003i
+1.9030	+	0.0000i
+0.3464	+	-0.0000i
+0.2082	+	0.0000i
+-0.9700	+	0.0002i
+-1.6562	+	0.0002i
+-0.4811	+	0.0003i
+-1.4699	+	-0.0000i
+-0.7433	+	0.0003i
+-0.5312	+	0.0001i
+-0.1586	+	-0.0000i
+-0.2775	+	-0.0001i
+0.1933	+	-0.0000i
+-0.0090	+	-0.0000i
+0.0444	+	0.0002i
+-1.2605	+	0.0001i
+1.3515	+	-0.0001i
+1.0010	+	-0.0002i
+-0.0220	+	0.0001i
+1.8138	+	-0.0000i
+1.9957	+	-0.0002i
+0.4639	+	-0.0000i
+1.1499	+	0.0001i
+0.5602	+	-0.0001i
+1.7004	+	-0.0002i
+0.7283	+	0.0002i
+0.6197	+	-0.0004i
+-0.4826	+	-0.0000i
+-1.3911	+	-0.0005i
+0.3400	+	-0.0000i
+1.9971	+	-0.0002i
+-0.0122	+	0.0001i
+0.4284	+	-0.0002i
+1.0027	+	-0.0003i
+0.7400	+	-0.0001i
+-0.0907	+	-0.0001i
+1.9456	+	-0.0003i
+0.9467	+	-0.0001i
+1.4605	+	-0.0001i
+-1.3202	+	0.0001i
+-0.8634	+	0.0002i
+1.3041	+	-0.0000i
+-1.1605	+	-0.0001i
+0.3340	+	-0.0000i
+-0.9228	+	-0.0001i
+0.7244	+	-0.0001i
+-0.5723	+	-0.0003i
+-0.8454	+	-0.0000i
+-1.6388	+	-0.0002i
+-0.7663	+	-0.0000i
+-0.0893	+	-0.0003i
+0.7198	+	-0.0001i
+-1.2775	+	-0.0000i
+2.6762	+	0.0001i
+0.5949	+	0.0001i
+0.8250	+	0.0002i
+0.3534	+	-0.0001i
+-1.4687	+	0.0002i
+-0.1583	+	0.0001i
+-0.3702	+	-0.0001i
+-0.8231	+	0.0003i
+-0.2340	+	0.0001i
+0.9921	+	0.0000i
+-0.0157	+	-0.0001i
+-1.0052	+	0.0001i
+-1.3666	+	-0.0004i
+0.5181	+	0.0000i
+-0.7713	+	-0.0003i
+-0.4844	+	-0.0002i
+0.3522	+	-0.0000i
+-0.4591	+	-0.0004i
+-0.5924	+	0.0001i
+-1.6785	+	-0.0000i
+-1.6104	+	-0.0001i
+-1.3327	+	0.0002i
+-0.5970	+	0.0000i
+1.3654	+	-0.0002i
+1.2742	+	-0.0002i
+1.7348	+	0.0001i
+0.8625	+	0.0001i
+0.9517	+	0.0001i
+0.0653	+	-0.0003i
+0.6605	+	-0.0002i
+1.4548	+	-0.0001i
+1.2215	+	-0.0003i
+-1.6180	+	0.0003i
+0.4574	+	-0.0003i
+0.1169	+	-0.0001i
+1.1656	+	-0.0006i
+0.9783	+	-0.0003i
+-0.2624	+	-0.0002i
+1.1154	+	-0.0002i
+0.6655	+	-0.0000i
+-0.7196	+	-0.0001i
+0.0803	+	-0.0002i
+1.1094	+	-0.0005i
+-0.3643	+	-0.0001i
+1.6415	+	-0.0002i
+-0.7688	+	-0.0003i
+-0.1974	+	-0.0000i
+0.2655	+	-0.0000i
+-0.0441	+	0.0001i
+0.9773	+	-0.0000i
+0.9919	+	-0.0003i
+-1.1670	+	0.0001i
+2.0823	+	-0.0002i
+0.9134	+	0.0001i
+-2.0476	+	-0.0001i
+-1.7517	+	0.0003i
+0.5533	+	0.0001i
+-0.4212	+	0.0002i
+-1.2058	+	0.0000i
+-0.5016	+	0.0000i
+-1.4416	+	0.0004i
+-0.9818	+	0.0003i
+-0.3737	+	-0.0000i
+-1.3276	+	0.0001i
+-2.0319	+	0.0003i
+-1.5912	+	0.0001i
+-1.4479	+	-0.0000i
+0.7592	+	0.0002i
+0.0148	+	0.0000i
+1.2976	+	0.0000i
+-0.3031	+	-0.0002i
+0.9544	+	-0.0002i
+0.8341	+	-0.0002i
+-0.6274	+	0.0003i
+0.4254	+	-0.0001i
+0.5293	+	-0.0002i
+-2.1571	+	0.0001i
+-1.0608	+	0.0003i
+0.4431	+	-0.0002i
+-0.8582	+	-0.0001i
+0.3880	+	-0.0002i
+0.4523	+	0.0004i
+-0.9717	+	-0.0000i
+-1.7496	+	-0.0000i
+-0.3907	+	-0.0000i
+-0.2042	+	-0.0001i
+-1.5912	+	-0.0001i
+-1.4778	+	0.0001i
+-1.3647	+	0.0002i
+-1.1636	+	-0.0000i
+-1.6759	+	-0.0000i
+0.1301	+	0.0000i
+0.0030	+	-0.0001i
+1.9040	+	-0.0002i
+0.7709	+	-0.0002i
+0.1900	+	-0.0001i
+-0.1525	+	0.0002i
+0.3019	+	0.0001i
+0.0355	+	-0.0003i
+-0.7832	+	0.0002i
+-0.3168	+	0.0001i
+2.2353	+	-0.0000i
+0.1463	+	0.0002i
+-0.9384	+	-0.0000i
+-0.8963	+	0.0001i
+1.4777	+	-0.0003i
+-1.0172	+	-0.0001i
+-0.5033	+	-0.0001i
+-0.3955	+	0.0001i
+-1.0029	+	0.0000i
+-2.4075	+	0.0001i
+-1.9906	+	-0.0002i
+-1.0603	+	0.0001i
+-0.4195	+	0.0001i
+-0.5551	+	-0.0000i
+0.2918	+	-0.0001i
+-1.0693	+	0.0001i
+-1.0246	+	-0.0000i
+-2.7310	+	0.0000i
+-1.1351	+	-0.0002i
+-0.7431	+	0.0003i
+-0.3110	+	0.0002i
+0.9120	+	0.0000i
+1.4822	+	-0.0002i
+-0.4333	+	0.0003i
+0.1967	+	-0.0000i
+0.9664	+	0.0000i
+0.2304	+	0.0001i
+-1.8127	+	0.0001i
+-0.4069	+	-0.0003i
+1.7389	+	0.0001i
+1.1872	+	0.0001i
+0.5719	+	0.0002i
+-1.0961	+	0.0000i
+-1.9572	+	0.0004i
+-0.1386	+	-0.0001i
+0.4399	+	-0.0002i
+0.2510	+	0.0001i
+0.4950	+	-0.0002i
+-0.7556	+	0.0003i
+-1.4692	+	0.0002i
+0.3556	+	0.0003i
+-1.9448	+	0.0002i
+-1.2017	+	0.0001i
+0.5294	+	0.0001i
+-0.1469	+	-0.0002i
+0.0566	+	0.0000i
+2.3798	+	-0.0001i
+-1.0780	+	0.0001i
+-1.2191	+	-0.0003i
+-1.3404	+	-0.0001i
+0.5902	+	-0.0003i
+-1.2641	+	0.0001i
+-1.4733	+	-0.0001i
+-0.8921	+	0.0004i
+-0.5476	+	0.0001i
+0.0179	+	0.0002i
+-0.4981	+	0.0001i
+-0.2650	+	-0.0000i
+-1.0762	+	-0.0000i
+0.0529	+	-0.0001i
+0.6554	+	-0.0000i
+2.1808	+	-0.0000i
+0.3037	+	0.0002i
+2.0379	+	0.0001i
+0.1301	+	0.0000i
+0.2308	+	0.0001i
+-1.8846	+	-0.0000i
+-1.6396	+	0.0002i
+-1.7769	+	0.0001i
+-1.5772	+	0.0001i
+-1.7901	+	-0.0002i
+-0.4806	+	-0.0001i
+-1.3757	+	0.0002i
+0.5542	+	-0.0003i
+0.0168	+	0.0001i
+-2.1395	+	-0.0000i
+-0.1006	+	0.0001i
+-1.0610	+	0.0002i
+-1.2545	+	0.0002i
+-0.2165	+	0.0003i
+-0.3370	+	0.0001i
+-0.0998	+	0.0002i
+1.4449	+	0.0000i
+0.3546	+	0.0002i
+1.1155	+	-0.0000i
+1.9287	+	0.0001i
+0.1764	+	0.0003i
+-0.6692	+	-0.0002i
+2.4734	+	-0.0000i
+-1.5285	+	0.0011i
+0.2670	+	0.0000i
+0.0242	+	-0.0002i
+0.1669	+	-0.0001i
+-0.5102	+	-0.0004i
+-1.3619	+	0.0001i
+-0.8029	+	-0.0001i
+0.0147	+	-0.0001i
+0.9050	+	0.0000i
+0.7528	+	0.0002i
+-0.1651	+	0.0003i
+-1.1011	+	0.0001i
+-1.1902	+	-0.0000i
+-0.1578	+	0.0002i
+-0.5053	+	0.0001i
+0.3803	+	0.0001i
+0.2216	+	-0.0002i
+0.2079	+	-0.0005i
+0.9242	+	-0.0002i
+0.7543	+	0.0001i
+1.7139	+	0.0001i
+1.1395	+	-0.0000i
+-1.7026	+	0.0000i
+-0.7159	+	-0.0003i
+-0.4221	+	0.0001i
+-0.5868	+	0.0001i
+-0.0224	+	-0.0000i
+0.1250	+	0.0001i
+0.3372	+	0.0002i
+0.4836	+	0.0001i
+1.3690	+	-0.0001i
+1.4830	+	0.0002i
+1.3721	+	-0.0001i
+-0.4735	+	0.0000i
+-0.2290	+	0.0001i
+0.4159	+	0.0004i
+1.0159	+	0.0001i
+-0.5716	+	0.0004i
+0.8275	+	0.0001i
+-0.0459	+	-0.0000i
+-0.5046	+	0.0001i
+1.6230	+	-0.0002i
+-0.4140	+	0.0000i
+0.7716	+	-0.0002i
+1.8520	+	0.0001i
+0.9611	+	-0.0003i
+0.2556	+	-0.0000i
+-0.4569	+	-0.0001i
+0.8911	+	-0.0000i
+0.6367	+	-0.0004i
+0.1479	+	0.0000i
+1.1101	+	-0.0003i
+-0.6884	+	0.0001i
+0.5424	+	0.0003i
+0.0407	+	-0.0001i
+-0.2756	+	0.0000i
+0.7176	+	0.0001i
+1.1109	+	0.0001i
+1.3885	+	-0.0001i
+1.1463	+	-0.0000i
+0.7908	+	0.0002i
+-0.3947	+	-0.0001i
+-0.0202	+	0.0000i
+0.3746	+	0.0002i
+-0.3942	+	0.0001i
+1.2238	+	-0.0001i
+-1.7558	+	0.0004i
+-0.0756	+	-0.0001i
+-0.1712	+	0.0001i
+-0.6539	+	0.0001i
+-2.0193	+	0.0002i
+0.1677	+	0.0001i
+0.9137	+	-0.0001i
+1.3513	+	0.0000i
+-0.6286	+	-0.0002i
+0.2796	+	0.0000i
+0.7594	+	0.0001i
+-1.7998	+	0.0002i
+-1.8745	+	-0.0002i
+-0.3381	+	-0.0002i
+0.9377	+	-0.0003i
+-1.0969	+	0.0001i
+-0.3896	+	-0.0001i
+0.7868	+	-0.0001i
+-1.4484	+	0.0001i
+-1.0121	+	0.0005i
+-1.8368	+	-0.0001i
+0.1570	+	-0.0000i
+0.6220	+	0.0002i
+-0.1616	+	0.0005i
+-0.0522	+	0.0001i
+-0.3576	+	-0.0001i
+0.0939	+	-0.0000i
+0.2994	+	0.0000i
+0.6405	+	0.0002i
+0.1642	+	-0.0001i
+-0.6157	+	0.0003i
+-2.1186	+	-0.0002i
+-1.7415	+	0.0000i
+-0.3354	+	0.0001i
+0.0882	+	-0.0001i
+0.2457	+	-0.0001i
+1.2591	+	0.0002i
+1.2260	+	-0.0006i
+1.6039	+	-0.0001i
+0.6801	+	-0.0000i
+0.8677	+	-0.0002i
+-2.9894	+	0.0003i
+0.0581	+	0.0003i
+0.4000	+	0.0002i
+-0.4075	+	0.0000i
+0.2950	+	-0.0002i
+-0.5927	+	-0.0002i
+1.6902	+	-0.0003i
+1.5095	+	0.0001i
+-1.0196	+	0.0002i
+0.2455	+	0.0002i
+1.0760	+	0.0002i
+0.9140	+	-0.0002i
+0.8750	+	0.0003i
+1.0808	+	0.0002i
+1.6477	+	-0.0004i
+0.8319	+	-0.0003i
+0.6900	+	-0.0001i
+0.5404	+	-0.0005i
+-0.0125	+	-0.0000i
+2.1094	+	-0.0004i
+0.9914	+	0.0001i
+-1.7323	+	0.0002i
+-0.5931	+	0.0002i
+-0.6939	+	0.0004i
+1.6825	+	0.0000i
+0.9833	+	-0.0000i
+0.2354	+	0.0003i
+-0.6949	+	-0.0001i
+0.2356	+	-0.0005i
+-0.3422	+	0.0002i
+-0.6627	+	-0.0001i
+-1.0364	+	0.0001i
+-0.4566	+	-0.0003i
+-0.9923	+	-0.0002i
+-0.0415	+	-0.0001i
+-0.0395	+	0.0001i
+0.3322	+	-0.0001i
+-0.2360	+	-0.0001i
+-1.1464	+	-0.0001i
+0.9784	+	-0.0001i
+-0.4648	+	0.0002i
+-1.0964	+	0.0003i
+0.9468	+	0.0005i
+0.7823	+	-0.0002i
+0.1700	+	0.0000i
+0.6196	+	0.0002i
+0.2902	+	0.0002i
+-1.0014	+	0.0003i
+-0.5874	+	0.0002i
+-0.6242	+	0.0002i
+1.7533	+	-0.0001i
+0.3485	+	0.0002i
+1.8280	+	0.0000i
+-0.3331	+	0.0000i
+0.4689	+	0.0003i
+0.4376	+	0.0002i
+-0.5684	+	0.0001i
+0.1083	+	-0.0000i
+0.1868	+	-0.0003i
+-1.4318	+	0.0001i
+-1.1843	+	0.0003i
+-0.0755	+	-0.0001i
+-1.3273	+	0.0002i
+-0.0615	+	-0.0003i
+-1.0010	+	-0.0001i
+-0.6450	+	-0.0004i
+-2.2091	+	0.0003i
+-2.0183	+	0.0000i
+-1.5128	+	-0.0001i
+0.9047	+	-0.0001i
+-1.9091	+	0.0002i
+0.9690	+	-0.0000i
+0.6922	+	-0.0004i
+-0.7305	+	-0.0002i
+0.6855	+	0.0001i
+0.1653	+	0.0002i
+1.1264	+	-0.0004i
+-0.2180	+	0.0002i
+1.7332	+	0.0000i
+1.3331	+	-0.0000i
+1.7646	+	-0.0002i
+2.3683	+	0.0001i
+1.4308	+	-0.0000i
+2.3271	+	0.0000i
+1.1100	+	0.0003i
+0.6005	+	-0.0002i
+-0.5993	+	0.0003i
+2.1092	+	0.0001i
+1.1995	+	-0.0000i
+2.1305	+	-0.0001i
+1.4892	+	-0.0002i
+1.7523	+	-0.0002i
+-0.6403	+	-0.0000i
+0.4483	+	0.0004i
+-0.8584	+	-0.0001i
+0.1089	+	0.0005i
+1.1177	+	0.0003i
+1.1445	+	-0.0000i
+0.7971	+	-0.0001i
+-1.0812	+	-0.0003i
+0.4284	+	-0.0001i
+-1.4782	+	0.0002i
+0.9742	+	0.0001i
+0.9628	+	-0.0001i
+-0.1374	+	0.0001i
+0.0949	+	-0.0002i
+-2.4607	+	0.0005i
+0.7550	+	0.0001i
+-1.9692	+	0.0004i
+-1.6820	+	0.0002i
+-1.5578	+	-0.0000i
+-1.4002	+	0.0001i
+-0.0153	+	0.0000i
+-0.2231	+	0.0000i
+0.3631	+	0.0000i
+-0.1875	+	0.0000i
+-0.8629	+	0.0002i
+-1.7807	+	0.0003i
+1.0219	+	-0.0004i
+2.7950	+	-0.0004i
+0.7506	+	0.0001i
+1.0988	+	-0.0001i
+1.0385	+	-0.0002i
+-0.9943	+	-0.0002i
+-0.6266	+	0.0000i
+0.4324	+	0.0000i
+-1.0336	+	0.0003i
+-1.0404	+	-0.0002i
+-0.9760	+	0.0001i
+0.2765	+	0.0002i
+-0.5936	+	0.0003i
+-0.0219	+	-0.0002i
+1.0522	+	-0.0001i
+-0.3223	+	-0.0003i
+0.4276	+	-0.0000i
+0.4867	+	-0.0004i
+0.5205	+	0.0001i
+-1.1574	+	0.0000i
+0.8011	+	-0.0004i
+-0.1797	+	0.0002i
+-0.2851	+	0.0000i
+-0.8148	+	0.0004i
+-0.5845	+	0.0006i
+0.2561	+	-0.0001i
+0.0679	+	-0.0001i
+0.2074	+	0.0002i
+-0.8263	+	0.0004i
+0.2417	+	-0.0002i
+-0.5051	+	0.0001i
+-0.3368	+	-0.0000i
+1.6310	+	0.0001i
+0.4949	+	0.0001i
+0.5993	+	-0.0001i
+-0.1587	+	-0.0001i
+-0.7087	+	-0.0000i
+-0.1445	+	0.0000i
+0.8024	+	-0.0002i
+-0.3296	+	-0.0003i
+0.9630	+	0.0002i
+-0.4522	+	0.0002i
+1.0976	+	-0.0000i
+0.3237	+	-0.0002i
+-0.5593	+	-0.0003i
+-1.8261	+	-0.0001i
+-1.2046	+	0.0004i
+-0.2818	+	0.0001i
+-0.5639	+	0.0003i
+0.4254	+	-0.0002i
+-1.0622	+	-0.0001i
+-0.7324	+	-0.0000i
+-0.1105	+	0.0000i
+-0.7342	+	0.0004i
+-0.1130	+	0.0003i
+0.5200	+	-0.0000i
+-2.2073	+	0.0001i
+-0.3439	+	0.0001i
+0.4744	+	0.0001i
+-0.7294	+	0.0002i
+0.2637	+	0.0001i
+2.3096	+	-0.0000i
+-0.3866	+	0.0004i
+1.9081	+	0.0000i
+-0.6141	+	-0.0001i
+-0.4817	+	-0.0000i
+-0.7369	+	0.0001i
+-0.4313	+	0.0001i
+-0.4723	+	0.0004i
+-1.5656	+	0.0003i
+1.7805	+	0.0004i
+-0.5242	+	0.0001i
+0.1505	+	0.0003i
+-0.5190	+	0.0003i
+1.0948	+	-0.0001i
+0.2637	+	0.0001i
+-1.0886	+	-0.0000i
+-2.3458	+	0.0000i
+-0.7335	+	-0.0002i
+-1.6654	+	-0.0001i
+-1.2402	+	-0.0001i
+0.6234	+	-0.0003i
+0.4196	+	-0.0001i
+0.9781	+	-0.0001i
+1.7795	+	0.0001i
+2.1566	+	-0.0005i
+-0.1471	+	-0.0007i
+-0.0338	+	-0.0004i
+1.4111	+	0.0001i
+1.1131	+	-0.0002i
+1.6428	+	0.0000i
+-1.6462	+	0.0001i
+-0.9698	+	-0.0000i
+0.1435	+	0.0001i
+-0.2664	+	0.0003i
+0.9549	+	-0.0001i
+1.5283	+	-0.0004i
+-1.6440	+	-0.0002i
+0.0897	+	0.0000i
+0.6261	+	0.0002i
+0.8023	+	0.0000i
+1.0452	+	0.0001i
+1.3100	+	0.0000i
+-0.5788	+	-0.0001i
+-1.3370	+	-0.0004i
+-0.5243	+	-0.0000i
+-0.5845	+	-0.0001i
+-1.0680	+	-0.0002i
+-0.3654	+	0.0003i
+2.2122	+	-0.0000i
+0.0330	+	0.0001i
+-0.9091	+	0.0001i
+0.4634	+	0.0003i
+-1.2600	+	0.0003i
+-2.5749	+	-0.0002i
+-1.0786	+	0.0001i
+-1.6440	+	0.0001i
+-1.4125	+	0.0001i
+0.5193	+	-0.0002i
+-2.0515	+	0.0004i
+-1.0472	+	-0.0001i
+-0.3879	+	0.0003i
+-0.0844	+	0.0005i
+-1.6790	+	0.0002i
+0.2876	+	-0.0002i
+-0.1527	+	0.0001i
+-0.0603	+	0.0004i
+0.4820	+	-0.0003i
+-0.3260	+	0.0001i
+-0.0246	+	-0.0002i
+-0.7590	+	0.0004i
+1.2286	+	-0.0001i
+0.1849	+	0.0001i
+1.4674	+	-0.0001i
+1.5878	+	-0.0002i
+1.4827	+	-0.0000i
+-0.1301	+	-0.0002i
+-1.4404	+	0.0001i
+-0.9328	+	-0.0001i
+0.6959	+	-0.0002i
+0.3298	+	0.0001i
+0.8916	+	-0.0004i
+-0.1360	+	-0.0000i
+1.2334	+	0.0000i
+-1.6528	+	0.0003i
+0.2763	+	-0.0003i
+0.0026	+	0.0002i
+1.5155	+	-0.0002i
+-0.5010	+	0.0001i
+-0.2503	+	0.0002i
+2.3182	+	-0.0000i
+2.1783	+	-0.0002i
+-0.1787	+	0.0000i
+-0.2972	+	0.0002i
+1.8550	+	0.0002i
+1.9941	+	0.0001i
+0.8558	+	0.0005i
+-0.6870	+	0.0003i
+1.3257	+	-0.0001i
+-0.2278	+	0.0001i
+0.3273	+	-0.0003i
+-0.6782	+	0.0002i
+-0.7984	+	-0.0004i
+0.1825	+	-0.0001i
+0.2770	+	-0.0003i
+1.0493	+	-0.0006i
+-0.6093	+	-0.0002i
+-1.4279	+	-0.0003i
+1.2516	+	0.0001i
+-0.2440	+	0.0001i
+-0.5737	+	0.0002i
+0.1546	+	-0.0000i
+-0.1314	+	-0.0000i
+-1.6548	+	-0.0004i
+-0.8967	+	-0.0000i
+-0.1674	+	0.0001i
+-0.1577	+	-0.0002i
+-0.5594	+	0.0000i
+0.0560	+	0.0000i
+-0.2126	+	0.0003i
+-0.5357	+	-0.0001i
+-1.9899	+	0.0002i
+-0.8355	+	0.0000i
+-0.1568	+	-0.0001i
+-1.8411	+	-0.0001i
+2.2023	+	-0.0000i
+0.2788	+	0.0003i
+0.9494	+	0.0002i
+-0.0515	+	-0.0000i
+-0.3782	+	-0.0002i
+-0.0040	+	-0.0001i
+-0.6410	+	0.0001i
+1.1502	+	0.0000i
+-0.6336	+	0.0002i
+0.9866	+	-0.0004i
+1.0358	+	-0.0000i
+-2.1529	+	0.0001i
+0.4146	+	-0.0000i
+-1.5626	+	-0.0001i
+-0.0939	+	0.0001i
+-0.7329	+	-0.0001i
+0.0145	+	0.0002i
+-0.0842	+	-0.0001i
+-0.3541	+	-0.0001i
+0.3697	+	-0.0003i
+0.6098	+	0.0000i
+1.4263	+	0.0000i
+-0.3368	+	-0.0002i
+-1.4197	+	0.0001i
+-1.0897	+	-0.0001i
+-0.1869	+	-0.0001i
+0.0931	+	-0.0001i
+-1.3065	+	0.0003i
+-0.8365	+	-0.0003i
+-0.8674	+	0.0003i
+-0.3226	+	0.0000i
+-1.4984	+	0.0001i
+-0.3986	+	0.0001i
+-0.9239	+	0.0001i
+-0.3962	+	0.0001i
+-1.7294	+	-0.0001i
+0.0759	+	-0.0003i
+-1.5267	+	-0.0003i
+0.7231	+	-0.0004i
+-0.7383	+	-0.0001i
+0.6556	+	-0.0002i
+0.7558	+	-0.0004i
+-0.6609	+	-0.0004i
+1.3162	+	-0.0006i
+1.4702	+	-0.0001i
+-0.8725	+	0.0001i
+1.4149	+	-0.0001i
+0.4384	+	0.0003i
+-0.0606	+	0.0001i
+-0.1513	+	0.0007i
+0.0028	+	-0.0001i
+1.1230	+	0.0000i
+-0.9919	+	-0.0002i
+1.7364	+	-0.0001i
+-0.1443	+	-0.0003i
+1.8650	+	-0.0004i
+0.6589	+	-0.0002i
+1.1727	+	-0.0002i
+-0.5352	+	0.0003i
+-2.0389	+	0.0006i
+-1.2683	+	-0.0001i
+-2.1477	+	0.0001i
+-2.4241	+	0.0002i
+-0.9917	+	-0.0003i
+-0.1788	+	0.0002i
+-0.0234	+	-0.0001i
+-0.7182	+	0.0004i
+-0.1875	+	0.0007i
+-0.1394	+	0.0001i
+-0.7589	+	0.0005i
+0.2506	+	0.0003i
+-0.1705	+	0.0003i
+0.1323	+	-0.0001i
+0.0677	+	-0.0003i
+0.0579	+	0.0001i
+-0.4502	+	0.0003i
+0.1967	+	-0.0000i
+0.2605	+	0.0003i
+1.3579	+	-0.0002i
+2.1622	+	-0.0000i
+0.4399	+	0.0002i
+0.1183	+	0.0002i
+0.9776	+	-0.0002i
+-1.4410	+	-0.0002i
+-0.9909	+	0.0003i
+-1.6571	+	-0.0002i
+-0.5824	+	-0.0001i
+-1.9807	+	0.0005i
+1.0199	+	-0.0000i
+2.0414	+	-0.0002i
+1.1040	+	-0.0001i
+-0.3888	+	-0.0002i
+-0.5050	+	0.0001i
+0.2124	+	-0.0002i
+1.2704	+	0.0000i
+0.9972	+	0.0002i
+1.4176	+	-0.0001i
+-1.2710	+	-0.0003i
+0.5078	+	0.0004i
+-1.1461	+	0.0001i
+0.8409	+	0.0001i
+-1.1602	+	0.0008i
+-0.2723	+	0.0036i
+0.9430	+	0.0003i
+0.2072	+	0.0007i
+0.3358	+	0.0004i
+1.7272	+	-0.0000i
+0.7752	+	0.0000i
+-1.5203	+	0.0003i
+0.2962	+	-0.0000i
+2.2973	+	-0.0001i
+-1.6058	+	0.0003i
+-0.9072	+	-0.0000i
+0.8628	+	0.0002i
+-0.5149	+	0.0002i
+-1.0654	+	-0.0001i
+0.5114	+	0.0001i
+0.6180	+	-0.0006i
+1.0310	+	0.0001i
+-0.0382	+	0.0000i
+2.1706	+	-0.0004i
+1.2149	+	0.0003i
+2.6398	+	0.0001i
+0.8286	+	-0.0004i
+0.8742	+	-0.0002i
+0.5899	+	-0.0007i
+-0.3954	+	0.0004i
+0.7610	+	-0.0002i
+0.9023	+	0.0000i
+1.7957	+	-0.0004i
+-0.0015	+	0.0001i
+0.6380	+	0.0000i
+0.3371	+	-0.0000i
+1.1982	+	-0.0002i
+-2.4034	+	0.0001i
+0.4616	+	-0.0003i
+-1.5736	+	-0.0000i
+-1.5924	+	-0.0003i
+1.0379	+	-0.0000i
+-0.0879	+	-0.0003i
+-0.3637	+	-0.0002i
+-0.4462	+	0.0001i
+-1.4242	+	0.0002i
+-0.3110	+	-0.0001i
+-2.2382	+	0.0002i
+0.7806	+	-0.0004i
+0.5425	+	-0.0003i
+0.7865	+	0.0003i
+-2.1761	+	0.0001i
+-1.3893	+	0.0004i
+0.0204	+	0.0002i
+1.0665	+	-0.0001i
+1.1453	+	-0.0001i
+0.4636	+	0.0000i
+1.0354	+	-0.0002i
+-0.8874	+	-0.0000i
+0.2568	+	-0.0000i
+1.1755	+	-0.0001i
+0.8013	+	0.0001i
+0.5524	+	-0.0002i
+0.9041	+	0.0002i
+-0.4681	+	0.0001i
+-0.8211	+	0.0004i
+-0.7621	+	0.0001i
+-0.0633	+	0.0003i
+-0.1239	+	0.0000i
+-0.4742	+	0.0003i
+-0.7616	+	0.0002i
+-0.2595	+	0.0001i
+-1.2736	+	-0.0000i
+0.2288	+	-0.0001i
+-0.5878	+	-0.0004i
+-0.2343	+	-0.0001i
+-0.8560	+	-0.0002i
+1.7422	+	0.0000i
+1.8757	+	-0.0001i
+1.4935	+	0.0001i
+-0.2715	+	0.0002i
+0.1192	+	0.0000i
+-1.2902	+	-0.0000i
+-0.4770	+	0.0003i
+-0.8728	+	-0.0004i
+0.5807	+	0.0000i
+0.5991	+	-0.0002i
+-0.3613	+	-0.0000i
+0.7834	+	0.0001i
+0.1923	+	0.0001i
+-0.3971	+	0.0002i
+-1.0146	+	0.0001i
+-1.3785	+	0.0000i
+0.3151	+	-0.0001i
+-0.6465	+	0.0003i
+0.7599	+	0.0001i
+-1.4961	+	0.0000i
+-1.5108	+	0.0003i
+1.2389	+	0.0001i
+1.8056	+	-0.0000i
+0.6397	+	0.0005i
+0.6748	+	-0.0001i
+-1.0293	+	0.0004i
+-0.5795	+	0.0001i
+0.5779	+	0.0002i
+-0.1713	+	0.0000i
+1.3944	+	-0.0001i
+0.5164	+	-0.0002i
+0.1980	+	0.0001i
+0.1615	+	0.0001i
+1.2997	+	0.0000i
+-0.6390	+	0.0001i
+0.4483	+	0.0001i
+-0.9247	+	-0.0001i
+0.6947	+	0.0000i
+0.3479	+	0.0002i
+0.7318	+	0.0001i
+0.2239	+	-0.0001i
+-0.9601	+	0.0001i
+-1.1843	+	0.0002i
+2.1044	+	-0.0003i
+1.0211	+	0.0001i
+0.8297	+	-0.0005i
+2.1542	+	-0.0000i
+1.2561	+	-0.0002i
+-0.9733	+	0.0001i
+-0.8837	+	-0.0000i
+-0.5083	+	0.0003i
+-0.1857	+	-0.0001i
+-2.4934	+	0.0003i
+-0.4413	+	0.0001i
+1.3521	+	-0.0001i
+1.5271	+	0.0001i
+1.1165	+	0.0000i
+0.3379	+	-0.0002i
+0.7337	+	-0.0001i
+-0.5758	+	-0.0004i
+0.3929	+	-0.0000i
+-1.1616	+	-0.0000i
+-0.9872	+	-0.0001i
+0.4242	+	0.0002i
+-0.5011	+	0.0002i
+0.3355	+	0.0000i
+-1.6556	+	-0.0001i
+-0.7413	+	-0.0000i
+0.4541	+	-0.0002i
+1.5530	+	-0.0000i
+-0.2677	+	0.0003i
+-0.8129	+	0.0001i
+0.7218	+	-0.0002i
+0.1071	+	-0.0002i
+-0.2708	+	0.0003i
+-1.3187	+	-0.0001i
+0.5149	+	-0.0001i
+-0.7219	+	-0.0001i
+-1.0523	+	-0.0001i
+-1.1504	+	-0.0001i
+1.4300	+	-0.0001i
+-0.7225	+	0.0005i
+1.2120	+	-0.0002i
+1.8205	+	-0.0002i
+0.8661	+	0.0003i
+1.1859	+	-0.0003i
+1.2330	+	-0.0002i
+0.3621	+	0.0000i
+-0.3853	+	0.0002i
+1.1362	+	-0.0001i
+1.2506	+	-0.0002i
+1.3225	+	0.0000i
+0.3193	+	-0.0002i
+0.7929	+	-0.0004i
+-0.0991	+	-0.0001i
+-0.1669	+	0.0000i
+-0.9987	+	-0.0001i
+-0.6766	+	0.0001i
+-0.8956	+	-0.0004i
+-1.6488	+	-0.0003i
+-1.0464	+	-0.0001i
+-0.1221	+	0.0001i
+0.9220	+	-0.0004i
+-1.3957	+	-0.0002i
+-0.7022	+	0.0000i
+0.6866	+	-0.0004i
+0.0124	+	0.0001i
+0.2561	+	-0.0005i
+-0.4518	+	0.0001i
+1.1037	+	0.0001i
+-0.2232	+	0.0002i
+0.8144	+	0.0001i
+1.2761	+	0.0000i
+-0.8497	+	-0.0001i
+-0.5699	+	-0.0001i
+-0.4527	+	-0.0003i
+0.6265	+	-0.0003i
+0.5529	+	-0.0001i
+0.0780	+	0.0002i
+-1.5110	+	0.0004i
+-0.6959	+	0.0003i
+-0.0119	+	-0.0002i
+-0.3702	+	-0.0002i
+0.1999	+	-0.0001i
+1.4377	+	0.0002i
+-1.5960	+	0.0004i
+-0.4352	+	0.0001i
+-0.4912	+	-0.0002i
+-0.1994	+	0.0002i
+-1.1392	+	0.0006i
+-1.3584	+	0.0003i
+0.1353	+	-0.0002i
+-1.1019	+	0.0002i
+-0.2929	+	-0.0000i
+-1.3607	+	0.0002i
+-0.5662	+	0.0003i
+-1.3092	+	0.0003i
+-1.2057	+	0.0004i
+-0.7336	+	0.0003i
+0.3239	+	-0.0005i
+1.1929	+	0.0000i
+-1.3210	+	-0.0000i
+-0.9818	+	-0.0003i
+0.7609	+	-0.0005i
+-0.9102	+	-0.0002i
+0.0764	+	-0.0000i
+-0.7746	+	-0.0002i
+-1.3560	+	0.0000i
+0.3114	+	-0.0003i
+-0.3336	+	0.0001i
+-1.1840	+	0.0001i
+-1.2067	+	0.0001i
+-1.9321	+	-0.0002i
+-0.9959	+	-0.0000i
+-1.4506	+	-0.0001i
+-0.7572	+	0.0003i
+-1.7917	+	-0.0003i
+-1.5475	+	0.0000i
+-1.8732	+	-0.0000i
+-0.8056	+	0.0000i
+-1.7011	+	0.0001i
+0.6033	+	-0.0003i
+0.7046	+	-0.0006i
+-0.6735	+	-0.0001i
+0.1792	+	0.0000i
+-0.9271	+	0.0000i
+-1.3716	+	0.0002i
+0.2357	+	0.0001i
+1.6887	+	-0.0004i
+0.0846	+	0.0001i
+2.5375	+	-0.0001i
+0.9833	+	0.0004i
+2.8596	+	-0.0004i
+-1.1374	+	0.0000i
+0.9121	+	0.0000i
+2.0270	+	-0.0000i
+0.8311	+	0.0001i
+-1.1329	+	0.0003i
+0.2143	+	-0.0002i
+-1.5657	+	0.0001i
+-1.5396	+	0.0000i
+-1.3820	+	0.0005i
+-0.3445	+	-0.0000i
+-0.1050	+	0.0001i
+0.4984	+	-0.0001i
+-0.2220	+	0.0002i
+-0.6170	+	0.0002i
+1.0209	+	0.0000i
+1.1069	+	-0.0001i
+0.0301	+	-0.0000i
+-0.0817	+	-0.0002i
+0.1710	+	0.0000i
+-0.3366	+	-0.0004i
+1.0321	+	0.0000i
+1.1787	+	-0.0002i
+-0.5563	+	0.0003i
+-1.5085	+	-0.0001i
+-1.3571	+	0.0000i
+-1.1304	+	0.0001i
+-0.8332	+	0.0003i
+0.1244	+	0.0000i
+0.4542	+	0.0001i
+-0.1083	+	-0.0000i
+0.1220	+	-0.0002i
+-0.0678	+	-0.0001i
+-1.2016	+	0.0002i
+1.7654	+	0.0002i
+0.2079	+	0.0000i
+0.5174	+	0.0000i
+-0.7224	+	-0.0000i
+-0.9139	+	0.0001i
+-1.0303	+	0.0002i
+-0.4000	+	0.0001i
+0.5700	+	-0.0003i
+-0.4815	+	0.0003i
+0.4037	+	0.0005i
+-1.6029	+	-0.0003i
+-0.3582	+	-0.0001i
+1.9029	+	-0.0001i
+-1.1659	+	0.0006i
+-1.4242	+	0.0002i
+-0.1185	+	0.0002i
+-0.6785	+	0.0002i
+0.6146	+	-0.0002i
+0.6156	+	0.0001i
+-1.2166	+	-0.0001i
+-0.8014	+	0.0003i
+-0.1434	+	-0.0000i
+0.7482	+	0.0002i
+1.8153	+	-0.0004i
+-0.3580	+	0.0001i
+0.8368	+	0.0001i
+-2.1877	+	0.0000i
+-0.0961	+	0.0002i
+-1.7054	+	0.0005i
+0.1629	+	0.0002i
+0.1977	+	-0.0001i
+-1.1525	+	-0.0002i
+-1.4899	+	-0.0004i
+-0.9808	+	-0.0003i
+-0.7714	+	-0.0004i
+-1.2493	+	-0.0003i
+0.0813	+	0.0002i
+-1.4059	+	0.0002i
+-1.6317	+	-0.0000i
+-1.0633	+	0.0001i
+-0.8581	+	0.0002i
+-1.2357	+	0.0003i
+-0.6359	+	-0.0000i
+0.7173	+	0.0000i
+1.1583	+	-0.0003i
+0.8044	+	-0.0001i
+0.9461	+	-0.0003i
+-0.6955	+	-0.0000i
+-0.1640	+	-0.0005i
+0.6219	+	-0.0001i
+0.2071	+	-0.0001i
+-0.1653	+	0.0001i
+0.3550	+	-0.0000i
+0.3152	+	0.0002i
+1.2978	+	0.0002i
+0.8012	+	0.0004i
+1.9658	+	-0.0002i
+-1.0319	+	-0.0002i
+-1.2074	+	0.0000i
+-0.4724	+	-0.0001i
+-0.1277	+	0.0001i
+-0.2037	+	-0.0003i
+0.4903	+	0.0007i
+-1.1564	+	-0.0000i
+1.2034	+	0.0001i
+-1.3104	+	0.0002i
+-0.0920	+	0.0001i
+0.2761	+	-0.0001i
+-0.8892	+	0.0003i
+-0.6605	+	0.0004i
+-0.1740	+	0.0001i
+-1.2069	+	0.0002i
+-0.0527	+	-0.0002i
+-0.2185	+	0.0001i
+-0.7622	+	0.0002i
+-1.5956	+	0.0001i
+-2.4115	+	0.0000i
+-1.3456	+	0.0001i
+-2.3912	+	-0.0000i
+0.4308	+	-0.0001i
+-2.0529	+	-0.0002i
+-1.1719	+	-0.0001i
+-1.8384	+	-0.0002i
+0.6149	+	0.0000i
+-1.5109	+	0.0001i
+-0.7544	+	-0.0004i
+1.8239	+	-0.0002i
+-1.8714	+	-0.0000i
+2.0853	+	-0.0002i
+0.7790	+	0.0000i
+-0.4541	+	0.0001i
+0.1475	+	0.0000i
+-0.0129	+	-0.0001i
+0.7843	+	0.0002i
+-0.6123	+	0.0001i
+-0.2956	+	0.0001i
+0.6397	+	-0.0003i
+-0.4501	+	-0.0003i
+0.3439	+	-0.0002i
+0.7426	+	0.0000i
+0.5692	+	-0.0001i
+-1.6052	+	0.0001i
+0.3621	+	-0.0001i
+1.0930	+	0.0000i
+0.5631	+	-0.0006i
+1.5115	+	-0.0005i
+0.4129	+	-0.0003i
+1.8882	+	0.0000i
+-0.6305	+	0.0005i
+1.8599	+	-0.0000i
+0.9099	+	0.0004i
+-0.3684	+	0.0004i
+0.3043	+	0.0002i
+-2.1561	+	0.0002i
+0.6138	+	-0.0002i
+-1.0665	+	-0.0000i
+0.0937	+	0.0002i
+0.0129	+	-0.0002i
+-0.0840	+	-0.0003i
+-1.4547	+	-0.0003i
+-0.3530	+	-0.0003i
+1.7050	+	0.0002i
+1.0951	+	0.0001i
+-0.5761	+	0.0004i
+1.2558	+	-0.0002i
+0.9075	+	-0.0004i
+-0.6256	+	-0.0003i
+-0.8149	+	-0.0005i
+-0.3855	+	0.0002i
+0.1657	+	0.0004i
+0.2926	+	-0.0001i
+0.3332	+	0.0005i
+0.9213	+	0.0002i
+-0.2046	+	0.0001i
+-0.1614	+	0.0004i
+-0.9047	+	0.0001i
+0.7979	+	-0.0003i
+-0.3806	+	0.0001i
+-1.2067	+	-0.0001i
+0.2192	+	0.0003i
+-0.6063	+	-0.0004i
+0.5335	+	-0.0003i
+-1.0194	+	0.0000i
+0.0870	+	-0.0002i
+0.0651	+	-0.0002i
+0.8690	+	-0.0004i
+1.4775	+	-0.0002i
+1.5502	+	-0.0003i
+-1.3811	+	0.0000i
+2.0302	+	-0.0006i
+-1.0751	+	0.0000i
+1.3156	+	-0.0004i
+0.7083	+	-0.0003i
+0.4323	+	-0.0002i
+0.4902	+	0.0004i
+1.0866	+	-0.0000i
+-1.9755	+	-0.0002i
+0.8213	+	-0.0001i
+0.7552	+	-0.0000i
+-0.3419	+	-0.0003i
+-1.9542	+	0.0002i
+1.3771	+	-0.0001i
+-1.2863	+	0.0001i
+-0.2603	+	-0.0002i
+-1.9294	+	-0.0005i
+-0.6808	+	-0.0001i
+-2.1985	+	-0.0000i
+-0.3303	+	0.0001i
+-1.2349	+	0.0000i
+-0.4407	+	-0.0004i
+-1.2419	+	0.0001i
+0.1125	+	-0.0001i
+0.0824	+	0.0000i
+0.1573	+	-0.0002i
+-0.5412	+	-0.0002i
+2.0537	+	0.0000i
+0.2322	+	0.0002i
+0.2626	+	-0.0003i
+0.7889	+	-0.0003i
+-0.4016	+	0.0002i
+0.0995	+	-0.0000i
+1.2552	+	-0.0001i
+-0.3169	+	0.0000i
+-1.0642	+	0.0000i
+-0.1936	+	-0.0003i
+-0.9028	+	0.0007i
+-0.0268	+	-0.0001i
+1.0762	+	-0.0000i
+1.5638	+	-0.0003i
+-1.9102	+	0.0001i
+0.4181	+	-0.0001i
+-1.0886	+	-0.0000i
+0.0611	+	0.0003i
+0.0091	+	0.0004i
+-0.3225	+	0.0001i
+-1.0302	+	0.0002i
+0.9862	+	-0.0000i
+0.7213	+	-0.0009i
+0.9284	+	-0.0004i
+-1.5199	+	-0.0006i
+-1.1324	+	-0.0001i
+-1.1968	+	-0.0004i
+0.1224	+	-0.0000i
+-0.5487	+	-0.0002i
+1.3926	+	-0.0002i
+-0.1123	+	-0.0001i
+0.8152	+	-0.0006i
+0.7645	+	0.0003i
+-2.1118	+	0.0000i
+-0.7430	+	0.0005i
+0.0687	+	-0.0000i
+0.3389	+	0.0005i
+-0.0499	+	-0.0002i
+0.0670	+	0.0000i
+1.3333	+	-0.0002i
+1.9509	+	-0.0001i
+1.7420	+	0.0003i
+1.5915	+	0.0005i
+-1.6603	+	0.0003i
+0.6030	+	-0.0003i
+0.5169	+	-0.0005i
+1.3214	+	-0.0002i
+-0.1147	+	-0.0000i
+0.1102	+	0.0002i
+-1.1142	+	-0.0002i
+0.7463	+	0.0002i
+-0.7918	+	-0.0001i
+0.3751	+	0.0006i
+0.6371	+	0.0001i
+-1.1687	+	-0.0001i
+-0.1014	+	0.0006i
+-1.2728	+	0.0004i
+1.2286	+	0.0006i
+1.0096	+	0.0006i
+0.5345	+	0.0008i
+0.7510	+	0.0002i
+0.5319	+	0.0004i
+-0.4000	+	-0.0004i
+-1.0533	+	-0.0002i
+-0.2419	+	0.0001i
+0.2302	+	-0.0002i
+0.3554	+	0.0001i
+0.3773	+	-0.0001i
+-2.0701	+	0.0000i
+-0.8381	+	-0.0000i
+-2.4027	+	0.0005i
+1.4816	+	-0.0002i
+1.1245	+	0.0001i
+1.4382	+	0.0003i
+0.2548	+	0.0002i
+0.2074	+	0.0005i
+-1.2356	+	-0.0001i
+1.1749	+	0.0001i
+-1.2414	+	0.0002i
+-0.7434	+	-0.0001i
+1.3133	+	-0.0002i
+-0.5612	+	-0.0003i
+1.1572	+	-0.0002i
+0.8290	+	-0.0002i
+0.4097	+	-0.0005i
+1.2759	+	-0.0002i
+-0.5052	+	-0.0004i
+0.2216	+	0.0000i
+-1.5770	+	-0.0001i
+-0.7758	+	0.0001i
+-1.3342	+	0.0002i
+1.8886	+	0.0000i
+-0.4478	+	0.0002i
+-0.0119	+	-0.0005i
+-1.9477	+	0.0001i
+0.5711	+	-0.0003i
+0.4525	+	0.0004i
+0.9312	+	-0.0000i
+1.9015	+	0.0002i
+2.4054	+	-0.0001i
+-0.2275	+	0.0003i
+2.4603	+	-0.0003i
+0.6497	+	0.0003i
+2.1699	+	-0.0000i
+-2.0805	+	0.0006i
+-0.1606	+	-0.0000i
+-0.7470	+	0.0000i
+-0.0751	+	-0.0002i
+-1.5115	+	-0.0000i
+0.8286	+	0.0002i
+0.9234	+	-0.0001i
+1.6080	+	0.0002i
+0.7085	+	0.0003i
+0.1398	+	-0.0001i
+0.4268	+	0.0002i
+1.3552	+	-0.0004i
+1.8989	+	0.0002i
+1.6025	+	-0.0002i
+0.7355	+	-0.0002i
+0.9836	+	-0.0001i
+0.1602	+	0.0002i
+1.1875	+	0.0000i
+0.4677	+	-0.0000i
+-0.3823	+	0.0001i
+2.5271	+	-0.0001i
+-0.9925	+	-0.0003i
+-0.5670	+	-0.0003i
+1.0036	+	-0.0000i
+1.5995	+	-0.0004i
+-0.7376	+	0.0001i
+0.9697	+	0.0001i
+-0.4709	+	0.0000i
+1.2072	+	-0.0000i
+-0.9494	+	-0.0000i
+0.8115	+	0.0001i
+-0.9971	+	0.0000i
+1.2629	+	-0.0006i
+-1.4624	+	-0.0001i
+-1.4289	+	0.0001i
+-1.0279	+	-0.0001i
+-1.1735	+	-0.0000i
+-0.6513	+	0.0004i
+-0.2702	+	-0.0002i
+0.0741	+	0.0000i
+0.3824	+	0.0006i
+-0.3804	+	0.0001i
+-0.1336	+	0.0002i
+0.0718	+	-0.0002i
+0.0087	+	0.0001i
+0.1309	+	-0.0003i
+-1.5788	+	0.0001i
+0.1713	+	0.0004i
+1.8780	+	-0.0002i
+0.2008	+	0.0000i
+1.0924	+	0.0002i
+0.3758	+	0.0002i
+-1.5037	+	0.0004i
+-2.0601	+	0.0004i
+-1.7822	+	-0.0002i
+-0.6356	+	-0.0001i
+0.3143	+	-0.0000i
+-0.3439	+	-0.0005i
+0.7686	+	-0.0004i
+0.3333	+	0.0001i
+0.0909	+	0.0002i
+0.5731	+	-0.0003i
+-1.5563	+	0.0002i
+0.8870	+	0.0001i
+1.4551	+	-0.0002i
+-0.8279	+	0.0001i
+0.2247	+	-0.0002i
+-0.1226	+	0.0002i
+0.7303	+	0.0001i
+-0.8256	+	0.0001i
+0.4111	+	0.0003i
+-0.1208	+	-0.0003i
+0.1021	+	0.0002i
+-0.0151	+	-0.0002i
+-1.0177	+	-0.0000i
+0.5451	+	0.0004i
+0.2950	+	0.0001i
+-1.1482	+	0.0001i
+0.1124	+	-0.0001i
+0.7822	+	-0.0001i
+-0.2556	+	-0.0001i
+0.5735	+	-0.0003i
+1.8640	+	-0.0003i
+0.2357	+	-0.0001i
+-1.2129	+	-0.0003i
+-0.3200	+	-0.0004i
+2.2477	+	-0.0002i
+1.0393	+	-0.0000i
+1.5738	+	0.0002i
+0.8327	+	0.0001i
+1.7316	+	0.0001i
+0.7483	+	0.0000i
+0.2480	+	0.0000i
+-0.3596	+	0.0004i
+0.2634	+	-0.0000i
+-0.8776	+	0.0004i
+0.5779	+	0.0002i
+-1.1304	+	0.0001i
+0.4801	+	-0.0001i
+0.9193	+	-0.0000i
+0.8063	+	0.0000i
+0.6851	+	0.0004i
+0.4857	+	0.0002i
+0.0246	+	0.0006i
+-0.0564	+	0.0001i
+-0.6941	+	0.0004i
+-0.8253	+	0.0004i
+-0.7099	+	0.0003i
+0.3702	+	0.0004i
+0.7930	+	0.0005i
+1.5259	+	0.0007i
+0.6704	+	0.0001i
+-0.2878	+	-0.0002i
+-0.8831	+	0.0001i
+0.2068	+	0.0003i
+0.2288	+	-0.0001i
+-1.2308	+	0.0003i
+-0.3536	+	-0.0000i
+-0.8833	+	0.0003i
+-1.1097	+	0.0001i
+0.9842	+	-0.0002i
+0.6875	+	0.0001i
+0.5538	+	-0.0002i
+1.7504	+	-0.0001i
+2.2796	+	-0.0003i
+0.2550	+	-0.0000i
+1.0871	+	-0.0004i
+2.0915	+	-0.0002i
+1.5229	+	0.0001i
+0.0893	+	0.0002i
+-0.7989	+	-0.0002i
+-2.6940	+	0.0005i
+-0.4667	+	0.0005i
+-0.1315	+	0.0002i
+-0.4210	+	0.0002i
+-0.4226	+	0.0002i
+-0.1954	+	-0.0002i
+0.0573	+	-0.0000i
+-0.0106	+	-0.0002i
+1.3320	+	0.0001i
+-0.8919	+	0.0002i
+-1.0424	+	0.0005i
+-0.4531	+	0.0001i
+-1.3432	+	0.0001i
+-1.9426	+	0.0003i
+-0.8526	+	0.0001i
+-1.2016	+	0.0001i
+-1.2876	+	0.0005i
+-0.9788	+	0.0001i
+-1.5387	+	-0.0001i
+-0.2136	+	0.0004i
+-0.1521	+	0.0002i
+-1.6903	+	0.0005i
+-0.1257	+	0.0004i
+0.0759	+	-0.0003i
+-0.6557	+	-0.0000i
+-0.6152	+	0.0002i
+0.4388	+	-0.0002i
+0.1203	+	0.0002i
+-0.1989	+	0.0001i
+-1.5080	+	0.0002i
+1.1714	+	0.0001i
+0.3337	+	-0.0000i
+0.6479	+	-0.0001i
+0.0293	+	0.0002i
+-1.0856	+	0.0007i
+-0.3328	+	0.0002i
+-0.0302	+	0.0000i
+-0.1788	+	0.0002i
+0.4893	+	-0.0003i
+-0.4657	+	0.0003i
+0.1053	+	-0.0000i
+0.3329	+	0.0004i
+0.7254	+	-0.0003i
+0.3564	+	0.0001i
+0.5008	+	-0.0001i
+-1.1237	+	-0.0003i
+0.4845	+	-0.0002i
+-0.4546	+	-0.0003i
+-0.3387	+	0.0002i
+0.4109	+	-0.0006i
+0.6874	+	0.0006i
+1.8031	+	0.0001i
+0.1252	+	-0.0002i
+0.3921	+	-0.0001i
+-1.1541	+	0.0001i
+0.7342	+	0.0005i
+0.6934	+	0.0000i
+-1.4692	+	0.0004i
+1.7801	+	-0.0006i
+0.9029	+	-0.0003i
+1.0846	+	-0.0001i
+-1.4009	+	0.0000i
+0.2309	+	-0.0002i
+-0.1183	+	-0.0002i
+-0.9776	+	0.0001i
+-0.2816	+	-0.0001i
+0.3717	+	0.0002i
+-0.5718	+	0.0004i
+-0.5407	+	-0.0000i
+1.1082	+	-0.0002i
+-0.5740	+	0.0002i
+0.8294	+	-0.0002i
+-0.4322	+	0.0002i
+0.0332	+	0.0005i
+0.0548	+	-0.0002i
+0.0647	+	0.0002i
+1.3947	+	-0.0003i
+-0.5643	+	-0.0002i
+-0.1492	+	-0.0005i
+-0.6827	+	-0.0002i
+0.7891	+	0.0004i
+-0.0019	+	-0.0001i
+1.4016	+	-0.0006i
+-1.0817	+	-0.0003i
+-3.0463	+	0.0004i
+-2.3968	+	-0.0001i
+-0.2740	+	0.0001i
+0.7219	+	-0.0004i
+0.1682	+	-0.0000i
+1.5501	+	0.0003i
+1.3794	+	-0.0002i
+-1.2741	+	0.0003i
+1.2061	+	-0.0000i
+0.3641	+	0.0006i
+-0.9670	+	-0.0000i
+1.0298	+	0.0004i
+-1.6302	+	0.0003i
+2.3735	+	-0.0004i
+0.9456	+	0.0002i
+-0.7422	+	-0.0001i
+2.1245	+	-0.0001i
+1.0084	+	0.0001i
+0.7134	+	0.0003i
+-2.3452	+	0.0003i
+-1.0226	+	-0.0003i
+-1.5743	+	0.0003i
+-1.2300	+	0.0003i
+0.7474	+	0.0002i
+0.1553	+	-0.0003i
+-0.4374	+	0.0004i
+0.1317	+	-0.0001i
+0.5968	+	-0.0002i
+0.1720	+	-0.0004i
+1.4718	+	0.0005i
+0.8545	+	0.0002i
+0.3786	+	0.0007i
+0.3231	+	0.0004i
+-0.5948	+	0.0002i
+-2.2269	+	0.0002i
+-1.6500	+	-0.0002i
+-1.4731	+	0.0001i
+-0.4039	+	0.0005i
+-1.5435	+	0.0000i
+0.7113	+	0.0003i
+-1.1703	+	0.0003i
+0.2974	+	-0.0003i
+-0.8955	+	-0.0001i
+0.8946	+	0.0002i
+-1.0243	+	-0.0001i
+-0.7720	+	-0.0001i
+0.3099	+	-0.0002i
+-0.7862	+	0.0000i
+-1.5808	+	0.0001i
+-0.2501	+	0.0003i
+0.5042	+	0.0006i
+-1.1289	+	-0.0001i
+-1.5886	+	0.0005i
+0.1153	+	0.0003i
+0.9962	+	0.0006i
+-0.0260	+	0.0001i
+1.0987	+	-0.0001i
+-0.1088	+	0.0000i
+0.1290	+	-0.0000i
+-0.7896	+	-0.0004i
+0.6828	+	-0.0001i
+1.5354	+	-0.0004i
+0.2722	+	0.0000i
+0.2668	+	-0.0000i
+-0.0474	+	0.0002i
+-1.4189	+	-0.0001i
+0.8343	+	0.0003i
+1.2414	+	0.0002i
+1.0601	+	0.0001i
+-0.3119	+	0.0004i
+1.6306	+	-0.0002i
+2.0641	+	0.0003i
+-0.0561	+	0.0000i
+0.3854	+	0.0005i
+1.7611	+	-0.0004i
+-2.3563	+	0.0002i
+-1.0961	+	0.0000i
+-0.5293	+	0.0005i
+-0.9077	+	0.0002i
+-0.7936	+	-0.0004i
+-0.2673	+	-0.0000i
+-1.5443	+	0.0002i
+0.7519	+	0.0000i
+1.4673	+	-0.0002i
+1.0552	+	-0.0003i
+-0.0884	+	-0.0001i
+0.0767	+	-0.0003i
+0.7944	+	-0.0005i
+0.6052	+	-0.0005i
+0.2780	+	-0.0000i
+-0.0078	+	-0.0002i
+0.0589	+	-0.0000i
+-1.1376	+	0.0000i
+-0.6237	+	0.0000i
+-1.2705	+	-0.0001i
+-0.5406	+	0.0000i
+-0.7343	+	-0.0000i
+-1.2490	+	0.0006i
+0.1373	+	-0.0001i
+0.1456	+	0.0001i
+-0.9199	+	-0.0000i
+-0.0405	+	-0.0000i
+1.7119	+	-0.0002i
+2.0179	+	-0.0000i
+0.3071	+	0.0006i
+0.7157	+	0.0002i
+0.1412	+	0.0007i
+-1.3854	+	0.0002i
+0.6135	+	0.0003i
+1.0422	+	-0.0000i
+-0.1810	+	-0.0004i
+-0.6474	+	-0.0001i
+-0.3019	+	0.0002i
+-0.4789	+	-0.0001i
+0.3787	+	-0.0003i
+-0.4689	+	0.0003i
+-0.3518	+	0.0003i
+-1.7392	+	0.0006i
+-0.5508	+	-0.0004i
+0.3107	+	-0.0001i
+1.5894	+	-0.0002i
+1.3486	+	-0.0003i
+0.1494	+	-0.0001i
+1.1907	+	-0.0001i
+1.0280	+	-0.0001i
+2.7011	+	-0.0007i
+-0.1659	+	0.0002i
+-0.3260	+	-0.0001i
+1.1437	+	-0.0003i
+-1.4512	+	-0.0002i
+-0.3582	+	-0.0005i
+0.4371	+	-0.0001i
+-0.1743	+	0.0001i
+-0.7892	+	-0.0002i
+0.8318	+	-0.0000i
+-0.0711	+	0.0003i
+0.3449	+	0.0007i
+1.8001	+	0.0003i
+0.3350	+	0.0003i
+0.1126	+	0.0004i
+-0.6491	+	0.0006i
+-0.5687	+	-0.0003i
+-0.4232	+	-0.0000i
+-0.6407	+	-0.0005i
+1.1556	+	-0.0001i
+0.6689	+	-0.0004i
+-0.0628	+	-0.0002i
+1.5089	+	-0.0002i
+-0.9092	+	0.0005i
+0.4065	+	-0.0003i
+0.2410	+	0.0000i
+0.8102	+	-0.0009i
+0.9851	+	-0.0001i
+0.2291	+	0.0001i
+-0.8730	+	-0.0000i
+0.5654	+	-0.0004i
+-1.4828	+	-0.0002i
+-0.2553	+	-0.0004i
+-1.9131	+	-0.0002i
+-1.7166	+	0.0003i
+-0.7533	+	-0.0003i
+-1.2781	+	-0.0003i
+-0.8532	+	0.0001i
+-0.7149	+	-0.0003i
+-0.8431	+	0.0002i
+0.4290	+	-0.0003i
+1.7844	+	-0.0005i
+2.2886	+	-0.0003i
+1.4343	+	-0.0006i
+0.6772	+	0.0003i
+0.8239	+	-0.0000i
+-0.0502	+	0.0004i
+1.4330	+	-0.0003i
+1.1972	+	0.0001i
+0.8381	+	0.0002i
+0.0507	+	-0.0003i
+1.5862	+	0.0003i
+-0.2312	+	0.0002i
+-0.2911	+	0.0001i
+0.6106	+	0.0004i
+0.6017	+	0.0000i
+0.2144	+	0.0007i
+2.2121	+	-0.0004i
+1.1094	+	0.0004i
+0.1601	+	0.0005i
+2.2723	+	-0.0002i
+1.0847	+	-0.0003i
+-0.4182	+	0.0000i
+1.5355	+	-0.0003i
+-0.2502	+	-0.0005i
+-0.4452	+	-0.0004i
+-0.4006	+	0.0002i
+1.9100	+	-0.0004i
+0.1249	+	0.0000i
+0.2377	+	-0.0003i
+1.4489	+	-0.0002i
+0.4526	+	-0.0001i
+0.2595	+	-0.0003i
+0.6626	+	-0.0003i
+-0.1385	+	-0.0002i
+0.5968	+	0.0004i
+0.6523	+	0.0005i
+0.4640	+	0.0001i
+0.2226	+	0.0006i
+-1.1574	+	0.0002i
+0.4304	+	-0.0003i
+1.0424	+	-0.0002i
+1.9578	+	-0.0007i
+0.1744	+	-0.0002i
+0.7945	+	-0.0005i
+0.5892	+	-0.0007i
+0.4277	+	-0.0002i
+-0.5649	+	0.0006i
+0.0836	+	-0.0002i
+-1.2953	+	-0.0004i
+-0.8630	+	-0.0002i
+-1.3146	+	-0.0005i
+-0.7618	+	-0.0005i
+-0.2456	+	-0.0001i
+0.1395	+	0.0000i
+0.8101	+	-0.0004i
+0.3558	+	-0.0002i
+1.1540	+	-0.0000i
+-0.2024	+	0.0002i
+0.3886	+	0.0006i
+-1.2334	+	-0.0000i
+-0.6598	+	0.0004i
+1.1573	+	-0.0006i
+0.7616	+	-0.0003i
+-0.5510	+	-0.0005i
+0.9556	+	0.0001i
+0.3661	+	0.0001i
+-1.0668	+	0.0002i
+0.2453	+	-0.0003i
+-0.5432	+	-0.0004i
+0.0062	+	0.0001i
+-1.3882	+	0.0004i
+-0.2643	+	-0.0002i
+-0.0445	+	0.0001i
+-0.9517	+	-0.0000i
+-0.9255	+	-0.0002i
+0.6817	+	-0.0003i
+2.1634	+	-0.0001i
+-1.1268	+	-0.0004i
+-0.8436	+	0.0002i
+0.3917	+	-0.0010i
+0.0436	+	-0.0002i
+-0.2711	+	-0.0005i
+2.5633	+	-0.0005i
+1.6099	+	-0.0011i
+4.9805	+	-0.0027i
+6.2006	+	-0.0043i
