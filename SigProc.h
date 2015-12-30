@@ -30,11 +30,11 @@ void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out, const float drif
    Array<Cmplx> f(inf2(in.len));
    FFT(in,f); Cmplx* const fa=f.data;
    float factor=0.0;
-   for(int k=0; k<f.len/2; ++k) {
+   for(int k=1; k<f.len/2; ++k) {//k=0 is its own dual. k=1 and k=last are dual, etc.
       factor += (randfloat()-0.5)*drift_speed/f.len;
       Cmplx phase=fa[k].phase();//unit(factor*tau);
       fa[k] = Cmplx(fa[k].mag(),0.0) * phase;
-      fa[f.len-1-k] = Cmplx(fa[f.len-1-k].mag(),0.0) * (~phase);
+      fa[f.len-2-k] = Cmplx(fa[f.len-2-k].mag(),0.0) * (~phase);
    }
    IFFT(f,out);
 }
