@@ -33,6 +33,7 @@ void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out, const float drif
    for(int k=1; k<f.len/2; ++k) {//k=0 is its own dual. k=1 and k=last are dual, etc.
       factor += (randfloat()-0.5)*drift_speed/f.len;
       Cmplx phase=fa[k].phase();//unit(factor*tau);
+      
       fa[k] = Cmplx(fa[k].mag(),0.0) * phase;
       fa[f.len-0-k] = Cmplx(fa[f.len-0-k].mag(),0.0) * (~phase);
    }
