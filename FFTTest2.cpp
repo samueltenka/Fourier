@@ -21,23 +21,27 @@ int main(int argc, char** argv) {
   std::cout.precision(4); std::cout<<std::fixed;
   //0. Generate white noise
   Array<Cmplx> c(len);
-  Cmplx* const ca = c.a;
+  Cmplx* const ca = c.data;
   for(int j=0; j<len; ++j) {
-     ca[j] = Cmplx(naive_random(),naive_random());
+     ca[j] = Cmplx(naive_random(),0); //real-valued white noise
   }
 
   //1. Analyze white noise
   Array<Cmplx> f(len);
   FFT(c,f);
+  for(int i=0; i<f.len/2; ++i) {
+     float dph=f.data[f.len-i].phase() + f.data[i].phase();
+     if(dph!=0.0) {std::cout << "dph " << dph << "\n";}
+  }
 
   //2. Synthesize white noise
   Array<Cmplx> c2(len);
   IFFT(f,c2);
 
   //3. Compare
-  Cmplx* const c2a = c2.a;
+  Cmplx* const c2a = c2.data;
   for(int j=0; j<len; ++j) {
-     print(c2.a[j]*(1.0/len) - c.a[j]);
+     print(c2a[j]*(1.0/len) - ca[j]);
   }
 
   return 0;

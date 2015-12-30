@@ -29,10 +29,10 @@ void phase_randomize(const Array<Cmplx> &in, Array<Cmplx> &out, const float drif
    /*indeed, it has units of radians per frequency i.e. units of time; so divide by the natural timescale, namely the length of sample?*/
    Array<Cmplx> f(inf2(in.len));
    FFT(in,f); Cmplx* const fa=f.data;
-   float factor=0.0;
+   //float factor=0.0;
    for(int k=1; k<f.len/2; ++k) {//k=0 is its own dual. k=1 and k=last are dual, etc.
-      factor += (randfloat()-0.5)*drift_speed/f.len;
-      Cmplx phase=fa[k].phase();//unit(factor*tau);
+      //factor += (randfloat()-0.5)*drift_speed/f.len;
+      Cmplx phase=unit(fa[k].phase());//unit(factor*tau);
       
       fa[k] = Cmplx(fa[k].mag(),0.0) * phase;
       fa[f.len-0-k] = Cmplx(fa[f.len-0-k].mag(),0.0) * (~phase);
