@@ -17,7 +17,8 @@ void copy(const char* filename_in, const char* filename_out) {
    FFT(cmplxs,fourier);
 
    for(int i=0; i<fourier.len; ++i) {
-      fourier.data[i] = Cmplx(fourier.data[i].mag(),0.0) * sqrt(1.0/(fourier.len));
+      std::cout << i <<" "; print(fourier.data[i]);
+      fourier.data[i] = Cmplx(fourier.data[i].mag(),0.0);// * sqrt(1.0/(fourier.len));
    }
    Array<short> shortsF(fourier);
    shortsF.write_to("Audio/sine0001.fourier.aligned.wav");
