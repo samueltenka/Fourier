@@ -36,6 +36,29 @@ int main(int argc, char** argv) {
   }
   analyze(c2);
 
+  //2.5. Analyze 1st stationary mode
+  std::cout << "Analyzing 1st stationary mode...\n";
+  Array<Cmplx> c25(8);
+  Cmplx ph1=Cmplx(1.0,0.0),
+        ph2=Cmplx(1.0,0.0);
+  for(int i=0; i<8; ++i) {
+     c25.data[i]=ph1+ph2;
+     ph1 = ph1*unit(tau/8);
+     ph2 = ph2*unit(-tau/8);
+  }
+  analyze(c25); 
+
+  std::cout << "Analyzing phase shifted stationary...\n";
+  Array<Cmplx> f25(8);
+  FFT(c25,f25);
+  for(int i=1; i<8/2; ++i) {
+     f25.data[i] = f25.data[i] * unit(tau/4);
+     f25.data[f25.len-i] = f25.data[f25.len-i] * (~unit(tau/4));
+  }
+  Array<Cmplx> c275(8);
+  IFFT(f25,c275);
+  analyze(c275);
+
   //3. Analyze linear combination
   std::cout << "Analyzing linear combination...\n";
   Array<Cmplx> c3(8);

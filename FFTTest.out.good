@@ -10,21 +10,39 @@ Analyzing constant signal...
 Analyzing 1st excited mode...
 0.000	+	0.000i
 8.000	+	0.000i
+0.000	+	-0.000i
+0.000	+	-0.000i
 0.000	+	0.000i
+0.000	+	0.000i
+0.000	+	-0.000i
+0.000	+	-0.000i
+Analyzing 1st stationary mode...
+0.000	+	0.000i
+8.000	+	0.000i
 0.000	+	-0.000i
 0.000	+	0.000i
 0.000	+	0.000i
 0.000	+	0.000i
+0.000	+	0.000i
+8.000	+	0.000i
+Analyzing phase shifted stationary...
+0.000	+	0.000i
+-0.000	+	8.000i
+0.000	+	0.000i
+0.000	+	0.000i
+-0.000	+	0.000i
+0.000	+	0.000i
 0.000	+	-0.000i
+-0.000	+	-8.000i
 Analyzing linear combination...
 8.000	+	0.000i
 8.000	+	0.000i
--0.000	+	-0.000i
+0.000	+	-0.000i
 0.000	+	-0.000i
 0.000	+	0.000i
 0.000	+	0.000i
-0.000	+	-0.000i
 -0.000	+	-0.000i
+0.000	+	0.000i
 Analyzing delta function...
 1.000	+	0.000i
 1.000	+	0.000i
@@ -42,7 +60,7 @@ Analyzing delta function...
 1.000	+	0.000i
 1.000	+	0.000i
 1.000	+	0.000i
-Analyzing delta function...
+Analyzing translated delta function...
 1.000	+	0.000i
 0.924	+	0.383i
 0.707	+	0.707i
