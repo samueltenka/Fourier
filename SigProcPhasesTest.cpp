@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
    Array<short> shorts3(cmplxs3);
    shorts3.write_to("Audio/sine1000.aligned.wav");
 
-   char fnm[] = "Audio/sine1000.randomized.brown00100.wav";
+   //char fnm[] = "Audio/sine1000.randomized.brown00100.wav";
    /*for(float i=10.0; i<100000.0; i*=1.5) {
       int ii=static_cast<int>(i);
       for(int j=5-1; j>=0;--j) {
@@ -31,6 +31,6 @@ int main(int argc, char** argv) {
       std::cout << "writing " << fnm << " ...\n";
       try_brownian_constant(cmplxs, i, fnm);
    }*/
-   try_brownian_constant(cmplxs,100.0,fnm);
+   //try_brownian_constant(cmplxs,100.0,fnm);
    return 0;
 }
