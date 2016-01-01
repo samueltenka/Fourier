@@ -50,5 +50,12 @@ inline Cmplx unit(float phase) {
    return polygon * static_cast<float>(1.0/m);
 }
 
+inline Cmplx exp(const Cmplx &other) {
+   return unit(other.im) * exp(other.re);
+}
+inline Cmplx log(const Cmplx &other) {
+   return Cmplx(log(other.mag()),other.phase());
+}
+
 
 #endif//CMPLX_H
