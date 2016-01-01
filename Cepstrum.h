@@ -19,7 +19,7 @@ void extract_essence(Array<filename> &ins, filename out) {
       }
    }
    for(int j=0; j<avg.len; ++j) {
-      avg.data[j] = avg.data[j] * (1.0/avg.len);
+      avg.data[j] = avg.data[j] * (1.0/ins.len);
    }
    for(int j=0; j<avg.len; ++j) {
       avg.data[j] = exp(avg.data[j]);
