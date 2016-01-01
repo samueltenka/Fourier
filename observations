@@ -1,0 +1,2 @@
+so the more instances we average, the more "spikes at ends" artifacts we get,
+suggesting that for some reason lots of phases are lining up around theta=0.
