@@ -6,6 +6,11 @@
 
 typedef const char* filename;
 
+
+void unroll_phases(Array<filename> &a) {
+    
+}
+
 void extract_essence(Array<filename> &ins, filename out) {
    Array<short> first(ins.data[0]); //TODO: sorta wasteful, just to get len...
    Array<Cmplx> avg(inf2(first.len));
