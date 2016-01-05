@@ -7,12 +7,12 @@ const long int SAMPLE_RATE = 44100;
 void write_ifft(float(*myfunc)(float), float duration, char * const filename) {
    const long int samples = duration*SAMPLE_RATE;
    Array<Cmplx> ifft_me(samples); 
-   const float norm = sqrt(ifft_me.len);
+   const float norm = static_cast<float>(inf2(ifft_me.len));
    for(int i=0; i<samples; ++i) {
       float x = static_cast<float>(i)/SAMPLE_RATE;
       ifft_me.data[i] = Cmplx(myfunc(x), 0.0) * norm;
    }
-   Array<Cmplx> time_domain(ifft_me.len);
+   Array<Cmplx> time_domain(inf2(ifft_me.len));
    IFFT(ifft_me, time_domain);
    Array<short> write_me(time_domain);
    write_me.write_to(filename);
