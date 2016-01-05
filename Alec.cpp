@@ -18,7 +18,7 @@ void write_ifft(float(*myfunc)(float), float duration, char * const filename) {
 
 #include <math.h>
 float testfunc(float f) {
-   return sin(f * 400/sin(f));
+   return 32000*440.0 / f; //sin(f * 400/sin(f));
 }
 #include <stdlib.h>
 int main(int argc, char** argv) {
